@@ -1,0 +1,10 @@
+services:
+  sample-mongodb:
+    build:
+      context: ../
+      dockerfile: ./database/mongo/dockerfile
+      args:
+        - git_commit
+      platforms:
+        - linux/amd64
+        - linux/arm64

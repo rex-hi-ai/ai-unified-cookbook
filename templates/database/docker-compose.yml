@@ -1,0 +1,6 @@
+services:
+  sample-mongodb:
+    container_name: "ns-domainservice-sample-mongodb"
+    ports:
+      - "29997:27017"
+    image: ns-domain-service-sample-mongodb:latest
