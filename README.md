@@ -1,49 +1,43 @@
 # ai-unified-cookbook
 
-**精選 AI 實用範例、工具與工作流，打造高效「人機整合」系統的最佳 Recipe 實踐手冊**
-
----
-
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-## 專案簡介
+## Project Overview
 
-ai-unified-cookbook 致力於彙整最實用的 AI 工具、模型、提示詞、代理人與自動化 Recipe，協助開發者、產品經理與研究人員快速原型開發、提升協作效率，打造高品質 AI 解決方案。
+ai-unified-cookbook is dedicated to compiling the most practical AI tools, models, prompts, agents, and automation recipes. It helps developers, product managers, and researchers rapidly prototype, enhance collaboration efficiency, and build high-quality AI solutions.
 
-
-## 目錄結構
+## Directory Structure
 
 ```
-├── prompts/                 # 提示詞範本
-│   └── workflow/            # 工作流提示詞範本（如：文件同步、Git 操作等）
+├── prompts/                 # Prompt templates
+│   └── workflow/            # Workflow prompt templates (e.g., document sync, Git operations, etc.)
 ├── docs/
-│   └── survey/              # AI 相關工具與服務的介紹
-├── references/              # 參考資料、原型、範本
-├── LICENSE                  # 授權條款
-├── README.md                # 專案說明文件
+│   └── survey/              # Introductions to AI-related tools and services
+├── references/              # Reference materials, prototypes, templates
+├── LICENSE                  # License terms
+└── README.md                # Project documentation
 ```
 
+## Project Maintenance
 
-## 專案維護
+Automated maintenance workflows help maintainers improve efficiency, reduce omissions, and ensure process consistency. It is recommended for use by project maintainers only.
 
-專案維護自動化工作流可協助維護者提升效率、降低疏漏，並確保流程一致性。建議僅由專案維護者使用。
-
-### 工作流
+### Workflows
 
 - **`/sync-readme <optional-memo>`**
-  - 用途：README 文件同步與維護，協助維護者自動化更新與校對專案說明。
+  - Purpose: Synchronize and maintain the README file, helping maintainers automate updates and proofreading of project documentation.
 
 - **`/sync-survey-docs <tool-service-name> <optional-memo>`**
-  - 用途：AI 工具/服務 survey 文件維護，標準化 survey 文件的撰寫與同步。
+  - Purpose: Maintain AI tool/service survey documents, standardizing the writing and synchronization of survey files.
 
 - **`/git-commit <optional-memo>`**
-  - 用途：Git commit 操作規範與自動化，提升提交品質與一致性。
+  - Purpose: Standardize and automate Git commit operations, improving commit quality and consistency.
 
 - **`/git-push <optional-memo>`**
-  - 用途：Git push 操作自動化，確保推送流程安全且合規。
+  - Purpose: Automate Git push operations, ensuring the push process is safe and compliant.
 
-> 目前僅支援 GitHub Copilot
+> Currently only supports GitHub Copilot
 
-## 授權
+## License
 
-本專案採用 [MIT License](LICENSE)。
+This project is licensed under the [MIT License](LICENSE).
