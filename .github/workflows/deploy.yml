@@ -1,0 +1,76 @@
+name: Deploy Next.js site to Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'web-interface/**'
+  workflow_dispatch:
+
+# 設定權限
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 避免併發部署問題
+concurrency:
+  group: 'pages'
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20.x'
+          cache: 'npm'
+
+      # 自動設定 Next.js 的 basePath 和關閉圖片優化
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+        with:
+          static_site_generator: next
+
+      # 快取 node_modules 和 .next/cache
+      - name: Cache dependencies
+        uses: actions/cache@v4
+        with:
+          path: |
+            web-interface/node_modules
+            web-interface/.next/cache
+          key: ${{ runner.os }}-nextjs-${{ hashFiles('web-interface/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-nextjs-
+
+      - name: Install dependencies
+        working-directory: ./web-interface
+        run: npm ci
+
+      - name: Build with Next.js
+        working-directory: ./web-interface
+        run: npm run build
+        env:
+          BASE_PATH: /ai-unified-cookbook
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: 'web-interface/out'
+          retention-days: 1
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

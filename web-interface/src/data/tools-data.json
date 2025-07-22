@@ -1,0 +1,3392 @@
+{
+  "stats": {
+    "totalTools": 45,
+    "totalCategories": 12,
+    "freeTools": 13,
+    "lastUpdated": "2025-07-21T10:08:49.001Z"
+  },
+  "categories": {
+    "agent": {
+      "name": "AI 代理",
+      "description": "智能代理和自主AI系統",
+      "tools": [
+        {
+          "id": "devin",
+          "name": "Devin",
+          "category": "agent",
+          "overview": "Devin 是 Cognition Labs 推出的 AI 軟體工程師，主打能夠自主規劃、編寫、測試、除錯與部署軟體專案。Devin 能理解複雜需求、與人協作，並自動化多數開發流程。",
+          "features": [
+            "自主規劃與分解任務",
+            "編寫、測試、除錯程式碼",
+            "自動化軟體部署與 CI/CD",
+            "與開發者協作、回饋",
+            "支援多種程式語言與框架",
+            "具備持續學習與自我改進能力"
+          ],
+          "useCases": [
+            "自動化軟體專案開發",
+            "快速原型設計與 MVP 開發",
+            "測試與除錯現有程式碼",
+            "輔助團隊協作與知識管理"
+          ],
+          "pricing": {
+            "plans": [
+              "僅限申請試用，尚未公開定價",
+              "詳細資訊請參考 [官方網站](https://www.cognition-labs.com/devin)"
+            ],
+            "hasFree": false,
+            "minPrice": null,
+            "maxPrice": null,
+            "raw": "- 僅限申請試用，尚未公開定價\n- 詳細資訊請參考 [官方網站](https://www.cognition-labs.com/devin)"
+          },
+          "installation": "目前僅開放申請試用，尚無公開安裝方式。",
+          "basicUsage": "尚無公開 CLI 或 API 範例，請參考官方網站申請試用。",
+          "resources": [
+            {
+              "name": "官方網站",
+              "url": "https://www.cognition-labs.com/devin"
+            }
+          ],
+          "lastUpdated": "2025-07-16T09:48:44.060Z"
+        },
+        {
+          "id": "jules",
+          "name": "Jules AI",
+          "category": "agent",
+          "overview": "",
+          "features": [],
+          "useCases": [],
+          "pricing": {
+            "plans": [
+              "提供免費試用（需 Google 帳號登入）",
+              "付費方案與企業版詳見官方網站，需登入查詢最新價格",
+              "企業版支援團隊協作與進階功能"
+            ],
+            "hasFree": true,
+            "minPrice": null,
+            "maxPrice": null,
+            "raw": "- 提供免費試用（需 Google 帳號登入）\n- 付費方案與企業版詳見官方網站，需登入查詢最新價格\n- 企業版支援團隊協作與進階功能"
+          },
+          "installation": "- 前往 [Jules 官方網站](https://jules.google/) 並以 Google 帳號登入\n- 授權 GitHub 帳號以存取專案\n- 選擇 repo 與分支，輸入任務描述即可啟用\n\n```bash\n# 無需安裝，瀏覽器登入即可用\n```",
+          "basicUsage": "- 登入後選擇 GitHub 專案與分支，輸入自然語言任務（如「升級 next.js 至 v15 並改用 app 目錄」）\n- Jules 會自動拉取專案、分析、產生計畫、執行變更、執行測試並建立 PR\n- 可於介面審查 diff、聆聽音訊摘要並快速合併\n\n```bash\n# 例：升級 next.js 並重構專案\n# 於 Jules 介面輸入：「Bump next.js to v15 and convert to app directory」\n```",
+          "resources": [
+            {
+              "name": "Jules AI 官方網站",
+              "url": "https://jules.google/"
+            },
+            {
+              "name": "Jules AI 文件",
+              "url": "https://jules.google/docs"
+            },
+            {
+              "name": "Jules AI 定價頁面",
+              "url": "https://jules.google/"
+            },
+            {
+              "name": "Jules AI 體驗入口",
+              "url": "https://jules.google.com/"
+            },
+            {
+              "name": "Google Labs",
+              "url": "https://labs.google.com/"
+            }
+          ],
+          "lastUpdated": "2025-07-16T09:48:44.060Z"
+        },
+        {
+          "id": "manus",
+          "name": "Manus",
+          "category": "agent",
+          "overview": "",
+          "features": [],
+          "useCases": [],
+          "pricing": null,
+          "installation": "Manus 為雲端平台，大多數用戶無需本地安裝。開始使用步驟如下：\n\n1. 前往官方網站註冊帳號。\n2. 透過網頁介面登入，或下載桌面/行動版應用（如有提供）。\n3. 選擇方案並依指引完成設定。\n\n```bash\n# 範例：透過網頁使用 Manus\nhttps://manus.im/home\n```",
+          "basicUsage": "登入後，可直接在 Manus 介面指派任務。常見流程如下：\n\n```bash\n# 範例：產生市場研究報告\n1. 登入 Manus\n2. 輸入任務：「調查美國金融科技市場前 10 大競爭者並彙整趨勢。」\n3. Manus 會自動分析、研究並產出結構化報告。\n\n# 範例：自動化商業簡報\n1. 登入 Manus\n2. 輸入任務：「製作含財務儀表板與策略洞察的董事會簡報。」\n3. Manus 會生成簡報與視覺化內容，供審閱。\n```",
+          "resources": [
+            {
+              "name": "官方網站",
+              "url": "https://manus.im/home"
+            },
+            {
+              "name": "關於 Manus",
+              "url": "https://manus.im/about"
+            },
+            {
+              "name": "LinkedIn",
+              "url": "https://www.linkedin.com/company/manus-im/"
+            },
+            {
+              "name": "YouTube",
+              "url": "https://www.youtube.com/@Manus-AI/videos"
+            },
+            {
+              "name": "X (Twitter)",
+              "url": "https://x.com/ManusAI_HQ"
+            },
+            {
+              "name": "Instagram",
+              "url": "https://www.instagram.com/manusaiofficial"
+            },
+            {
+              "name": "TikTok",
+              "url": "http://www.tiktok.com/@manusaiofficial"
+            }
+          ],
+          "lastUpdated": "2025-07-16T09:48:44.061Z"
+        },
+        {
+          "id": "openhands",
+          "name": "OpenHands",
+          "category": "agent",
+          "overview": "",
+          "features": [],
+          "useCases": [],
+          "pricing": null,
+          "installation": "### Docker（推薦）\n```bash\ndocker pull docker.all-hands.dev/all-hands-ai/runtime:0.48-nikolaik\n\ndocker run -it --rm --pull=always \\\n    -e SANDBOX_RUNTIME_CONTAINER_IMAGE=docker.all-hands.dev/all-hands-ai/runtime:0.48-nikolaik \\\n    -e LOG_ALL_EVENTS=true \\\n    -v /var/run/docker.sock:/var/run/docker.sock \\\n    -v ~/.openhands:/.openhands \\\n    -p 3000:3000 \\\n    --add-host host.docker.internal:host-gateway \\\n    --name openhands-app \\\n    docker.all-hands.dev/all-hands-ai/openhands:0.48\n```\n啟動後瀏覽 [http://localhost:3000](http://localhost:3000)\n\n### OpenHands Cloud\n- 直接註冊 [https://app.all-hands.dev/](https://app.all-hands.dev/)，免安裝即可使用。\n\n### CLI（本地）\n- 詳細 CLI 與無頭模式安裝請參考[官方文件](https://docs.all-hands.dev/usage/installation)。",
+          "basicUsage": "- 首次啟動時，請選擇 LLM 供應商並輸入 API 金鑰（如 Anthropic Claude、OpenAI）。\n- 可透過網頁介面或 CLI 輸入任務（如：「修正此專案所有 lint 錯誤」）。\n- 代理會自動規劃、執行並逐步回報進度。\n\n```bash\n# 範例：用 Docker 啟動 OpenHands 並執行任務\nopenhands --task \"彙整本專案所有 GitHub open issue 並摘要\"\n\n# 範例：無頭模式執行（詳見官方文件）\nopenhands --headless --task \"重構資料處理流程程式碼\"\n```",
+          "resources": [
+            {
+              "name": "官方網站",
+              "url": "https://all-hands.dev/"
+            },
+            {
+              "name": "官方文件",
+              "url": "https://docs.all-hands.dev/"
+            },
+            {
+              "name": "GitHub 原始碼",
+              "url": "https://github.com/All-Hands-AI/OpenHands"
+            },
+            {
+              "name": "OpenHands Cloud",
+              "url": "https://app.all-hands.dev/"
+            },
+            {
+              "name": "Slack 社群",
+              "url": "https://join.slack.com/t/openhands-ai/shared_invite/zt-3847of6xi-xuYJIPa6YIPg4ElbDWbtSA"
+            },
+            {
+              "name": "Discord 社群",
+              "url": "https://discord.gg/ESHStjSjD4"
+            }
+          ],
+          "lastUpdated": "2025-07-16T09:48:44.061Z"
+        },
+        {
+          "id": "replit-ai",
+          "name": "Replit AI",
+          "category": "agent",
+          "overview": "",
+          "features": [],
+          "useCases": [],
+          "pricing": null,
+          "installation": "- 直接於 [https://replit.com/ai](https://replit.com/ai) 註冊帳號即可使用，無需安裝\n- 行動裝置請於 App Store/Google Play 下載「Replit」App\n- 企業/團隊可於 Teams 頁面建立團隊與專案\n- 進階功能與 API 請參考[官方文件](https://docs.replit.com/ai)\n\n```bash\n# 無需安裝，瀏覽器註冊即可用\n# 行動裝置請於商店搜尋「Replit」下載\n```",
+          "basicUsage": "- 登入後於專案內啟用 Replit Agent，輸入自然語言描述需求\n- 於編輯器內獲得 AI 補全、除錯、重構、文件產生等功能\n- 多人可即時協作、分支、合併與部署\n\n```bash\n# 範例：啟用 Replit Agent，輸入「建立一個 ToDo List 應用」\n# 範例：多人協作開發並一鍵部署至雲端\n```",
+          "resources": [
+            {
+              "name": "Replit AI 官方網站",
+              "url": "https://replit.com/ai"
+            },
+            {
+              "name": "Replit 定價頁面",
+              "url": "https://replit.com/pricing"
+            },
+            {
+              "name": "Replit 官方文件",
+              "url": "https://docs.replit.com/ai"
+            },
+            {
+              "name": "Replit Teams",
+              "url": "https://replit.com/teams"
+            },
+            {
+              "name": "Replit 部署說明",
+              "url": "https://docs.replit.com/category/replit-deployments"
+            },
+            {
+              "name": "Replit Blog",
+              "url": "https://blog.replit.com/"
+            },
+            {
+              "name": "Replit 社群",
+              "url": "https://replit.com/community"
+            }
+          ],
+          "lastUpdated": "2025-07-16T09:48:44.062Z"
+        }
+      ],
+      "count": 5
+    },
+    "automation": {
+      "name": "自動化工具",
+      "description": "工作流程自動化平台",
+      "tools": [
+        {
+          "id": "dify",
+          "name": "Dify",
+          "category": "automation",
+          "overview": "Dify 是一款 AI 工作流自動化平台，支援視覺化拖拉建構、整合多家大語言模型、RAG 知識庫、智慧代理與企業級安全，適合開發者、企業與教育單位快速構建 AI 應用與自動化流程。",
+          "features": [
+            "視覺化工作流建構（無需程式設計）",
+            "整合 OpenAI、Anthropic、Google、本地模型等多家 LLM",
+            "內建 RAG 向量知識庫，支援多資料來源",
+            "智慧代理策略與工具整合",
+            "企業級安全與權限控管",
+            "靈活發布（API、Web、聊天機器人等）",
+            "Backend-as-a-Service 後端即服務",
+            "團隊協作、DSL 工作流保存與分享",
+            "插件市場與外部工具連接",
+            "監控與分析功能",
+            "開源自主部署與雲端託管"
+          ],
+          "useCases": [
+            "AI 應用快速原型與產品驗證",
+            "企業 AI 轉型與跨部門能力分發",
+            "智慧客服與 Q&A 系統",
+            "文件處理與自動化分析",
+            "程式設計輔助與自動化",
+            "教育訓練與 AI 工作流教學",
+            "資料分析與商業洞察",
+            "重複性任務自動化"
+          ],
+          "pricing": {
+            "plans": [
+              "Sandbox（免費）：$0，200 訊息/月，1人，5應用，50文件，50MB",
+              "Professional：$59/月，5,000 訊息/月，3人，50應用，500文件，5GB",
+              "Team：$159/月，10,000 訊息/月，50人，200應用，1,000文件，20GB",
+              "Enterprise：客製化報價，無限制用量與功能",
+              "年繳享 17% 折扣，學生/教育者免費",
+              "詳細與最新價格請參考 [定價方案](https://dify.ai/pricing)"
+            ],
+            "hasFree": true,
+            "minPrice": 59,
+            "maxPrice": 159,
+            "raw": "- Sandbox（免費）：$0，200 訊息/月，1人，5應用，50文件，50MB\n- Professional：$59/月，5,000 訊息/月，3人，50應用，500文件，5GB\n- Team：$159/月，10,000 訊息/月，50人，200應用，1,000文件，20GB\n- Enterprise：客製化報價，無限制用量與功能\n- 年繳享 17% 折扣，學生/教育者免費\n- 詳細與最新價格請參考 [定價方案](https://dify.ai/pricing)"
+          },
+          "installation": "- 雲端版：註冊 [Dify 雲端服務](https://cloud.dify.ai/)\n- 開源版：於 [GitHub](https://github.com/langgenius/dify) 下載原始碼，依官方文件部署",
+          "basicUsage": "1. 註冊並登入 Dify 雲端或部署開源版\n2. 於平台內建立新應用，拖拉元件設計工作流\n3. 整合 LLM、知識庫與外部工具，發布 API 或 Web 應用",
+          "resources": [
+            {
+              "name": "官方網站",
+              "url": "https://dify.ai/"
+            },
+            {
+              "name": "雲端服務",
+              "url": "https://cloud.dify.ai/"
+            },
+            {
+              "name": "定價方案",
+              "url": "https://dify.ai/pricing"
+            },
+            {
+              "name": "GitHub 頁面",
+              "url": "https://github.com/langgenius/dify"
+            },
+            {
+              "name": "官方文檔",
+              "url": "https://docs.dify.ai/en/introduction"
+            },
+            {
+              "name": "Discord 社群",
+              "url": "https://discord.com/invite/FngNHpbcY7"
+            },
+            {
+              "name": "教育計畫",
+              "url": "https://dify.ai/education"
+            },
+            {
+              "name": "合作夥伴計畫",
+              "url": "https://dify.ai/partner"
+            },
+            {
+              "name": "插件市場",
+              "url": "https://marketplace.dify.ai/?language=en-US"
+            },
+            {
+              "name": "品牌指南",
+              "url": "https://docs.dify.ai/en/resources/about-dify/dify-brand-guidelines"
+            }
+          ],
+          "lastUpdated": "2025-07-16T09:48:44.063Z"
+        },
+        {
+          "id": "make",
+          "name": "Make",
+          "category": "automation",
+          "overview": "",
+          "features": [],
+          "useCases": [],
+          "pricing": null,
+          "installation": "",
+          "basicUsage": "",
+          "resources": [],
+          "lastUpdated": "2025-07-16T09:48:44.063Z"
+        },
+        {
+          "id": "n8n",
+          "name": "n8n",
+          "category": "automation",
+          "overview": "",
+          "features": [],
+          "useCases": [],
+          "pricing": null,
+          "installation": "n8n 支援多種安裝方式，最常見為 Docker 或 npm：\n\n```bash\n# 以 npx 快速啟動（需先安裝 Node.js）\nnpx n8n\n\n# Docker 部署\n# 建立資料卷\n$ docker volume create n8n_data\n# 啟動 n8n 容器\n$ docker run -it --rm --name n8n -p 5678:5678 -v n8n_data:/home/node/.n8n docker.n8n.io/n8nio/n8n\n```\n\n更多安裝方式請參考官方文件（支援雲端 VM、Docker Compose、npm、各大雲平台等）。",
+          "basicUsage": "登入 n8n 編輯器（預設 http://localhost:5678），即可建立自動化流程。\n\n```bash\n# 範例：建立一個簡單的 Google Sheets 自動同步流程\n1. 新增 Google Sheets 節點，設定認證與資料來源\n2. 新增 Slack 節點，設定訊息內容\n3. 連接節點，儲存並啟用流程\n\n# 範例：AI 代理自動摘要網頁內容\n1. 新增 HTTP Request 節點抓取網頁\n2. 新增 AI Transform 節點，選擇摘要任務\n3. 輸出結果到 Email/Slack\n```",
+          "resources": [
+            {
+              "name": "官方網站",
+              "url": "https://n8n.io/"
+            },
+            {
+              "name": "官方文件",
+              "url": "https://docs.n8n.io/"
+            },
+            {
+              "name": "GitHub 專案",
+              "url": "https://github.com/n8n-io/n8n"
+            },
+            {
+              "name": "定價方案",
+              "url": "https://n8n.io/pricing/"
+            },
+            {
+              "name": "整合清單",
+              "url": "https://n8n.io/integrations/"
+            },
+            {
+              "name": "範本/工作流程",
+              "url": "https://n8n.io/workflows/"
+            },
+            {
+              "name": "社群論壇",
+              "url": "https://community.n8n.io/"
+            },
+            {
+              "name": "YouTube 頻道",
+              "url": "https://www.youtube.com/c/n8n-io"
+            },
+            {
+              "name": "X (Twitter)",
+              "url": "https://twitter.com/n8n_io"
+            },
+            {
+              "name": "LinkedIn",
+              "url": "https://www.linkedin.com/company/n8n/"
+            },
+            {
+              "name": "Discord",
+              "url": "https://discord.gg/n8n"
+            }
+          ],
+          "lastUpdated": "2025-07-16T09:48:44.063Z"
+        },
+        {
+          "id": "task-master",
+          "name": "task-master",
+          "category": "automation",
+          "overview": "",
+          "features": [],
+          "useCases": [],
+          "pricing": null,
+          "installation": "",
+          "basicUsage": "",
+          "resources": [],
+          "lastUpdated": "2025-07-16T09:48:44.063Z"
+        },
+        {
+          "id": "zapier",
+          "name": "Zapier",
+          "category": "automation",
+          "overview": "",
+          "features": [],
+          "useCases": [],
+          "pricing": null,
+          "installation": "- 直接於 [官方網站](https://zapier.com/) 註冊帳號即可使用，無需安裝\n- 進階功能與 API 請參考官方文件\n\n```bash\n# 無需安裝，瀏覽器註冊即可用\n```",
+          "basicUsage": "- 登入後於介面建立 Zap，選擇觸發器與動作應用程式\n- 可於 Canvas 設計 AI 流程圖，或啟用 Agents/Chatbots\n\n```bash\n# 例：建立一個自動將 Gmail 郵件存入 Google Sheets 的 Zap\n# 於 Zapier 介面選擇 Gmail 為觸發器，Google Sheets 為動作\n```",
+          "resources": [
+            {
+              "name": "Zapier 官方網站",
+              "url": "https://zapier.com/"
+            },
+            {
+              "name": "官方定價頁面",
+              "url": "https://zapier.com/pricing"
+            },
+            {
+              "name": "官方文件",
+              "url": "https://help.zapier.com/"
+            },
+            {
+              "name": "Zapier AI 介紹",
+              "url": "https://zapier.com/ai"
+            },
+            {
+              "name": "Zapier Canvas",
+              "url": "https://zapier.com/canvas"
+            },
+            {
+              "name": "Zapier Agents",
+              "url": "https://zapier.com/agents"
+            },
+            {
+              "name": "Zapier Chatbots",
+              "url": "https://zapier.com/ai/chatbot"
+            },
+            {
+              "name": "Gartner 評論",
+              "url": "https://www.gartner.com/reviews/market/application-integration-platforms/vendor/zapier"
+            }
+          ],
+          "lastUpdated": "2025-07-16T09:48:44.064Z"
+        }
+      ],
+      "count": 5
+    },
+    "browser": {
+      "name": "瀏覽器工具",
+      "description": "瀏覽器擴展和網頁工具",
+      "tools": [
+        {
+          "id": "comet",
+          "name": "Comet",
+          "category": "browser",
+          "overview": "",
+          "features": [],
+          "useCases": [],
+          "pricing": null,
+          "installation": "",
+          "basicUsage": "",
+          "resources": [],
+          "lastUpdated": "2025-07-16T09:48:44.064Z"
+        }
+      ],
+      "count": 1
+    },
+    "chat": {
+      "name": "對話工具",
+      "description": "AI聊天和對話助手",
+      "tools": [
+        {
+          "id": "chatgpt",
+          "name": "ChatGPT",
+          "category": "chat",
+          "overview": "ChatGPT 是 OpenAI 推出的對話式 AI 助手，支援多模型（如 GPT-4o、GPT-4.1、GPT-4.5 研究預覽版），可進行自然語言對話、內容生成、程式輔助、資料分析、語音與多模態互動，適用於個人、團隊與企業。",
+          "features": [
+            "多模型支援（GPT-4o、GPT-4.1、GPT-4.5 等）",
+            "進階推理與多模態互動（文字、圖片、語音、影片）",
+            "標準與進階語音對話、螢幕分享",
+            "檔案上傳、資料分析、圖片生成",
+            "即時網路搜尋",
+            "Canvas 視覺化創作介面",
+            "自訂 GPT 模型建立與分享",
+            "專案管理與任務協作",
+            "企業級安全與資源整合（Google Drive、SharePoint、GitHub 等）",
+            "GDPR、CCPA、SOC 2 Type 2 合規"
+          ],
+          "useCases": [
+            "日常工作助理（寫作、編輯、資料分析、程式設計）",
+            "企業客服與 24/7 智慧支援",
+            "教育輔助與學術研究",
+            "創意寫作、內容創作、設計發想",
+            "程式開發、除錯、最佳化建議",
+            "商業分析、市場研究、策略制定",
+            "多語言翻譯與跨文化溝通",
+            "企業知識管理與智慧檢索"
+          ],
+          "pricing": {
+            "plans": [
+              "Free：$0/月，GPT-4.1 mini 無限、有限 GPT-4o、基礎檔案上傳、圖片生成、語音、自訂 GPT",
+              "Plus：$20/月，Free 所有功能、提高限額、進階語音、多推理模型、專案與任務",
+              "Pro：$200/月，Plus 所有功能、無限推理模型、無限進階語音、o1 pro、進階 Sora 影片、Operator 預覽",
+              "Team：$25/年繳或 $30/月繳（每用戶），無限 GPT-4o、安全專屬空間、SAML SSO、資源連接器、管理控制",
+              "Enterprise：客製化報價，Team 所有功能、擴充上下文、企業級保護、SCIM、進階支援、資料存留地",
+              "詳細與最新價格請參考 [官方定價頁](https://openai.com/chatgpt/pricing/)"
+            ],
+            "hasFree": true,
+            "minPrice": 20,
+            "maxPrice": 200,
+            "raw": "- Free：$0/月，GPT-4.1 mini 無限、有限 GPT-4o、基礎檔案上傳、圖片生成、語音、自訂 GPT\n- Plus：$20/月，Free 所有功能、提高限額、進階語音、多推理模型、專案與任務\n- Pro：$200/月，Plus 所有功能、無限推理模型、無限進階語音、o1 pro、進階 Sora 影片、Operator 預覽\n- Team：$25/年繳或 $30/月繳（每用戶），無限 GPT-4o、安全專屬空間、SAML SSO、資源連接器、管理控制\n- Enterprise：客製化報價，Team 所有功能、擴充上下文、企業級保護、SCIM、進階支援、資料存留地\n- 詳細與最新價格請參考 [官方定價頁](https://openai.com/chatgpt/pricing/)"
+          },
+          "installation": "ChatGPT 可直接於網頁使用，或下載行動 App：\n- [ChatGPT 下載](https://openai.com/chatgpt/download/)\n- [iOS 下載](https://apps.apple.com/app/openai-chatgpt/id6448311069)\n- [Android 下載](https://play.google.com/store/apps/details?id=com.openai.chatgpt)",
+          "basicUsage": "1. 註冊並登入 [ChatGPT 官方網站](https://chatgpt.com/)\n2. 選擇模型（如 GPT-4o）\n3. 輸入文字、語音或上傳檔案進行互動\n4. 可建立自訂 GPT 或管理專案、任務",
+          "resources": [
+            {
+              "name": "官方網站",
+              "url": "https://chatgpt.com/"
+            },
+            {
+              "name": "官方定價",
+              "url": "https://openai.com/chatgpt/pricing/"
+            },
+            {
+              "name": "Team 方案",
+              "url": "https://openai.com/chatgpt/team/"
+            },
+            {
+              "name": "Enterprise 方案",
+              "url": "https://openai.com/chatgpt/enterprise/"
+            },
+            {
+              "name": "教育方案",
+              "url": "https://openai.com/chatgpt/education/"
+            },
+            {
+              "name": "下載頁",
+              "url": "https://openai.com/chatgpt/download/"
+            },
+            {
+              "name": "OpenAI API 平台",
+              "url": "https://openai.com/api/"
+            },
+            {
+              "name": "OpenAI 支援中心",
+              "url": "https://help.openai.com/"
+            },
+            {
+              "name": "OpenAI 開發者文檔",
+              "url": "https://platform.openai.com/docs/overview"
+            }
+          ],
+          "lastUpdated": "2025-07-16T09:48:44.065Z"
+        },
+        {
+          "id": "cherry-studio",
+          "name": "Cherry Studio",
+          "category": "chat",
+          "overview": "Cherry Studio 是一款多模型 AI 對話與知識管理平台，支援整合多家雲端 LLM（如 OpenAI、Gemini、Anthropic、Claude、Perplexity、Poe）及本地模型（Ollama、LM Studio），提供 AI 助理、文件處理、知識庫、團隊協作等功能，適用於個人與企業。",
+          "features": [
+            "整合多家 LLM 供應商與本地模型",
+            "300+ 預設 AI 助理，支援自訂與多模型同時對話",
+            "文件、圖片、Office、PDF 等多格式處理",
+            "WebDAV 檔案管理、Mermaid 圖表、程式碼高亮",
+            "全域搜尋、主題管理、AI 翻譯、拖放排序、迷你程式",
+            "MCP 伺服器支援",
+            "筆記、收藏、動態畫布、OCR、TTS",
+            "企業版：統一模型管理、企業知識庫、存取控制、私有部署"
+          ],
+          "useCases": [
+            "日常 AI 對話與多模態互動",
+            "文件、圖片、程式碼處理與知識庫建立",
+            "AI 繪圖、翻譯、內容創作",
+            "團隊協作、集中管理 AI 資源與知識",
+            "企業級私有部署與資料合規"
+          ],
+          "pricing": {
+            "plans": [
+              "社群版：個人免費，商業需授權，開源，單機部署",
+              "企業版：買斷或訂閱（自訂報價），商業授權，私有部署，集中管理",
+              "詳細方案請參考 [企業版介紹](https://www.cherry-ai.com/enterprise)"
+            ],
+            "hasFree": true,
+            "minPrice": null,
+            "maxPrice": null,
+            "raw": "- 社群版：個人免費，商業需授權，開源，單機部署\n- 企業版：買斷或訂閱（自訂報價），商業授權，私有部署，集中管理\n- 詳細方案請參考 [企業版介紹](https://www.cherry-ai.com/enterprise)"
+          },
+          "installation": "- 社群版可於 [GitHub](https://github.com/CherryHQ/cherry-studio) 下載安裝，支援 Windows、macOS、Linux\n- 企業版請聯繫官方取得部署協助",
+          "basicUsage": "1. 下載並安裝 Cherry Studio\n2. 啟動應用程式，登入或註冊帳號\n3. 選擇 AI 助理或自訂助理，開始對話或文件處理\n4. 企業用戶可於後台管理模型、知識庫與權限",
+          "resources": [
+            {
+              "name": "官方網站",
+              "url": "https://www.cherry-ai.com/"
+            },
+            {
+              "name": "GitHub 頁面",
+              "url": "https://github.com/CherryHQ/cherry-studio"
+            },
+            {
+              "name": "企業版介紹",
+              "url": "https://www.cherry-ai.com/enterprise"
+            }
+          ],
+          "lastUpdated": "2025-07-16T09:48:44.065Z"
+        },
+        {
+          "id": "gemini",
+          "name": "Google Gemini",
+          "category": "chat",
+          "overview": "Google Gemini 是 Google 推出的多模態 AI 助理，支援文字、圖像、語音、影片等多種輸入，深度整合 Google 服務，適用於日常助理、內容創作、商業分析、教育學習與程式開發等多元場景。",
+          "features": [
+            "多模態 AI（文字、圖像、語音、影片）",
+            "即時資訊存取與 Google 搜尋整合",
+            "Gmail、Google 文件、相簿、雲端硬碟等服務整合",
+            "Gemini 2.5 Pro 先進推理與理解",
+            "Veo 3 影片生成",
+            "Flow 自動化工作流",
+            "NotebookLM 筆記與研究整合",
+            "跨平台支援（網頁、iOS、Android）",
+            "程式碼生成與資料分析",
+            "多語言支援"
+          ],
+          "useCases": [
+            "日常生活助理（行程、郵件、查詢）",
+            "學術研究與筆記管理",
+            "內容創作（寫作、影片、創意發想）",
+            "商業分析、簡報、數據處理",
+            "教育學習與知識問答",
+            "程式開發與技術支援",
+            "工作流自動化",
+            "多媒體內容創作",
+            "企業協作與專案管理"
+          ],
+          "pricing": {
+            "plans": [
+              "免費版：$0/月，15GB，基礎 Gemini 2.5 Flash、有限用量、Google 服務整合",
+              "基本版：$65/月，$650/年（16% 折扣），100GB，進階協作功能",
+              "進階版：$330/月，$3,300/年（16% 折扣），2TB，Google Workspace 進階功能",
+              "Google AI Pro：$650/月，2TB，Gemini 2.5 Pro、Veo 3、Flow、NotebookLM 高用量",
+              "詳細與最新價格請參考 [Google One 訂閱方案](https://one.google.com/about/plans)"
+            ],
+            "hasFree": true,
+            "minPrice": 65,
+            "maxPrice": 3300,
+            "raw": "- 免費版：$0/月，15GB，基礎 Gemini 2.5 Flash、有限用量、Google 服務整合\n- 基本版：$65/月，$650/年（16% 折扣），100GB，進階協作功能\n- 進階版：$330/月，$3,300/年（16% 折扣），2TB，Google Workspace 進階功能\n- Google AI Pro：$650/月，2TB，Gemini 2.5 Pro、Veo 3、Flow、NotebookLM 高用量\n- 詳細與最新價格請參考 [Google One 訂閱方案](https://one.google.com/about/plans)"
+          },
+          "installation": "- 直接於 [Google Gemini 官方網站](https://gemini.google.com/) 使用\n- 行動裝置可於 [Gemini 應用程式下載](https://gemini.google.com/app)",
+          "basicUsage": "1. 註冊並登入 Google 帳號，進入 Gemini\n2. 輸入文字、語音、上傳檔案或圖片進行互動\n3. 啟用 Flow 建立自動化流程，或整合 NotebookLM 進行筆記管理",
+          "resources": [
+            {
+              "name": "官方網站",
+              "url": "https://gemini.google.com/"
+            },
+            {
+              "name": "Google One 訂閱方案",
+              "url": "https://one.google.com/about/plans"
+            },
+            {
+              "name": "Google AI Studio",
+              "url": "https://aistudio.google.com/"
+            },
+            {
+              "name": "Gemini API 文檔",
+              "url": "https://ai.google.dev/docs"
+            },
+            {
+              "name": "NotebookLM",
+              "url": "https://notebooklm.google.com/"
+            },
+            {
+              "name": "Google AI 開發者中心",
+              "url": "https://developers.google.com/ai"
+            },
+            {
+              "name": "Gemini 應用程式下載",
+              "url": "https://gemini.google.com/app"
+            },
+            {
+              "name": "Google AI 隱私權政策",
+              "url": "https://policies.google.com/privacy"
+            },
+            {
+              "name": "Google AI 條款",
+              "url": "https://policies.google.com/terms"
+            }
+          ],
+          "lastUpdated": "2025-07-16T09:48:44.065Z"
+        },
+        {
+          "id": "grok",
+          "name": "Grok",
+          "category": "chat",
+          "overview": "",
+          "features": [],
+          "useCases": [],
+          "pricing": null,
+          "installation": "",
+          "basicUsage": "",
+          "resources": [],
+          "lastUpdated": "2025-07-16T09:48:44.065Z"
+        },
+        {
+          "id": "open-webui",
+          "name": "Open WebUI",
+          "category": "chat",
+          "overview": "",
+          "features": [],
+          "useCases": [],
+          "pricing": null,
+          "installation": "",
+          "basicUsage": "",
+          "resources": [
+            {
+              "name": "官方網站",
+              "url": "https://openwebui.com/"
+            },
+            {
+              "name": "文件中心",
+              "url": "https://docs.openwebui.com/"
+            },
+            {
+              "name": "GitHub",
+              "url": "https://github.com/open-webui/open-webui"
+            },
+            {
+              "name": "Discord 社群",
+              "url": "https://discord.gg/5rJgQTnV4s"
+            },
+            {
+              "name": "企業方案",
+              "url": "https://docs.openwebui.com/enterprise/"
+            },
+            {
+              "name": "Elestio 雲端託管",
+              "url": "https://elest.io/open-source/openwebui"
+            }
+          ],
+          "lastUpdated": "2025-07-16T09:48:44.066Z"
+        }
+      ],
+      "count": 5
+    },
+    "cli": {
+      "name": "命令列工具",
+      "description": "命令列和終端工具",
+      "tools": [
+        {
+          "id": "claude-code",
+          "name": "Claude Code",
+          "category": "cli",
+          "overview": "",
+          "features": [],
+          "useCases": [],
+          "pricing": null,
+          "installation": "",
+          "basicUsage": "",
+          "resources": [],
+          "lastUpdated": "2025-07-16T09:48:44.066Z"
+        },
+        {
+          "id": "gemini-cli",
+          "name": "Gemini CLI",
+          "category": "cli",
+          "overview": "Gemini CLI 是 Google 官方開源的命令列 AI 工作流工具，讓你直接在終端機與 Gemini 互動，查詢/編輯大型程式碼庫、生成應用、執行自動化任務，並支援多模態（文字、圖片、PDF、程式碼等）輸入。",
+          "features": [
+            "直接於終端機與 Gemini 互動，無需瀏覽器",
+            "查詢、編輯、重構大型程式碼庫（支援 100 萬 tokens 以上上下文）",
+            "生成新應用、腳本、文件、簡報等",
+            "多模態支援：文字、圖片、PDF、程式碼",
+            "內建 Google Search、MCP 工具、第三方插件",
+            "支援自動化工作流與本地工具整合",
+            "可用於個人、團隊、企業協作"
+          ],
+          "useCases": [
+            "探索/理解大型程式碼庫",
+            "生成/重構/修正程式碼",
+            "自動化日常開發與運維任務",
+            "產生簡報、文件、報告",
+            "團隊協作與知識管理",
+            "多模態內容生成與分析"
+          ],
+          "pricing": {
+            "plans": [
+              "免費層：",
+              "- 以 Google 帳號登入：每分鐘 60 次、每日 1,000 次免費請求（Gemini 2.5 Pro）",
+              "- 以 API 金鑰：每日 100 次免費請求（Gemini 2.5 Pro）",
+              "付費層：依 API 金鑰/帳號升級，享更高速率與額度",
+              "詳細與最新價格請參考 [官方定價頁](https://ai.google.dev/gemini-api/docs/pricing)"
+            ],
+            "hasFree": true,
+            "minPrice": null,
+            "maxPrice": null,
+            "raw": "- 免費層：\n  - 以 Google 帳號登入：每分鐘 60 次、每日 1,000 次免費請求（Gemini 2.5 Pro）\n  - 以 API 金鑰：每日 100 次免費請求（Gemini 2.5 Pro）\n- 付費層：依 API 金鑰/帳號升級，享更高速率與額度\n- 詳細與最新價格請參考 [官方定價頁](https://ai.google.dev/gemini-api/docs/pricing)"
+          },
+          "installation": "### 安裝 Node.js（需 v20 以上）\n[Node.js 下載](https://nodejs.org/en/download)\n\n### 直接執行（推薦）\n```bash\nnpx https://github.com/google-gemini/gemini-cli\n```\n\n### 全域安裝\n```bash\nnpm install -g @google/gemini-cli\ngemini\n```\n\n### 登入與 API 金鑰設定\n- **首次啟動時可直接以 Google 帳號登入**，無需 API 金鑰，享有每分鐘 60 次、每日 1,000 次免費請求額度。\n- 亦可選擇使用 Gemini API 金鑰：\n  1. 申請金鑰：[Google AI Studio](https://aistudio.google.com/apikey)\n  2. 設定環境變數：\n```bash\nexport GEMINI_API_KEY=\"<你的 API 金鑰>\"\n```\n- （如使用 Vertex AI，請參考官方文件設定 GOOGLE_API_KEY 與 GOOGLE_GENAI_USE_VERTEXAI）",
+          "basicUsage": "### 啟動 CLI\n```bash\ngemini\n```\n或\n```bash\nnpx https://github.com/google-gemini/gemini-cli\n```\n\n### 互動範例\n- 啟動後直接輸入指令，例如：\n  - `請幫我摘要這個 repo 的架構`  \n  - `幫我產生一個 Python 爬蟲腳本`  \n  - `分析這份 PDF 並列出重點`\n- 可於專案目錄下執行，針對本地程式碼進行查詢、重構、生成\n\n### 常用指令\n- `gemini`：啟動互動式 CLI\n- `gemini --help`：顯示所有可用參數與指令\n- 更多進階指令與自動化用法，請參考[官方指令文件](https://github.com/google-gemini/gemini-cli/blob/main/docs/cli/commands.md)",
+          "resources": [
+            {
+              "name": "GitHub Repo",
+              "url": "https://github.com/google-gemini/gemini-cli"
+            },
+            {
+              "name": "官方文件",
+              "url": "https://github.com/google-gemini/gemini-cli/blob/main/docs/index.md"
+            },
+            {
+              "name": "常見問題/疑難排解",
+              "url": "https://github.com/google-gemini/gemini-cli/blob/main/docs/troubleshooting.md"
+            },
+            {
+              "name": "API 金鑰申請",
+              "url": "https://aistudio.google.com/apikey"
+            },
+            {
+              "name": "定價頁",
+              "url": "https://ai.google.dev/gemini-api/docs/pricing"
+            },
+            {
+              "name": "官方 Roadmap",
+              "url": "https://github.com/google-gemini/gemini-cli/blob/main/ROADMAP.md"
+            },
+            {
+              "name": "CLI 指令大全",
+              "url": "https://github.com/google-gemini/gemini-cli/blob/main/docs/cli/commands.md"
+            },
+            {
+              "name": "貢獻指南",
+              "url": "https://github.com/google-gemini/gemini-cli/blob/main/CONTRIBUTING.md"
+            }
+          ],
+          "lastUpdated": "2025-07-16T09:48:44.066Z"
+        },
+        {
+          "id": "openai-codex-cli",
+          "name": "OpenAI Codex CLI",
+          "category": "cli",
+          "overview": "OpenAI Codex CLI 是指透過 OpenAI API（現已整合於 GPT-4o、GPT-4 Turbo、GPT-3.5 Turbo 等模型）以命令列或腳本方式進行程式碼生成、解釋、自然語言處理與多模態任務。可透過官方 Python、Node.js SDK 或直接 HTTP 請求存取。",
+          "features": [
+            "程式碼生成、補全、解釋",
+            "自然語言轉程式碼",
+            "多模態支援（文字、圖片、程式碼）",
+            "Function calling 與工具整合",
+            "Agents 與自動化工作流程",
+            "串流與即時回應",
+            "官方 Python、Node.js SDK"
+          ],
+          "useCases": [
+            "以自然語言生成程式碼",
+            "程式碼解釋、重構",
+            "建立 AI 開發者工具",
+            "自動化重複性程式任務",
+            "整合 AI 於 CI/CD 流程",
+            "資料擷取與文件分析"
+          ],
+          "pricing": {
+            "plans": [
+              "**按量計費**：依模型與 tokens 數量計價",
+              "- GPT-4o：輸入 $5/百萬 tokens，輸出 $15/百萬 tokens",
+              "- GPT-4 Turbo：輸入 $10/百萬 tokens，輸出 $30/百萬 tokens",
+              "- GPT-3.5 Turbo：輸入 $0.5/百萬 tokens，輸出 $1.5/百萬 tokens",
+              "無免費額度（僅 ChatGPT 網頁有限免費）",
+              "詳細與最新價格請參考 [官方定價頁](https://platform.openai.com/docs/pricing)"
+            ],
+            "hasFree": true,
+            "minPrice": 1,
+            "maxPrice": 30,
+            "raw": "- **按量計費**：依模型與 tokens 數量計價\n  - GPT-4o：輸入 $5/百萬 tokens，輸出 $15/百萬 tokens\n  - GPT-4 Turbo：輸入 $10/百萬 tokens，輸出 $30/百萬 tokens\n  - GPT-3.5 Turbo：輸入 $0.5/百萬 tokens，輸出 $1.5/百萬 tokens\n- 無免費額度（僅 ChatGPT 網頁有限免費）\n- 詳細與最新價格請參考 [官方定價頁](https://platform.openai.com/docs/pricing)"
+          },
+          "installation": "安裝官方 Python SDK：\n```bash\npip install openai\n```\n或 Node.js SDK：\n```bash\nnpm install openai\n```\n設定 API 金鑰（於 [OpenAI Platform](https://platform.openai.com/api-keys) 取得）：\n```bash\nexport OPENAI_API_KEY=\"<your-api-key>\"\n```",
+          "basicUsage": "以 Python SDK 生成程式碼：\n```python\nimport openai\nopenai.api_key = \"<your-api-key>\"\nresponse = openai.ChatCompletion.create(\n    model=\"gpt-4o\",\n    messages=[{\"role\": \"user\", \"content\": \"請寫一個反轉字串的 Python 函式。\"}]\n)\nprint(response.choices[0].message[\"content\"])\n```\n或 Node.js SDK：\n```js\nimport OpenAI from \"openai\";\nconst openai = new OpenAI();\nconst response = await openai.chat.completions.create({\n  model: \"gpt-4o\",\n  messages: [{ role: \"user\", content: \"請寫一個反轉字串的 JavaScript 函式。\" }]\n});\nconsole.log(response.choices[0].message.content);\n```",
+          "resources": [
+            {
+              "name": "官方網站",
+              "url": "https://platform.openai.com/"
+            },
+            {
+              "name": "官方文件",
+              "url": "https://platform.openai.com/docs"
+            },
+            {
+              "name": "GitHub 儲存庫",
+              "url": "https://github.com/openai/openai-python"
+            },
+            {
+              "name": "API 定價",
+              "url": "https://platform.openai.com/docs/pricing"
+            }
+          ],
+          "lastUpdated": "2025-07-16T09:48:44.067Z"
+        },
+        {
+          "id": "rovo-dev",
+          "name": "Rovo Dev CLI",
+          "category": "cli",
+          "overview": "",
+          "features": [],
+          "useCases": [],
+          "pricing": null,
+          "installation": "1. 安裝 Atlassian CLI (ACLI)：\n   - [macOS 安裝教學](https://developer.atlassian.com/cloud/acli/guides/install-macos/)\n   - [Linux 安裝教學](https://developer.atlassian.com/cloud/acli/guides/install-linux/)\n   - [Windows 安裝教學](https://developer.atlassian.com/cloud/acli/guides/install-windows/)\n2. 申請 Beta：[Rovo Dev Beta 申請](https://www.atlassian.com/try/cloud/signup?bundle=devai)\n3. 產生 API Token：[Atlassian 個人檔案](https://id.atlassian.com/manage-profile/security/api-tokens)\n4. 終端機登入與啟動：\n\n```bash\nacli rovodev auth login\nacli rovodev run\n```",
+          "basicUsage": "- 啟動互動模式後，直接以自然語言描述需求（如「重構此函式」、「產生文件」等）\n- 於專案目錄下查詢、生成、修改程式碼\n- 整合 Jira、Confluence、Bitbucket 流程\n\n```bash\n# 登入 Atlassian 帳號\nacli rovodev auth login\n\n# 啟動 Rovo Dev 互動模式\nacli rovodev run\n```",
+          "resources": [
+            {
+              "name": "官方網站（AI 開發解決方案）",
+              "url": "https://www.atlassian.com/solutions/devops/ai-innovation"
+            },
+            {
+              "name": "Rovo Dev CLI 官方公告",
+              "url": "https://www.atlassian.com/blog/announcements/rovo-dev-command-line-interface"
+            },
+            {
+              "name": "Rovo Dev CLI 介紹與安裝指南",
+              "url": "https://community.atlassian.com/forums/Rovo-for-Software-Teams-Beta/Introducing-Rovo-Dev-CLI-AI-Powered-Development-in-your-terminal/ba-p/3043623"
+            },
+            {
+              "name": "SWE-bench 排行榜",
+              "url": "https://www.swebench.com/#full"
+            },
+            {
+              "name": "ACLI 官方文件",
+              "url": "https://developer.atlassian.com/cloud/acli/guides/introduction/"
+            },
+            {
+              "name": "Rovo Dev Beta 申請",
+              "url": "https://www.atlassian.com/try/cloud/signup?bundle=devai"
+            },
+            {
+              "name": "Rovo Dev 社群",
+              "url": "https://community.atlassian.com/forums/Rovo-Dev-AI-Agents-Beta/gh-p/rovo-dev-ai-agents"
+            },
+            {
+              "name": "問題回報表單",
+              "url": "https://rovodevagents.atlassian.net/servicedesk/customer/portal/1/group/1/create/45"
+            }
+          ],
+          "lastUpdated": "2025-07-16T09:48:44.067Z"
+        }
+      ],
+      "count": 4
+    },
+    "design": {
+      "name": "設計工具",
+      "description": "AI設計和創作平台",
+      "tools": [
+        {
+          "id": "canva",
+          "name": "Canva",
+          "category": "design",
+          "overview": "",
+          "features": [],
+          "useCases": [],
+          "pricing": null,
+          "installation": "",
+          "basicUsage": "",
+          "resources": [],
+          "lastUpdated": "2025-07-16T09:48:44.067Z"
+        },
+        {
+          "id": "gamma",
+          "name": "Gamma",
+          "category": "design",
+          "overview": "Gamma 是一款 AI 設計夥伴，專為簡報、網站與文件創建而設計，結合多模型 AI 生成、即時編輯與多格式分享，協助用戶快速產出高品質內容並提升團隊協作效率。",
+          "features": [
+            "AI 生成簡報、網站、文件（從想法、大綱或現有內容）",
+            "AI 編輯：智慧佈局、內容豐富化、即時翻譯",
+            "多格式匯出（PPT、PDF、PNG、Google Slides、網站）",
+            "卡片式捲動格式，類網頁體驗",
+            "整合多種 AI 模型（Claude、ChatGPT、DALL-E、Gemini）",
+            "團隊協作與內容管理"
+          ],
+          "useCases": [
+            "簡報製作與投影片生成",
+            "社群媒體內容設計",
+            "文件創建與提案產出",
+            "網站與登陸頁快速建立",
+            "團隊內部協作與知識分享"
+          ],
+          "pricing": {
+            "plans": [
+              "免費版：US$0/人/月，20,000 AI 詞元輸入/月，最多 10 張卡片",
+              "Plus 版：US$10/人/月，US$96/人/年，50,000 AI 詞元輸入/月，最多 20 張卡片，無限 AI 創作、優先支援",
+              "Pro 版：US$20/人/月，US$180/人/年，100,000 AI 詞元輸入/月，最多 60 張卡片，高品質圖片、進階編輯、自訂網域",
+              "詳細與最新價格請參考 [定價頁面](https://gamma.app/pricing)"
+            ],
+            "hasFree": true,
+            "minPrice": 10,
+            "maxPrice": 180,
+            "raw": "- 免費版：US$0/人/月，20,000 AI 詞元輸入/月，最多 10 張卡片\n- Plus 版：US$10/人/月，US$96/人/年，50,000 AI 詞元輸入/月，最多 20 張卡片，無限 AI 創作、優先支援\n- Pro 版：US$20/人/月，US$180/人/年，100,000 AI 詞元輸入/月，最多 60 張卡片，高品質圖片、進階編輯、自訂網域\n- 詳細與最新價格請參考 [定價頁面](https://gamma.app/pricing)"
+          },
+          "installation": "- Gamma 為雲端平台，無需安裝，直接註冊帳號於 [官方網站](https://gamma.app/) 使用",
+          "basicUsage": "1. 註冊並登入 Gamma\n2. 選擇「新建簡報」、「網站」或「文件」\n3. 輸入想法或大綱，啟用 AI 生成內容\n4. 編輯、調整卡片內容，匯出或分享",
+          "resources": [
+            {
+              "name": "官方網站",
+              "url": "https://gamma.app/"
+            },
+            {
+              "name": "定價頁面",
+              "url": "https://gamma.app/pricing"
+            },
+            {
+              "name": "o8.agency 評論",
+              "url": "https://www.o8.agency/blog/unleash-your-marketing-productivity-ai-marketing-tools-gammaapp-review"
+            }
+          ],
+          "lastUpdated": "2025-07-16T09:48:44.067Z"
+        },
+        {
+          "id": "locofy",
+          "name": "Locofy.ai",
+          "category": "design",
+          "overview": "",
+          "features": [],
+          "useCases": [],
+          "pricing": null,
+          "installation": "",
+          "basicUsage": "",
+          "resources": [],
+          "lastUpdated": "2025-07-16T09:48:44.068Z"
+        },
+        {
+          "id": "napkin",
+          "name": "Napkin",
+          "category": "design",
+          "overview": "",
+          "features": [],
+          "useCases": [],
+          "pricing": null,
+          "installation": "Napkin 為雲端服務，無需安裝，直接於瀏覽器使用：\n\n```bash\n# 開始使用 Napkin\nhttps://www.napkin.ai/\n# 註冊帳號後即可登入使用\n```",
+          "basicUsage": "1. 進入 Napkin 網站並登入\n2. 貼上或輸入欲視覺化的文字內容\n3. 點擊生成，選擇喜歡的視覺化圖像\n4. 進行細部編輯（顏色、圖示、連接線等）\n5. 匯出為 PPT、PNG、PDF、SVG 或產生分享連結\n\n```bash\n# 範例：將一段流程說明轉為流程圖\n1. 貼上「用戶註冊 → 郵件驗證 → 完成啟用」\n2. 點擊生成，選擇流程圖樣式\n3. 編輯顏色與圖示，匯出為 PNG\n```",
+          "resources": [
+            {
+              "name": "官方網站",
+              "url": "https://www.napkin.ai/"
+            },
+            {
+              "name": "官方文件/說明中心",
+              "url": "https://help.napkin.ai/"
+            },
+            {
+              "name": "定價方案",
+              "url": "https://www.napkin.ai/pricing/"
+            },
+            {
+              "name": "註冊/登入",
+              "url": "https://app.napkin.ai/signin"
+            },
+            {
+              "name": "LinkedIn",
+              "url": "https://www.linkedin.com/company/napkin-ai"
+            },
+            {
+              "name": "X (Twitter)",
+              "url": "https://x.com/napkin_ai/"
+            },
+            {
+              "name": "YouTube",
+              "url": "https://www.youtube.com/@napkin_ai"
+            },
+            {
+              "name": "Instagram",
+              "url": "https://www.instagram.com/napkin_ai/"
+            },
+            {
+              "name": "TikTok",
+              "url": "https://www.tiktok.com/@napkin_ai"
+            },
+            {
+              "name": "聯絡信箱",
+              "url": "mailto:contact@napkin.ai"
+            }
+          ],
+          "lastUpdated": "2025-07-16T09:48:44.068Z"
+        }
+      ],
+      "count": 4
+    },
+    "ide": {
+      "name": "開發環境",
+      "description": "整合開發環境和編輯器",
+      "tools": [
+        {
+          "id": "claudia",
+          "name": "Claudia",
+          "category": "ide",
+          "overview": "Claudia GUI 是一款專為 Anthropic 的 Claude Code 設計的強大開源圖形化使用者介面。由 Asterisk 開發，Claudia GUI 縮短了命令列操作與視覺化簡化之間的距離，使 AI 輔助編碼更加直觀且高效。Claudia GUI 採用 Tauri、React 和 Rust 等現代技術，為開發者提供無縫的桌面體驗。",
+          "features": [
+            "**視覺化專案管理**：直觀的專案瀏覽器，支援智慧搜尋與元數據洞察。",
+            "**自訂 AI 代理**：創建專屬代理，支援沙箱執行與行為記錄。",
+            "**使用分析儀表板**：實時追蹤 Claude API 成本與效能，並提供數據匯出功能。",
+            "**進階沙箱安全性**：作業系統級別的保護（Linux seccomp、macOS Seatbelt）。",
+            "**時間旅行功能**：支援檢查點、分支與視覺化時間軸導航。",
+            "**MCP 伺服器管理**：集中管理模型上下文協議伺服器，支援配置導入與連線測試。"
+          ],
+          "useCases": [
+            "使用視覺化介面增強 Claude Code 工作流程。",
+            "管理多個互動式會話與專案。",
+            "創建自訂 AI 代理以自動化重複性任務。",
+            "監控 API 成本並優化 AI 編碼工作流程。"
+          ],
+          "pricing": {
+            "plans": [
+              "**免費且開源**：採用 AGPL 授權。",
+              "**Claude Code 整合**：需使用 Anthropic API，並根據使用量單獨計費。"
+            ],
+            "hasFree": true,
+            "minPrice": null,
+            "maxPrice": null,
+            "raw": "- **免費且開源**：採用 AGPL 授權。\n- **Claude Code 整合**：需使用 Anthropic API，並根據使用量單獨計費。"
+          },
+          "installation": "Claudia GUI 支援 macOS、Linux 和 Windows。請按照以下步驟安裝：\n\n```bash\n# 複製儲存庫\ngit clone https://github.com/getAsterisk/claudia.git\n\n# 安裝前端依賴\nbun install\n\n# 構建應用程式\nbun run tauri build\n```",
+          "basicUsage": "1. 啟動 Claudia GUI，選擇「CC Agents」或「CC Projects」。\n2. 配置 Claude API 憑證並連接至現有專案。\n3. 使用視覺化介面管理會話、創建代理並監控分析。\n\n```bash\n# 範例：啟動 Claudia GUI\n./src-tauri/target/release/claudia\n```",
+          "resources": [],
+          "lastUpdated": "2025-07-16T09:48:44.068Z"
+        },
+        {
+          "id": "cursor",
+          "name": "Cursor",
+          "category": "ide",
+          "overview": "Cursor 是一款 AI 驅動的程式碼編輯器，結合自訂與前沿 AI 模型，支援多行自動完成、自然語言編輯、程式碼庫理解與錯誤修復，適合個人與團隊提升開發效率。",
+          "features": [
+            "Tab 自動完成（多行、智慧重寫）",
+            "程式碼庫理解與問答",
+            "自然語言提示編輯與重構",
+            "Bug 修復代理（Agent）",
+            "程式碼庫分析與 README 生成",
+            "隱私模式（SOC 2 認證）",
+            "組織管理、集中計費、SAML/OIDC SSO",
+            "支援多種 AI 模型（OpenAI、Claude、Gemini 等）"
+          ],
+          "useCases": [
+            "加速個人與團隊程式碼編寫",
+            "程式碼庫分析、文檔自動生成",
+            "調試與錯誤修復",
+            "學習與理解程式碼概念"
+          ],
+          "pricing": {
+            "plans": [
+              "Hobby（個人）：免費，有限代理請求與 Tab 完成",
+              "Pro（個人）：$20/月，$192/年（$16/月），無限 Tab 完成、擴展代理、Bug Bot、最大上下文",
+              "Ultra（個人）：$200/月，$2400/年，Pro 全部功能、20 倍 AI 用量、PR 索引",
+              "Teams：$40/用戶/月，$384/用戶/年（$32/月），Pro 全部功能、組織管理、集中計費、SSO",
+              "Enterprise：聯絡銷售，Teams 全部功能、更多用量、SCIM、存取控制、優先支援",
+              "詳細與最新價格請參考 [定價頁](https://cursor.com/pricing)"
+            ],
+            "hasFree": true,
+            "minPrice": 16,
+            "maxPrice": 2400,
+            "raw": "- Hobby（個人）：免費，有限代理請求與 Tab 完成\n- Pro（個人）：$20/月，$192/年（$16/月），無限 Tab 完成、擴展代理、Bug Bot、最大上下文\n- Ultra（個人）：$200/月，$2400/年，Pro 全部功能、20 倍 AI 用量、PR 索引\n- Teams：$40/用戶/月，$384/用戶/年（$32/月），Pro 全部功能、組織管理、集中計費、SSO\n- Enterprise：聯絡銷售，Teams 全部功能、更多用量、SCIM、存取控制、優先支援\n- 詳細與最新價格請參考 [定價頁](https://cursor.com/pricing)"
+          },
+          "installation": "- 於 [Cursor 官方網站](https://cursor.com/) 下載安裝程式，支援 Windows、macOS、Linux\n- 註冊帳號並登入，即可開始使用",
+          "basicUsage": "1. 下載並安裝 Cursor\n2. 開啟專案資料夾，啟用 AI 自動完成與代理功能\n3. 於編輯器中輸入自然語言提示或使用 Tab 完成程式碼",
+          "resources": [
+            {
+              "name": "官方網站",
+              "url": "https://cursor.com/"
+            },
+            {
+              "name": "定價頁",
+              "url": "https://cursor.com/pricing"
+            },
+            {
+              "name": "EngineLabs AI 評論",
+              "url": "https://blog.enginelabs.ai/cursor-ai-an-in-depth-review"
+            }
+          ],
+          "lastUpdated": "2025-07-16T09:48:44.068Z"
+        },
+        {
+          "id": "jetbrains-ai-assistant",
+          "name": "JetBrains AI Assistant",
+          "category": "ide",
+          "overview": "",
+          "features": [],
+          "useCases": [],
+          "pricing": null,
+          "installation": "- 於 JetBrains IDE Marketplace 安裝「AI Assistant」外掛，或於 IDE 2025.1 以上版本內建\n- 啟用後登入 JetBrains 帳號，依指示啟用免費或付費授權\n- 企業用戶可依需求設定自有 LLM 與資料控管\n\n```bash\n# 於 JetBrains IDE 內搜尋安裝 AI Assistant 外掛\n# 或直接於 Marketplace 安裝\n```",
+          "basicUsage": "- 啟用後於編輯器內直接獲得 AI 補全、重構、測試生成等功能\n- 透過 AI 聊天視窗與 AI 助理互動，詢問程式碼、架構、除錯等問題\n- 可自訂提示、切換 LLM、調整 AI 行為\n\n```bash\n# 範例：於編輯器內自動補全程式碼\n# 範例：AI 聊天視窗輸入「請解釋這段程式碼」\n```",
+          "resources": [
+            {
+              "name": "AI Assistant 官方網站",
+              "url": "https://www.jetbrains.com/ai/"
+            },
+            {
+              "name": "AI Assistant 功能介紹",
+              "url": "https://www.jetbrains.com/ai/features/"
+            },
+            {
+              "name": "AI Assistant 授權與訂閱",
+              "url": "https://www.jetbrains.com/help/ai-assistant/licensing-and-subscriptions.html"
+            },
+            {
+              "name": "Rider 官方網站",
+              "url": "https://www.jetbrains.com/rider/"
+            },
+            {
+              "name": "Rider 定價頁面",
+              "url": "https://www.jetbrains.com/rider/buy/"
+            },
+            {
+              "name": "JetBrains AI Assistant 外掛",
+              "url": "https://plugins.jetbrains.com/plugin/22282-jetbrains-ai-assistant"
+            },
+            {
+              "name": "官方文件",
+              "url": "https://www.jetbrains.com/help/ai-assistant/"
+            }
+          ],
+          "lastUpdated": "2025-07-16T09:48:44.069Z"
+        },
+        {
+          "id": "kiro",
+          "name": "Kiro",
+          "category": "ide",
+          "overview": "Kiro 是一款專為 AI 驅動軟體開發設計的 IDE 與 agent coding 平台，主打「spec-driven development」與多代理人協作，協助開發者從原型到產品快速落地。Kiro 以結構化規格、AI 代理人自動化、MCP 整合、VS Code 相容等特性，讓 AI coding 更高效、可控且工程化。",
+          "features": [
+            "規格驅動開發（Spec-driven development）：將自然語言 prompt 轉為明確需求、系統設計與可執行任務。",
+            "AI 代理人協作：可自訂 agent hooks，根據事件（如儲存檔案）自動執行生成文件、單元測試、優化程式等任務。",
+            "多模態聊天與上下文管理：支援文字、圖片等多模態輸入，並能理解大型專案脈絡。",
+            "MCP 整合：原生支援連接文件、資料庫、API 等，方便整合外部資源。",
+            "VS Code 相容：支援 Open VSX 外掛、主題與設定，降低遷移門檻。",
+            "企業級安全與隱私：完整的權限、隱私與安全設計。",
+            "自動化與 autopilot 模式：可讓 Kiro 自主執行大型任務，開發者可隨時審核與介入。"
+          ],
+          "useCases": [
+            "以自然語言描述需求，快速產生規格、架構與任務分解",
+            "讓 AI 代理人自動生成程式碼、測試、文件，並根據觸發條件自動執行",
+            "團隊協作下，結合規格、審查與自動化，提升大型專案開發效率",
+            "匯入 VS Code 設定與外掛，無痛遷移開發環境",
+            "整合外部 API、資料庫，打造端到端 AI 應用"
+          ],
+          "pricing": {
+            "plans": [
+              "目前處於預覽階段，免費使用",
+              "未來定價請關注 [官方定價頁](https://kiro.dev/pricing/)"
+            ],
+            "hasFree": true,
+            "minPrice": null,
+            "maxPrice": null,
+            "raw": "- 目前處於預覽階段，免費使用\n- 未來定價請關注 [官方定價頁](https://kiro.dev/pricing/)"
+          },
+          "installation": "- 僅支援 macOS，前往 [下載頁](https://kiro.dev/downloads/) 下載安裝包\n- 安裝後可直接啟動，依指示登入/註冊帳號\n- 可匯入 VS Code 設定與外掛，詳見 [遷移指南](https://kiro.dev/docs/guides/migrating-from-vscode/)",
+          "basicUsage": "- 啟動 Kiro，建立新專案或開啟現有專案\n- 以自然語言輸入需求，Kiro 會協助產生規格、分解任務\n- 可設定 agent hooks，自動化常見開發任務（如自動產生測試、文件等）\n- 透過多模態聊天與 AI 代理人協作，快速完成開發、審查與部署\n- 進階用法請參考 [官方教學](https://kiro.dev/docs/getting-started/first-project/)",
+          "resources": [
+            {
+              "name": "官方網站",
+              "url": "https://kiro.dev/"
+            },
+            {
+              "name": "官方文件",
+              "url": "https://kiro.dev/docs/"
+            },
+            {
+              "name": "定價方案",
+              "url": "https://kiro.dev/pricing/"
+            },
+            {
+              "name": "下載頁",
+              "url": "https://kiro.dev/downloads/"
+            },
+            {
+              "name": "遷移指南",
+              "url": "https://kiro.dev/docs/guides/migrating-from-vscode/"
+            },
+            {
+              "name": "常見問題",
+              "url": "https://kiro.dev/faq/"
+            },
+            {
+              "name": "官方部落格",
+              "url": "https://kiro.dev/blog/"
+            },
+            {
+              "name": "GitHub Issues 反饋",
+              "url": "https://github.com/kirodotdev/Kiro/issues/new/choose"
+            },
+            {
+              "name": "Discord 社群",
+              "url": "https://discord.gg/kirodotdev"
+            }
+          ],
+          "lastUpdated": "2025-07-16T09:48:44.069Z"
+        },
+        {
+          "id": "theia-ide",
+          "name": "Theia IDE",
+          "category": "ide",
+          "overview": "",
+          "features": [],
+          "useCases": [],
+          "pricing": null,
+          "installation": "- 以 Node.js/npm 安裝（建議 Node.js 18+）：\n\n```bash\nnpm install -g @theia/cli\n# 建立新專案\ntheia create my-workspace\n# 啟動本地伺服器\ncd my-workspace\nnpx theia start\n```\n- 亦可透過 Docker、雲端平台或下載桌面版（詳見官方文件）",
+          "basicUsage": "- 啟動後於瀏覽器或桌面應用開啟專案，安裝所需擴充套件\n- 啟用 Theia Coder 或其他 AI 代理，於編輯器內輸入自然語言描述需求\n\n```bash\n# 啟動 Theia IDE 本地伺服器\nnpx theia start\n```",
+          "resources": [
+            {
+              "name": "官方網站",
+              "url": "https://theia-ide.org/"
+            },
+            {
+              "name": "官方文件",
+              "url": "https://theia-ide.org/docs/"
+            },
+            {
+              "name": "GitHub Repository",
+              "url": "https://github.com/eclipse-theia/theia"
+            },
+            {
+              "name": "EclipseSource 部落格：AI 驅動的 Theia IDE 介紹",
+              "url": "https://eclipsesource.com/blogs/2025/03/13/introducing-the-ai-powered-theia-ide/"
+            },
+            {
+              "name": "EclipseSource 部落格：VS Code vs. Theia IDE",
+              "url": "https://eclipsesource.com/blogs/2024/07/12/vs-code-vs-theia-ide/"
+            }
+          ],
+          "lastUpdated": "2025-07-16T09:48:44.069Z"
+        },
+        {
+          "id": "trae",
+          "name": "Trae",
+          "category": "ide",
+          "overview": "",
+          "features": [],
+          "useCases": [],
+          "pricing": null,
+          "installation": "- 官方網站註冊帳號即可使用雲端版\n- 桌面版/本地安裝請參考官方文件（如有）\n\n```bash\n# 雲端版：瀏覽器註冊登入即可\n# 桌面版：依官方指示下載安裝\n```",
+          "basicUsage": "- 登入後可建立/選擇專案，配置 AI 代理與工具\n- 於編輯器內輸入需求，AI 代理自動協作完成任務\n\n```bash\n# 於雲端介面建立新專案，啟用代理團隊\n# 於編輯器內輸入自然語言描述需求\n```",
+          "resources": [
+            {
+              "name": "Trae AI 官方網站",
+              "url": "https://www.trae.ai/"
+            },
+            {
+              "name": "官方定價頁面",
+              "url": "https://www.trae.ai/pricing"
+            },
+            {
+              "name": "官方文件/FAQ",
+              "url": "https://www.trae.ai/faq"
+            },
+            {
+              "name": "GitHub Repository",
+              "url": "https://github.com/trae-ai"
+            },
+            {
+              "name": "Reddit 評論",
+              "url": "https://www.reddit.com/r/TraeIDE/comments/1id41o2/using_traeai_for_4_days_now_my_honest_review/"
+            }
+          ],
+          "lastUpdated": "2025-07-16T09:48:44.069Z"
+        },
+        {
+          "id": "windsurf",
+          "name": "Windsurf",
+          "category": "ide",
+          "overview": "",
+          "features": [],
+          "useCases": [],
+          "pricing": null,
+          "installation": "- 前往 [官方網站](https://windsurf.com/) 註冊帳號並下載桌面版（支援 macOS/Windows/Linux）\n- 依官方指示安裝並登入帳號\n- 進階設定請參考官方文件\n\n```bash\n# 桌面版：下載安裝後啟動 Windsurf\n# 依官方指示登入帳號並啟用功能\n```",
+          "basicUsage": "- 啟動桌面應用後可建立/選擇專案，啟用 Cascade 代理與 Windsurf Tab\n- 上傳圖像自動生成前端程式碼\n- 於編輯器內輸入需求，AI 代理自動協作完成任務\n\n```bash\n# 建立新專案，啟用代理團隊\n# 上傳設計圖像自動生成 CSS/HTML/JS\n```",
+          "resources": [
+            {
+              "name": "Windsurf AI 官方網站",
+              "url": "https://windsurf.com/"
+            },
+            {
+              "name": "官方定價頁面",
+              "url": "https://windsurf.com/pricing"
+            },
+            {
+              "name": "官方文件/FAQ",
+              "url": "https://windsurf.com/docs"
+            },
+            {
+              "name": "GitHub Repository",
+              "url": "https://github.com/windsurf-ai"
+            },
+            {
+              "name": "DataCamp 教學",
+              "url": "https://www.datacamp.com/tutorial/windsurf-ai-agentic-code-editor"
+            }
+          ],
+          "lastUpdated": "2025-07-16T09:48:44.070Z"
+        }
+      ],
+      "count": 7
+    },
+    "mcp": {
+      "name": "MCP 協議",
+      "description": "Model Context Protocol相關工具",
+      "tools": [
+        {
+          "id": "brave-search-mcp",
+          "name": "Brave Search MCP",
+          "category": "mcp",
+          "overview": "",
+          "features": [],
+          "useCases": [],
+          "pricing": null,
+          "installation": "",
+          "basicUsage": "",
+          "resources": [
+            {
+              "name": "Brave Search API 官方指南",
+              "url": "https://brave.com/zh-tw/search/api/guides/use-with-claude-desktop-with-mcp/"
+            },
+            {
+              "name": "Brave Search API 文件",
+              "url": "https://search.brave.com/api/docs"
+            }
+          ],
+          "lastUpdated": "2025-07-16T09:48:44.070Z"
+        },
+        {
+          "id": "context7-mcp",
+          "name": "Context 7 MCP",
+          "category": "mcp",
+          "overview": "Context 7 MCP 是由 Upstash 開發的一個伺服器與 API 平台，用於管理模型上下文協議（MCP）。它提供了一個集中化的解決方案，用於整合與管理上下文感知的 AI 模型，實現無縫協作與高效模型部署。",
+          "features": [
+            "集中管理模型上下文協議。",
+            "與多種工具和庫整合。",
+            "支援上下文感知 AI 模型操作的 API。",
+            "由 Upstash 開發與維護。"
+          ],
+          "useCases": [
+            "在集中化平台中管理上下文感知 AI 模型。",
+            "將 MCP 整合到現有的 AI 工具和工作流程中。",
+            "部署與監控上下文感知 AI 模型。"
+          ],
+          "pricing": {
+            "plans": [
+              "官方網站未明確提及定價細節。請聯繫 Upstash 獲取更多資訊。"
+            ],
+            "hasFree": false,
+            "minPrice": null,
+            "maxPrice": null,
+            "raw": "- 官方網站未明確提及定價細節。請聯繫 Upstash 獲取更多資訊。"
+          },
+          "installation": "",
+          "basicUsage": "### 主要用法\n1. 在 AI 助理或開發工具的 prompt 中加入 `use context7`，即可自動取得最新的程式庫文件與範例。\n2. 若已知特定程式庫，可直接指定 Context7 ID，例如 `/supabase/supabase`，以取得該庫的 API 與說明。\n3. 可在 MCP 支援的 IDE、CLI 或雲端平台中，透過 MCP 協議自動串接 Context7 取得即時文件。\n\n#### Prompt 範例：\n```\n# 取得 Next.js JWT 驗證中介軟體範例\nCreate a Next.js middleware that checks for a valid JWT in cookies and redirects unauthenticated users to /login. use context7\n\n# 直接指定程式庫\nimplement basic authentication with supabase. use library /supabase/supabase for api and docs\n```\n\n### 進階用法\n- 可在 MCP 客戶端（如 Cursor、Windsurf、Claude Desktop 等）設定自動規則，讓所有程式碼、API、設定等問題自動呼叫 Context7。\n- 也可透過 API 直接查詢文件與範例，或在 MCP Inspector 測試。",
+          "resources": [],
+          "lastUpdated": "2025-07-16T09:48:44.070Z"
+        },
+        {
+          "id": "fetch-mcp",
+          "name": "Fetch MCP",
+          "category": "mcp",
+          "overview": "",
+          "features": [],
+          "useCases": [],
+          "pricing": null,
+          "installation": "",
+          "basicUsage": "",
+          "resources": [],
+          "lastUpdated": "2025-07-16T09:48:44.070Z"
+        },
+        {
+          "id": "memory-mcp",
+          "name": "Memory MCP",
+          "category": "mcp",
+          "overview": "",
+          "features": [],
+          "useCases": [],
+          "pricing": null,
+          "installation": "",
+          "basicUsage": "",
+          "resources": [],
+          "lastUpdated": "2025-07-16T09:48:44.071Z"
+        },
+        {
+          "id": "sequential-thinking-mcp",
+          "name": "Sequential Thinking MCP",
+          "category": "mcp",
+          "overview": "",
+          "features": [],
+          "useCases": [],
+          "pricing": null,
+          "installation": "",
+          "basicUsage": "",
+          "resources": [],
+          "lastUpdated": "2025-07-16T09:48:44.071Z"
+        },
+        {
+          "id": "task-master-mcp",
+          "name": "Task Master MCP",
+          "category": "mcp",
+          "overview": "Task Master MCP 是一套專為軟體開發團隊設計的 AI 任務管理與自動化協作系統，支援 MCP（Model Control Protocol）協議。它可與 Cursor、VS Code、Windsurf 等多種編輯器無縫整合，讓開發者能以 AI 助理協助規劃、拆解、追蹤與執行專案任務。",
+          "features": [
+            "AI 驅動的 PRD（產品需求文件）解析與任務拆解",
+            "支援多種 AI 模型（Claude、OpenAI、Gemini、Perplexity、xAI 等）",
+            "與 Cursor、VS Code、Windsurf、Roo 等 IDE 整合",
+            "互動式任務規劃、追蹤與研究",
+            "支援 MCP 協議，可自動串接多種 AI 工具",
+            "自訂規則與專案範本"
+          ],
+          "useCases": [
+            "解析 PRD 並自動產生可執行開發任務",
+            "AI 協助規劃下一步、追蹤進度與任務分配",
+            "研究最佳實踐、技術遷移策略與自動化重複性任務",
+            "在 IDE 內直接與 AI 助理互動，提升開發效率"
+          ],
+          "pricing": {
+            "plans": [
+              "採用 MIT with Commons Clause 授權，開源免費（禁止作為雲端服務銷售）"
+            ],
+            "hasFree": true,
+            "minPrice": null,
+            "maxPrice": null,
+            "raw": "- 採用 MIT with Commons Clause 授權，開源免費（禁止作為雲端服務銷售）"
+          },
+          "installation": "建議以 MCP 模式整合於支援的編輯器：\n\n1. 於專案或全域 MCP 設定檔（如 `.cursor/mcp.json` 或 `.vscode/mcp.json`）加入：\n```json\n{\n  \"servers\": {\n    \"taskmaster-ai\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"--package=task-master-ai\", \"task-master-ai\"],\n      \"env\": {\n        \"ANTHROPIC_API_KEY\": \"YOUR_ANTHROPIC_API_KEY_HERE\",\n        \"OPENAI_API_KEY\": \"YOUR_OPENAI_KEY_HERE\"\n        // ...其他支援的金鑰\n      },\n      \"type\": \"stdio\"\n    }\n  }\n}\n```\n2. 於 AI 編輯器啟用 Task Master MCP，並依需求設定 API 金鑰。",
+          "basicUsage": "### 常用指令與互動\n- 初始化專案：\n```bash\n# 全域安裝\nnpm install -g task-master-ai\n# 初始化\ntask-master init\n```\n- 解析 PRD 並產生任務：\n```bash\ntask-master parse-prd your-prd.txt\n```\n- 查詢任務、追蹤進度：\n```bash\ntask-master list\ntask-master next\ntask-master show 1,3,5\n```\n- 研究與自動化：\n```bash\ntask-master research \"請查找 JWT 驗證最佳實踐\"\n```\n- 於 AI 聊天視窗互動：\n  - 「請解析 scripts/prd.txt 的 PRD」\n  - 「下一步該做什麼？」\n  - 「請協助我實作第 3 個任務」\n  - 「請研究 React Query v5 遷移策略」",
+          "resources": [],
+          "lastUpdated": "2025-07-16T09:48:44.071Z"
+        }
+      ],
+      "count": 6
+    },
+    "notebook": {
+      "name": "筆記工具",
+      "description": "智能筆記和知識管理",
+      "tools": [
+        {
+          "id": "notebooklm",
+          "name": "NotebookLM",
+          "category": "notebook",
+          "overview": "",
+          "features": [],
+          "useCases": [],
+          "pricing": null,
+          "installation": "",
+          "basicUsage": "",
+          "resources": [],
+          "lastUpdated": "2025-07-16T09:48:44.071Z"
+        },
+        {
+          "id": "notion",
+          "name": "Notion",
+          "category": "notebook",
+          "overview": "",
+          "features": [],
+          "useCases": [],
+          "pricing": null,
+          "installation": "",
+          "basicUsage": "",
+          "resources": [],
+          "lastUpdated": "2025-07-16T09:48:44.072Z"
+        }
+      ],
+      "count": 2
+    },
+    "plugin": {
+      "name": "插件工具",
+      "description": "編輯器插件和擴展",
+      "tools": [
+        {
+          "id": "augment-code",
+          "name": "Augment Code",
+          "category": "plugin",
+          "overview": "",
+          "features": [],
+          "useCases": [],
+          "pricing": null,
+          "installation": "",
+          "basicUsage": "",
+          "resources": [],
+          "lastUpdated": "2025-07-16T09:48:44.072Z"
+        },
+        {
+          "id": "github-copilot",
+          "name": "GitHub Copilot",
+          "category": "plugin",
+          "overview": "GitHub Copilot 是一款由 GitHub 與 OpenAI 合作開發的 AI 編程助理，深度整合於多種 IDE，能根據上下文自動補全程式碼、生成整段邏輯、協助除錯與測試，並支援聊天互動與多檔案協作，大幅提升開發效率。",
+          "features": [
+            "AI 代理模式：從單一提示規劃、構建、測試、修復程式碼",
+            "即時更新 AI 模型，提供上下文感知建議",
+            "單行與多行程式碼自動完成",
+            "Copilot 編輯：多檔案編輯、程式碼審查、預覽與回溯",
+            "Copilot Chat：即時程式碼查詢、調試、單元測試生成",
+            "自動產生提交訊息，協助版本控制",
+            "支援多種 IDE（VS Code、JetBrains、Neovim 等）"
+          ],
+          "useCases": [
+            "軟體開發全流程（編寫、調試、測試、版本控制）",
+            "加速個人與團隊開發速度",
+            "自動化單元測試與整合測試",
+            "程式碼審查與重構",
+            "新手學習與程式碼解釋"
+          ],
+          "pricing": {
+            "plans": [
+              "Copilot Pro：$10/月 或 $100/年，無限代理/聊天、無限程式碼完成、6倍高級請求、30天免費試用",
+              "Copilot Pro+：$39/月 或 $390/年，Pro 所有功能、存取所有模型、30倍高級請求、無試用",
+              "高級請求超額：$0.04/次",
+              "詳細與最新價格請參考 [定價頁](https://docs.github.com/en/copilot/concepts/copilot-billing/about-billing-for-individual-copilot-plans)"
+            ],
+            "hasFree": true,
+            "minPrice": 10,
+            "maxPrice": 390,
+            "raw": "- Copilot Pro：$10/月 或 $100/年，無限代理/聊天、無限程式碼完成、6倍高級請求、30天免費試用\n- Copilot Pro+：$39/月 或 $390/年，Pro 所有功能、存取所有模型、30倍高級請求、無試用\n- 高級請求超額：$0.04/次\n- 詳細與最新價格請參考 [定價頁](https://docs.github.com/en/copilot/concepts/copilot-billing/about-billing-for-individual-copilot-plans)"
+          },
+          "installation": "- 於 [GitHub Copilot 官方網站](https://github.com/features/copilot) 選擇對應 IDE 擴充套件安裝\n- 登入 GitHub 帳號並啟用 Copilot 訂閱",
+          "basicUsage": "1. 在 VS Code/JetBrains/Neovim 安裝 Copilot 擴充套件\n2. 開啟專案，於編輯器中輸入程式碼，Copilot 會自動補全\n3. 啟用 Copilot Chat，輸入自然語言查詢、除錯或生成測試",
+          "resources": [
+            {
+              "name": "官方網站",
+              "url": "https://github.com/features/copilot"
+            },
+            {
+              "name": "定價頁",
+              "url": "https://docs.github.com/en/copilot/concepts/copilot-billing/about-billing-for-individual-copilot-plans"
+            }
+          ],
+          "lastUpdated": "2025-07-16T09:48:44.072Z"
+        },
+        {
+          "id": "roo-code",
+          "name": "Roo Code",
+          "category": "plugin",
+          "overview": "",
+          "features": [],
+          "useCases": [],
+          "pricing": null,
+          "installation": "",
+          "basicUsage": "",
+          "resources": [],
+          "lastUpdated": "2025-07-16T09:48:44.072Z"
+        }
+      ],
+      "count": 3
+    },
+    "search": {
+      "name": "搜尋工具",
+      "description": "AI搜索和資訊檢索",
+      "tools": [
+        {
+          "id": "felo",
+          "name": "Felo AI Search",
+          "category": "search",
+          "overview": "",
+          "features": [],
+          "useCases": [],
+          "pricing": null,
+          "installation": "",
+          "basicUsage": "",
+          "resources": [],
+          "lastUpdated": "2025-07-16T09:48:44.073Z"
+        },
+        {
+          "id": "perplexity",
+          "name": "Perplexity",
+          "category": "search",
+          "overview": "",
+          "features": [],
+          "useCases": [],
+          "pricing": null,
+          "installation": "- 直接於 [https://www.perplexity.ai/](https://www.perplexity.ai/) 註冊帳號即可使用\n- iOS/Android 請於 App Store/Google Play 下載官方 App\n- API 與 Sonar 服務請參考[官方文件](https://docs.perplexity.ai/)\n\n```bash\n# 無需安裝，直接註冊或以 Google/Apple/Email 登入\n# 行動裝置請於商店搜尋「Perplexity」下載\n```",
+          "basicUsage": "- 登入後於搜尋框輸入問題或貼上圖片，即可獲得 AI 回答與來源引用\n- 切換 Pro Search 可使用進階模型與功能\n- 建立空間、圖書館管理主題與知識\n- 企業用戶可整合內部檔案、設定團隊權限\n\n```bash\n# 範例：搜尋「2025 年 AI 趨勢」\n# 範例：上傳 PDF 檔案並詢問內容摘要（Pro 版）\n```",
+          "resources": [
+            {
+              "name": "Perplexity 官方網站",
+              "url": "https://www.perplexity.ai/"
+            },
+            {
+              "name": "Perplexity Pro 方案",
+              "url": "https://www.perplexity.ai/pro"
+            },
+            {
+              "name": "Perplexity 企業方案",
+              "url": "https://www.perplexity.ai/enterprise"
+            },
+            {
+              "name": "Perplexity API 文件",
+              "url": "https://docs.perplexity.ai/"
+            },
+            {
+              "name": "金融搜尋",
+              "url": "https://www.perplexity.ai/finance"
+            },
+            {
+              "name": "旅遊搜尋",
+              "url": "https://www.perplexity.ai/travel"
+            },
+            {
+              "name": "學術搜尋",
+              "url": "https://www.perplexity.ai/academic"
+            },
+            {
+              "name": "空間模板",
+              "url": "https://www.perplexity.ai/spaces/templates/"
+            },
+            {
+              "name": "圖書館",
+              "url": "https://www.perplexity.ai/library"
+            },
+            {
+              "name": "官方 FAQ",
+              "url": "https://www.perplexity.ai/hub/faq"
+            }
+          ],
+          "lastUpdated": "2025-07-16T09:48:44.073Z"
+        }
+      ],
+      "count": 2
+    },
+    "terminal": {
+      "name": "終端工具",
+      "description": "終端增強和AI助手",
+      "tools": [
+        {
+          "id": "warp-ai",
+          "name": "Warp AI",
+          "category": "terminal",
+          "overview": "",
+          "features": [],
+          "useCases": [],
+          "pricing": null,
+          "installation": "- 前往 [官方網站](https://www.warp.dev/download) 下載對應平台的 Warp 終端\n- 安裝後登入帳號並啟用 Warp AI\n\n```bash\n# 以 Homebrew 安裝（macOS）\nbrew install --cask warp\n# 下載 Windows/Linux 版請見官方網站\n```",
+          "basicUsage": "- 啟動 Warp 終端後，於輸入列直接輸入自然語言描述需求\n- 例如：「列出目前資料夾所有檔案並顯示詳細資訊」\n- Warp AI 會自動轉換為對應指令並可直接執行\n\n```bash\n# 例：自然語言轉指令\nls -al\n\n# 例：AI 解釋指令\nwarp explain \"tar -czvf archive.tar.gz folder/\"\n```",
+          "resources": [
+            {
+              "name": "Warp AI 官方網站",
+              "url": "https://www.warp.dev/warp-ai"
+            },
+            {
+              "name": "官方定價頁面",
+              "url": "https://www.warp.dev/pricing"
+            },
+            {
+              "name": "官方文件",
+              "url": "https://docs.warp.dev/"
+            },
+            {
+              "name": "GitHub Repository",
+              "url": "https://github.com/warpdotdev/Warp"
+            }
+          ],
+          "lastUpdated": "2025-07-16T09:48:44.073Z"
+        }
+      ],
+      "count": 1
+    }
+  },
+  "tools": [
+    {
+      "id": "devin",
+      "name": "Devin",
+      "category": "agent",
+      "overview": "Devin 是 Cognition Labs 推出的 AI 軟體工程師，主打能夠自主規劃、編寫、測試、除錯與部署軟體專案。Devin 能理解複雜需求、與人協作，並自動化多數開發流程。",
+      "features": [
+        "自主規劃與分解任務",
+        "編寫、測試、除錯程式碼",
+        "自動化軟體部署與 CI/CD",
+        "與開發者協作、回饋",
+        "支援多種程式語言與框架",
+        "具備持續學習與自我改進能力"
+      ],
+      "useCases": [
+        "自動化軟體專案開發",
+        "快速原型設計與 MVP 開發",
+        "測試與除錯現有程式碼",
+        "輔助團隊協作與知識管理"
+      ],
+      "pricing": {
+        "plans": [
+          "僅限申請試用，尚未公開定價",
+          "詳細資訊請參考 [官方網站](https://www.cognition-labs.com/devin)"
+        ],
+        "hasFree": false,
+        "minPrice": null,
+        "maxPrice": null,
+        "raw": "- 僅限申請試用，尚未公開定價\n- 詳細資訊請參考 [官方網站](https://www.cognition-labs.com/devin)"
+      },
+      "installation": "目前僅開放申請試用，尚無公開安裝方式。",
+      "basicUsage": "尚無公開 CLI 或 API 範例，請參考官方網站申請試用。",
+      "resources": [
+        {
+          "name": "官方網站",
+          "url": "https://www.cognition-labs.com/devin"
+        }
+      ],
+      "lastUpdated": "2025-07-16T09:48:44.060Z"
+    },
+    {
+      "id": "jules",
+      "name": "Jules AI",
+      "category": "agent",
+      "overview": "",
+      "features": [],
+      "useCases": [],
+      "pricing": {
+        "plans": [
+          "提供免費試用（需 Google 帳號登入）",
+          "付費方案與企業版詳見官方網站，需登入查詢最新價格",
+          "企業版支援團隊協作與進階功能"
+        ],
+        "hasFree": true,
+        "minPrice": null,
+        "maxPrice": null,
+        "raw": "- 提供免費試用（需 Google 帳號登入）\n- 付費方案與企業版詳見官方網站，需登入查詢最新價格\n- 企業版支援團隊協作與進階功能"
+      },
+      "installation": "- 前往 [Jules 官方網站](https://jules.google/) 並以 Google 帳號登入\n- 授權 GitHub 帳號以存取專案\n- 選擇 repo 與分支，輸入任務描述即可啟用\n\n```bash\n# 無需安裝，瀏覽器登入即可用\n```",
+      "basicUsage": "- 登入後選擇 GitHub 專案與分支，輸入自然語言任務（如「升級 next.js 至 v15 並改用 app 目錄」）\n- Jules 會自動拉取專案、分析、產生計畫、執行變更、執行測試並建立 PR\n- 可於介面審查 diff、聆聽音訊摘要並快速合併\n\n```bash\n# 例：升級 next.js 並重構專案\n# 於 Jules 介面輸入：「Bump next.js to v15 and convert to app directory」\n```",
+      "resources": [
+        {
+          "name": "Jules AI 官方網站",
+          "url": "https://jules.google/"
+        },
+        {
+          "name": "Jules AI 文件",
+          "url": "https://jules.google/docs"
+        },
+        {
+          "name": "Jules AI 定價頁面",
+          "url": "https://jules.google/"
+        },
+        {
+          "name": "Jules AI 體驗入口",
+          "url": "https://jules.google.com/"
+        },
+        {
+          "name": "Google Labs",
+          "url": "https://labs.google.com/"
+        }
+      ],
+      "lastUpdated": "2025-07-16T09:48:44.060Z"
+    },
+    {
+      "id": "manus",
+      "name": "Manus",
+      "category": "agent",
+      "overview": "",
+      "features": [],
+      "useCases": [],
+      "pricing": null,
+      "installation": "Manus 為雲端平台，大多數用戶無需本地安裝。開始使用步驟如下：\n\n1. 前往官方網站註冊帳號。\n2. 透過網頁介面登入，或下載桌面/行動版應用（如有提供）。\n3. 選擇方案並依指引完成設定。\n\n```bash\n# 範例：透過網頁使用 Manus\nhttps://manus.im/home\n```",
+      "basicUsage": "登入後，可直接在 Manus 介面指派任務。常見流程如下：\n\n```bash\n# 範例：產生市場研究報告\n1. 登入 Manus\n2. 輸入任務：「調查美國金融科技市場前 10 大競爭者並彙整趨勢。」\n3. Manus 會自動分析、研究並產出結構化報告。\n\n# 範例：自動化商業簡報\n1. 登入 Manus\n2. 輸入任務：「製作含財務儀表板與策略洞察的董事會簡報。」\n3. Manus 會生成簡報與視覺化內容，供審閱。\n```",
+      "resources": [
+        {
+          "name": "官方網站",
+          "url": "https://manus.im/home"
+        },
+        {
+          "name": "關於 Manus",
+          "url": "https://manus.im/about"
+        },
+        {
+          "name": "LinkedIn",
+          "url": "https://www.linkedin.com/company/manus-im/"
+        },
+        {
+          "name": "YouTube",
+          "url": "https://www.youtube.com/@Manus-AI/videos"
+        },
+        {
+          "name": "X (Twitter)",
+          "url": "https://x.com/ManusAI_HQ"
+        },
+        {
+          "name": "Instagram",
+          "url": "https://www.instagram.com/manusaiofficial"
+        },
+        {
+          "name": "TikTok",
+          "url": "http://www.tiktok.com/@manusaiofficial"
+        }
+      ],
+      "lastUpdated": "2025-07-16T09:48:44.061Z"
+    },
+    {
+      "id": "openhands",
+      "name": "OpenHands",
+      "category": "agent",
+      "overview": "",
+      "features": [],
+      "useCases": [],
+      "pricing": null,
+      "installation": "### Docker（推薦）\n```bash\ndocker pull docker.all-hands.dev/all-hands-ai/runtime:0.48-nikolaik\n\ndocker run -it --rm --pull=always \\\n    -e SANDBOX_RUNTIME_CONTAINER_IMAGE=docker.all-hands.dev/all-hands-ai/runtime:0.48-nikolaik \\\n    -e LOG_ALL_EVENTS=true \\\n    -v /var/run/docker.sock:/var/run/docker.sock \\\n    -v ~/.openhands:/.openhands \\\n    -p 3000:3000 \\\n    --add-host host.docker.internal:host-gateway \\\n    --name openhands-app \\\n    docker.all-hands.dev/all-hands-ai/openhands:0.48\n```\n啟動後瀏覽 [http://localhost:3000](http://localhost:3000)\n\n### OpenHands Cloud\n- 直接註冊 [https://app.all-hands.dev/](https://app.all-hands.dev/)，免安裝即可使用。\n\n### CLI（本地）\n- 詳細 CLI 與無頭模式安裝請參考[官方文件](https://docs.all-hands.dev/usage/installation)。",
+      "basicUsage": "- 首次啟動時，請選擇 LLM 供應商並輸入 API 金鑰（如 Anthropic Claude、OpenAI）。\n- 可透過網頁介面或 CLI 輸入任務（如：「修正此專案所有 lint 錯誤」）。\n- 代理會自動規劃、執行並逐步回報進度。\n\n```bash\n# 範例：用 Docker 啟動 OpenHands 並執行任務\nopenhands --task \"彙整本專案所有 GitHub open issue 並摘要\"\n\n# 範例：無頭模式執行（詳見官方文件）\nopenhands --headless --task \"重構資料處理流程程式碼\"\n```",
+      "resources": [
+        {
+          "name": "官方網站",
+          "url": "https://all-hands.dev/"
+        },
+        {
+          "name": "官方文件",
+          "url": "https://docs.all-hands.dev/"
+        },
+        {
+          "name": "GitHub 原始碼",
+          "url": "https://github.com/All-Hands-AI/OpenHands"
+        },
+        {
+          "name": "OpenHands Cloud",
+          "url": "https://app.all-hands.dev/"
+        },
+        {
+          "name": "Slack 社群",
+          "url": "https://join.slack.com/t/openhands-ai/shared_invite/zt-3847of6xi-xuYJIPa6YIPg4ElbDWbtSA"
+        },
+        {
+          "name": "Discord 社群",
+          "url": "https://discord.gg/ESHStjSjD4"
+        }
+      ],
+      "lastUpdated": "2025-07-16T09:48:44.061Z"
+    },
+    {
+      "id": "replit-ai",
+      "name": "Replit AI",
+      "category": "agent",
+      "overview": "",
+      "features": [],
+      "useCases": [],
+      "pricing": null,
+      "installation": "- 直接於 [https://replit.com/ai](https://replit.com/ai) 註冊帳號即可使用，無需安裝\n- 行動裝置請於 App Store/Google Play 下載「Replit」App\n- 企業/團隊可於 Teams 頁面建立團隊與專案\n- 進階功能與 API 請參考[官方文件](https://docs.replit.com/ai)\n\n```bash\n# 無需安裝，瀏覽器註冊即可用\n# 行動裝置請於商店搜尋「Replit」下載\n```",
+      "basicUsage": "- 登入後於專案內啟用 Replit Agent，輸入自然語言描述需求\n- 於編輯器內獲得 AI 補全、除錯、重構、文件產生等功能\n- 多人可即時協作、分支、合併與部署\n\n```bash\n# 範例：啟用 Replit Agent，輸入「建立一個 ToDo List 應用」\n# 範例：多人協作開發並一鍵部署至雲端\n```",
+      "resources": [
+        {
+          "name": "Replit AI 官方網站",
+          "url": "https://replit.com/ai"
+        },
+        {
+          "name": "Replit 定價頁面",
+          "url": "https://replit.com/pricing"
+        },
+        {
+          "name": "Replit 官方文件",
+          "url": "https://docs.replit.com/ai"
+        },
+        {
+          "name": "Replit Teams",
+          "url": "https://replit.com/teams"
+        },
+        {
+          "name": "Replit 部署說明",
+          "url": "https://docs.replit.com/category/replit-deployments"
+        },
+        {
+          "name": "Replit Blog",
+          "url": "https://blog.replit.com/"
+        },
+        {
+          "name": "Replit 社群",
+          "url": "https://replit.com/community"
+        }
+      ],
+      "lastUpdated": "2025-07-16T09:48:44.062Z"
+    },
+    {
+      "id": "dify",
+      "name": "Dify",
+      "category": "automation",
+      "overview": "Dify 是一款 AI 工作流自動化平台，支援視覺化拖拉建構、整合多家大語言模型、RAG 知識庫、智慧代理與企業級安全，適合開發者、企業與教育單位快速構建 AI 應用與自動化流程。",
+      "features": [
+        "視覺化工作流建構（無需程式設計）",
+        "整合 OpenAI、Anthropic、Google、本地模型等多家 LLM",
+        "內建 RAG 向量知識庫，支援多資料來源",
+        "智慧代理策略與工具整合",
+        "企業級安全與權限控管",
+        "靈活發布（API、Web、聊天機器人等）",
+        "Backend-as-a-Service 後端即服務",
+        "團隊協作、DSL 工作流保存與分享",
+        "插件市場與外部工具連接",
+        "監控與分析功能",
+        "開源自主部署與雲端託管"
+      ],
+      "useCases": [
+        "AI 應用快速原型與產品驗證",
+        "企業 AI 轉型與跨部門能力分發",
+        "智慧客服與 Q&A 系統",
+        "文件處理與自動化分析",
+        "程式設計輔助與自動化",
+        "教育訓練與 AI 工作流教學",
+        "資料分析與商業洞察",
+        "重複性任務自動化"
+      ],
+      "pricing": {
+        "plans": [
+          "Sandbox（免費）：$0，200 訊息/月，1人，5應用，50文件，50MB",
+          "Professional：$59/月，5,000 訊息/月，3人，50應用，500文件，5GB",
+          "Team：$159/月，10,000 訊息/月，50人，200應用，1,000文件，20GB",
+          "Enterprise：客製化報價，無限制用量與功能",
+          "年繳享 17% 折扣，學生/教育者免費",
+          "詳細與最新價格請參考 [定價方案](https://dify.ai/pricing)"
+        ],
+        "hasFree": true,
+        "minPrice": 59,
+        "maxPrice": 159,
+        "raw": "- Sandbox（免費）：$0，200 訊息/月，1人，5應用，50文件，50MB\n- Professional：$59/月，5,000 訊息/月，3人，50應用，500文件，5GB\n- Team：$159/月，10,000 訊息/月，50人，200應用，1,000文件，20GB\n- Enterprise：客製化報價，無限制用量與功能\n- 年繳享 17% 折扣，學生/教育者免費\n- 詳細與最新價格請參考 [定價方案](https://dify.ai/pricing)"
+      },
+      "installation": "- 雲端版：註冊 [Dify 雲端服務](https://cloud.dify.ai/)\n- 開源版：於 [GitHub](https://github.com/langgenius/dify) 下載原始碼，依官方文件部署",
+      "basicUsage": "1. 註冊並登入 Dify 雲端或部署開源版\n2. 於平台內建立新應用，拖拉元件設計工作流\n3. 整合 LLM、知識庫與外部工具，發布 API 或 Web 應用",
+      "resources": [
+        {
+          "name": "官方網站",
+          "url": "https://dify.ai/"
+        },
+        {
+          "name": "雲端服務",
+          "url": "https://cloud.dify.ai/"
+        },
+        {
+          "name": "定價方案",
+          "url": "https://dify.ai/pricing"
+        },
+        {
+          "name": "GitHub 頁面",
+          "url": "https://github.com/langgenius/dify"
+        },
+        {
+          "name": "官方文檔",
+          "url": "https://docs.dify.ai/en/introduction"
+        },
+        {
+          "name": "Discord 社群",
+          "url": "https://discord.com/invite/FngNHpbcY7"
+        },
+        {
+          "name": "教育計畫",
+          "url": "https://dify.ai/education"
+        },
+        {
+          "name": "合作夥伴計畫",
+          "url": "https://dify.ai/partner"
+        },
+        {
+          "name": "插件市場",
+          "url": "https://marketplace.dify.ai/?language=en-US"
+        },
+        {
+          "name": "品牌指南",
+          "url": "https://docs.dify.ai/en/resources/about-dify/dify-brand-guidelines"
+        }
+      ],
+      "lastUpdated": "2025-07-16T09:48:44.063Z"
+    },
+    {
+      "id": "make",
+      "name": "Make",
+      "category": "automation",
+      "overview": "",
+      "features": [],
+      "useCases": [],
+      "pricing": null,
+      "installation": "",
+      "basicUsage": "",
+      "resources": [],
+      "lastUpdated": "2025-07-16T09:48:44.063Z"
+    },
+    {
+      "id": "n8n",
+      "name": "n8n",
+      "category": "automation",
+      "overview": "",
+      "features": [],
+      "useCases": [],
+      "pricing": null,
+      "installation": "n8n 支援多種安裝方式，最常見為 Docker 或 npm：\n\n```bash\n# 以 npx 快速啟動（需先安裝 Node.js）\nnpx n8n\n\n# Docker 部署\n# 建立資料卷\n$ docker volume create n8n_data\n# 啟動 n8n 容器\n$ docker run -it --rm --name n8n -p 5678:5678 -v n8n_data:/home/node/.n8n docker.n8n.io/n8nio/n8n\n```\n\n更多安裝方式請參考官方文件（支援雲端 VM、Docker Compose、npm、各大雲平台等）。",
+      "basicUsage": "登入 n8n 編輯器（預設 http://localhost:5678），即可建立自動化流程。\n\n```bash\n# 範例：建立一個簡單的 Google Sheets 自動同步流程\n1. 新增 Google Sheets 節點，設定認證與資料來源\n2. 新增 Slack 節點，設定訊息內容\n3. 連接節點，儲存並啟用流程\n\n# 範例：AI 代理自動摘要網頁內容\n1. 新增 HTTP Request 節點抓取網頁\n2. 新增 AI Transform 節點，選擇摘要任務\n3. 輸出結果到 Email/Slack\n```",
+      "resources": [
+        {
+          "name": "官方網站",
+          "url": "https://n8n.io/"
+        },
+        {
+          "name": "官方文件",
+          "url": "https://docs.n8n.io/"
+        },
+        {
+          "name": "GitHub 專案",
+          "url": "https://github.com/n8n-io/n8n"
+        },
+        {
+          "name": "定價方案",
+          "url": "https://n8n.io/pricing/"
+        },
+        {
+          "name": "整合清單",
+          "url": "https://n8n.io/integrations/"
+        },
+        {
+          "name": "範本/工作流程",
+          "url": "https://n8n.io/workflows/"
+        },
+        {
+          "name": "社群論壇",
+          "url": "https://community.n8n.io/"
+        },
+        {
+          "name": "YouTube 頻道",
+          "url": "https://www.youtube.com/c/n8n-io"
+        },
+        {
+          "name": "X (Twitter)",
+          "url": "https://twitter.com/n8n_io"
+        },
+        {
+          "name": "LinkedIn",
+          "url": "https://www.linkedin.com/company/n8n/"
+        },
+        {
+          "name": "Discord",
+          "url": "https://discord.gg/n8n"
+        }
+      ],
+      "lastUpdated": "2025-07-16T09:48:44.063Z"
+    },
+    {
+      "id": "task-master",
+      "name": "task-master",
+      "category": "automation",
+      "overview": "",
+      "features": [],
+      "useCases": [],
+      "pricing": null,
+      "installation": "",
+      "basicUsage": "",
+      "resources": [],
+      "lastUpdated": "2025-07-16T09:48:44.063Z"
+    },
+    {
+      "id": "zapier",
+      "name": "Zapier",
+      "category": "automation",
+      "overview": "",
+      "features": [],
+      "useCases": [],
+      "pricing": null,
+      "installation": "- 直接於 [官方網站](https://zapier.com/) 註冊帳號即可使用，無需安裝\n- 進階功能與 API 請參考官方文件\n\n```bash\n# 無需安裝，瀏覽器註冊即可用\n```",
+      "basicUsage": "- 登入後於介面建立 Zap，選擇觸發器與動作應用程式\n- 可於 Canvas 設計 AI 流程圖，或啟用 Agents/Chatbots\n\n```bash\n# 例：建立一個自動將 Gmail 郵件存入 Google Sheets 的 Zap\n# 於 Zapier 介面選擇 Gmail 為觸發器，Google Sheets 為動作\n```",
+      "resources": [
+        {
+          "name": "Zapier 官方網站",
+          "url": "https://zapier.com/"
+        },
+        {
+          "name": "官方定價頁面",
+          "url": "https://zapier.com/pricing"
+        },
+        {
+          "name": "官方文件",
+          "url": "https://help.zapier.com/"
+        },
+        {
+          "name": "Zapier AI 介紹",
+          "url": "https://zapier.com/ai"
+        },
+        {
+          "name": "Zapier Canvas",
+          "url": "https://zapier.com/canvas"
+        },
+        {
+          "name": "Zapier Agents",
+          "url": "https://zapier.com/agents"
+        },
+        {
+          "name": "Zapier Chatbots",
+          "url": "https://zapier.com/ai/chatbot"
+        },
+        {
+          "name": "Gartner 評論",
+          "url": "https://www.gartner.com/reviews/market/application-integration-platforms/vendor/zapier"
+        }
+      ],
+      "lastUpdated": "2025-07-16T09:48:44.064Z"
+    },
+    {
+      "id": "comet",
+      "name": "Comet",
+      "category": "browser",
+      "overview": "",
+      "features": [],
+      "useCases": [],
+      "pricing": null,
+      "installation": "",
+      "basicUsage": "",
+      "resources": [],
+      "lastUpdated": "2025-07-16T09:48:44.064Z"
+    },
+    {
+      "id": "chatgpt",
+      "name": "ChatGPT",
+      "category": "chat",
+      "overview": "ChatGPT 是 OpenAI 推出的對話式 AI 助手，支援多模型（如 GPT-4o、GPT-4.1、GPT-4.5 研究預覽版），可進行自然語言對話、內容生成、程式輔助、資料分析、語音與多模態互動，適用於個人、團隊與企業。",
+      "features": [
+        "多模型支援（GPT-4o、GPT-4.1、GPT-4.5 等）",
+        "進階推理與多模態互動（文字、圖片、語音、影片）",
+        "標準與進階語音對話、螢幕分享",
+        "檔案上傳、資料分析、圖片生成",
+        "即時網路搜尋",
+        "Canvas 視覺化創作介面",
+        "自訂 GPT 模型建立與分享",
+        "專案管理與任務協作",
+        "企業級安全與資源整合（Google Drive、SharePoint、GitHub 等）",
+        "GDPR、CCPA、SOC 2 Type 2 合規"
+      ],
+      "useCases": [
+        "日常工作助理（寫作、編輯、資料分析、程式設計）",
+        "企業客服與 24/7 智慧支援",
+        "教育輔助與學術研究",
+        "創意寫作、內容創作、設計發想",
+        "程式開發、除錯、最佳化建議",
+        "商業分析、市場研究、策略制定",
+        "多語言翻譯與跨文化溝通",
+        "企業知識管理與智慧檢索"
+      ],
+      "pricing": {
+        "plans": [
+          "Free：$0/月，GPT-4.1 mini 無限、有限 GPT-4o、基礎檔案上傳、圖片生成、語音、自訂 GPT",
+          "Plus：$20/月，Free 所有功能、提高限額、進階語音、多推理模型、專案與任務",
+          "Pro：$200/月，Plus 所有功能、無限推理模型、無限進階語音、o1 pro、進階 Sora 影片、Operator 預覽",
+          "Team：$25/年繳或 $30/月繳（每用戶），無限 GPT-4o、安全專屬空間、SAML SSO、資源連接器、管理控制",
+          "Enterprise：客製化報價，Team 所有功能、擴充上下文、企業級保護、SCIM、進階支援、資料存留地",
+          "詳細與最新價格請參考 [官方定價頁](https://openai.com/chatgpt/pricing/)"
+        ],
+        "hasFree": true,
+        "minPrice": 20,
+        "maxPrice": 200,
+        "raw": "- Free：$0/月，GPT-4.1 mini 無限、有限 GPT-4o、基礎檔案上傳、圖片生成、語音、自訂 GPT\n- Plus：$20/月，Free 所有功能、提高限額、進階語音、多推理模型、專案與任務\n- Pro：$200/月，Plus 所有功能、無限推理模型、無限進階語音、o1 pro、進階 Sora 影片、Operator 預覽\n- Team：$25/年繳或 $30/月繳（每用戶），無限 GPT-4o、安全專屬空間、SAML SSO、資源連接器、管理控制\n- Enterprise：客製化報價，Team 所有功能、擴充上下文、企業級保護、SCIM、進階支援、資料存留地\n- 詳細與最新價格請參考 [官方定價頁](https://openai.com/chatgpt/pricing/)"
+      },
+      "installation": "ChatGPT 可直接於網頁使用，或下載行動 App：\n- [ChatGPT 下載](https://openai.com/chatgpt/download/)\n- [iOS 下載](https://apps.apple.com/app/openai-chatgpt/id6448311069)\n- [Android 下載](https://play.google.com/store/apps/details?id=com.openai.chatgpt)",
+      "basicUsage": "1. 註冊並登入 [ChatGPT 官方網站](https://chatgpt.com/)\n2. 選擇模型（如 GPT-4o）\n3. 輸入文字、語音或上傳檔案進行互動\n4. 可建立自訂 GPT 或管理專案、任務",
+      "resources": [
+        {
+          "name": "官方網站",
+          "url": "https://chatgpt.com/"
+        },
+        {
+          "name": "官方定價",
+          "url": "https://openai.com/chatgpt/pricing/"
+        },
+        {
+          "name": "Team 方案",
+          "url": "https://openai.com/chatgpt/team/"
+        },
+        {
+          "name": "Enterprise 方案",
+          "url": "https://openai.com/chatgpt/enterprise/"
+        },
+        {
+          "name": "教育方案",
+          "url": "https://openai.com/chatgpt/education/"
+        },
+        {
+          "name": "下載頁",
+          "url": "https://openai.com/chatgpt/download/"
+        },
+        {
+          "name": "OpenAI API 平台",
+          "url": "https://openai.com/api/"
+        },
+        {
+          "name": "OpenAI 支援中心",
+          "url": "https://help.openai.com/"
+        },
+        {
+          "name": "OpenAI 開發者文檔",
+          "url": "https://platform.openai.com/docs/overview"
+        }
+      ],
+      "lastUpdated": "2025-07-16T09:48:44.065Z"
+    },
+    {
+      "id": "cherry-studio",
+      "name": "Cherry Studio",
+      "category": "chat",
+      "overview": "Cherry Studio 是一款多模型 AI 對話與知識管理平台，支援整合多家雲端 LLM（如 OpenAI、Gemini、Anthropic、Claude、Perplexity、Poe）及本地模型（Ollama、LM Studio），提供 AI 助理、文件處理、知識庫、團隊協作等功能，適用於個人與企業。",
+      "features": [
+        "整合多家 LLM 供應商與本地模型",
+        "300+ 預設 AI 助理，支援自訂與多模型同時對話",
+        "文件、圖片、Office、PDF 等多格式處理",
+        "WebDAV 檔案管理、Mermaid 圖表、程式碼高亮",
+        "全域搜尋、主題管理、AI 翻譯、拖放排序、迷你程式",
+        "MCP 伺服器支援",
+        "筆記、收藏、動態畫布、OCR、TTS",
+        "企業版：統一模型管理、企業知識庫、存取控制、私有部署"
+      ],
+      "useCases": [
+        "日常 AI 對話與多模態互動",
+        "文件、圖片、程式碼處理與知識庫建立",
+        "AI 繪圖、翻譯、內容創作",
+        "團隊協作、集中管理 AI 資源與知識",
+        "企業級私有部署與資料合規"
+      ],
+      "pricing": {
+        "plans": [
+          "社群版：個人免費，商業需授權，開源，單機部署",
+          "企業版：買斷或訂閱（自訂報價），商業授權，私有部署，集中管理",
+          "詳細方案請參考 [企業版介紹](https://www.cherry-ai.com/enterprise)"
+        ],
+        "hasFree": true,
+        "minPrice": null,
+        "maxPrice": null,
+        "raw": "- 社群版：個人免費，商業需授權，開源，單機部署\n- 企業版：買斷或訂閱（自訂報價），商業授權，私有部署，集中管理\n- 詳細方案請參考 [企業版介紹](https://www.cherry-ai.com/enterprise)"
+      },
+      "installation": "- 社群版可於 [GitHub](https://github.com/CherryHQ/cherry-studio) 下載安裝，支援 Windows、macOS、Linux\n- 企業版請聯繫官方取得部署協助",
+      "basicUsage": "1. 下載並安裝 Cherry Studio\n2. 啟動應用程式，登入或註冊帳號\n3. 選擇 AI 助理或自訂助理，開始對話或文件處理\n4. 企業用戶可於後台管理模型、知識庫與權限",
+      "resources": [
+        {
+          "name": "官方網站",
+          "url": "https://www.cherry-ai.com/"
+        },
+        {
+          "name": "GitHub 頁面",
+          "url": "https://github.com/CherryHQ/cherry-studio"
+        },
+        {
+          "name": "企業版介紹",
+          "url": "https://www.cherry-ai.com/enterprise"
+        }
+      ],
+      "lastUpdated": "2025-07-16T09:48:44.065Z"
+    },
+    {
+      "id": "gemini",
+      "name": "Google Gemini",
+      "category": "chat",
+      "overview": "Google Gemini 是 Google 推出的多模態 AI 助理，支援文字、圖像、語音、影片等多種輸入，深度整合 Google 服務，適用於日常助理、內容創作、商業分析、教育學習與程式開發等多元場景。",
+      "features": [
+        "多模態 AI（文字、圖像、語音、影片）",
+        "即時資訊存取與 Google 搜尋整合",
+        "Gmail、Google 文件、相簿、雲端硬碟等服務整合",
+        "Gemini 2.5 Pro 先進推理與理解",
+        "Veo 3 影片生成",
+        "Flow 自動化工作流",
+        "NotebookLM 筆記與研究整合",
+        "跨平台支援（網頁、iOS、Android）",
+        "程式碼生成與資料分析",
+        "多語言支援"
+      ],
+      "useCases": [
+        "日常生活助理（行程、郵件、查詢）",
+        "學術研究與筆記管理",
+        "內容創作（寫作、影片、創意發想）",
+        "商業分析、簡報、數據處理",
+        "教育學習與知識問答",
+        "程式開發與技術支援",
+        "工作流自動化",
+        "多媒體內容創作",
+        "企業協作與專案管理"
+      ],
+      "pricing": {
+        "plans": [
+          "免費版：$0/月，15GB，基礎 Gemini 2.5 Flash、有限用量、Google 服務整合",
+          "基本版：$65/月，$650/年（16% 折扣），100GB，進階協作功能",
+          "進階版：$330/月，$3,300/年（16% 折扣），2TB，Google Workspace 進階功能",
+          "Google AI Pro：$650/月，2TB，Gemini 2.5 Pro、Veo 3、Flow、NotebookLM 高用量",
+          "詳細與最新價格請參考 [Google One 訂閱方案](https://one.google.com/about/plans)"
+        ],
+        "hasFree": true,
+        "minPrice": 65,
+        "maxPrice": 3300,
+        "raw": "- 免費版：$0/月，15GB，基礎 Gemini 2.5 Flash、有限用量、Google 服務整合\n- 基本版：$65/月，$650/年（16% 折扣），100GB，進階協作功能\n- 進階版：$330/月，$3,300/年（16% 折扣），2TB，Google Workspace 進階功能\n- Google AI Pro：$650/月，2TB，Gemini 2.5 Pro、Veo 3、Flow、NotebookLM 高用量\n- 詳細與最新價格請參考 [Google One 訂閱方案](https://one.google.com/about/plans)"
+      },
+      "installation": "- 直接於 [Google Gemini 官方網站](https://gemini.google.com/) 使用\n- 行動裝置可於 [Gemini 應用程式下載](https://gemini.google.com/app)",
+      "basicUsage": "1. 註冊並登入 Google 帳號，進入 Gemini\n2. 輸入文字、語音、上傳檔案或圖片進行互動\n3. 啟用 Flow 建立自動化流程，或整合 NotebookLM 進行筆記管理",
+      "resources": [
+        {
+          "name": "官方網站",
+          "url": "https://gemini.google.com/"
+        },
+        {
+          "name": "Google One 訂閱方案",
+          "url": "https://one.google.com/about/plans"
+        },
+        {
+          "name": "Google AI Studio",
+          "url": "https://aistudio.google.com/"
+        },
+        {
+          "name": "Gemini API 文檔",
+          "url": "https://ai.google.dev/docs"
+        },
+        {
+          "name": "NotebookLM",
+          "url": "https://notebooklm.google.com/"
+        },
+        {
+          "name": "Google AI 開發者中心",
+          "url": "https://developers.google.com/ai"
+        },
+        {
+          "name": "Gemini 應用程式下載",
+          "url": "https://gemini.google.com/app"
+        },
+        {
+          "name": "Google AI 隱私權政策",
+          "url": "https://policies.google.com/privacy"
+        },
+        {
+          "name": "Google AI 條款",
+          "url": "https://policies.google.com/terms"
+        }
+      ],
+      "lastUpdated": "2025-07-16T09:48:44.065Z"
+    },
+    {
+      "id": "grok",
+      "name": "Grok",
+      "category": "chat",
+      "overview": "",
+      "features": [],
+      "useCases": [],
+      "pricing": null,
+      "installation": "",
+      "basicUsage": "",
+      "resources": [],
+      "lastUpdated": "2025-07-16T09:48:44.065Z"
+    },
+    {
+      "id": "open-webui",
+      "name": "Open WebUI",
+      "category": "chat",
+      "overview": "",
+      "features": [],
+      "useCases": [],
+      "pricing": null,
+      "installation": "",
+      "basicUsage": "",
+      "resources": [
+        {
+          "name": "官方網站",
+          "url": "https://openwebui.com/"
+        },
+        {
+          "name": "文件中心",
+          "url": "https://docs.openwebui.com/"
+        },
+        {
+          "name": "GitHub",
+          "url": "https://github.com/open-webui/open-webui"
+        },
+        {
+          "name": "Discord 社群",
+          "url": "https://discord.gg/5rJgQTnV4s"
+        },
+        {
+          "name": "企業方案",
+          "url": "https://docs.openwebui.com/enterprise/"
+        },
+        {
+          "name": "Elestio 雲端託管",
+          "url": "https://elest.io/open-source/openwebui"
+        }
+      ],
+      "lastUpdated": "2025-07-16T09:48:44.066Z"
+    },
+    {
+      "id": "claude-code",
+      "name": "Claude Code",
+      "category": "cli",
+      "overview": "",
+      "features": [],
+      "useCases": [],
+      "pricing": null,
+      "installation": "",
+      "basicUsage": "",
+      "resources": [],
+      "lastUpdated": "2025-07-16T09:48:44.066Z"
+    },
+    {
+      "id": "gemini-cli",
+      "name": "Gemini CLI",
+      "category": "cli",
+      "overview": "Gemini CLI 是 Google 官方開源的命令列 AI 工作流工具，讓你直接在終端機與 Gemini 互動，查詢/編輯大型程式碼庫、生成應用、執行自動化任務，並支援多模態（文字、圖片、PDF、程式碼等）輸入。",
+      "features": [
+        "直接於終端機與 Gemini 互動，無需瀏覽器",
+        "查詢、編輯、重構大型程式碼庫（支援 100 萬 tokens 以上上下文）",
+        "生成新應用、腳本、文件、簡報等",
+        "多模態支援：文字、圖片、PDF、程式碼",
+        "內建 Google Search、MCP 工具、第三方插件",
+        "支援自動化工作流與本地工具整合",
+        "可用於個人、團隊、企業協作"
+      ],
+      "useCases": [
+        "探索/理解大型程式碼庫",
+        "生成/重構/修正程式碼",
+        "自動化日常開發與運維任務",
+        "產生簡報、文件、報告",
+        "團隊協作與知識管理",
+        "多模態內容生成與分析"
+      ],
+      "pricing": {
+        "plans": [
+          "免費層：",
+          "- 以 Google 帳號登入：每分鐘 60 次、每日 1,000 次免費請求（Gemini 2.5 Pro）",
+          "- 以 API 金鑰：每日 100 次免費請求（Gemini 2.5 Pro）",
+          "付費層：依 API 金鑰/帳號升級，享更高速率與額度",
+          "詳細與最新價格請參考 [官方定價頁](https://ai.google.dev/gemini-api/docs/pricing)"
+        ],
+        "hasFree": true,
+        "minPrice": null,
+        "maxPrice": null,
+        "raw": "- 免費層：\n  - 以 Google 帳號登入：每分鐘 60 次、每日 1,000 次免費請求（Gemini 2.5 Pro）\n  - 以 API 金鑰：每日 100 次免費請求（Gemini 2.5 Pro）\n- 付費層：依 API 金鑰/帳號升級，享更高速率與額度\n- 詳細與最新價格請參考 [官方定價頁](https://ai.google.dev/gemini-api/docs/pricing)"
+      },
+      "installation": "### 安裝 Node.js（需 v20 以上）\n[Node.js 下載](https://nodejs.org/en/download)\n\n### 直接執行（推薦）\n```bash\nnpx https://github.com/google-gemini/gemini-cli\n```\n\n### 全域安裝\n```bash\nnpm install -g @google/gemini-cli\ngemini\n```\n\n### 登入與 API 金鑰設定\n- **首次啟動時可直接以 Google 帳號登入**，無需 API 金鑰，享有每分鐘 60 次、每日 1,000 次免費請求額度。\n- 亦可選擇使用 Gemini API 金鑰：\n  1. 申請金鑰：[Google AI Studio](https://aistudio.google.com/apikey)\n  2. 設定環境變數：\n```bash\nexport GEMINI_API_KEY=\"<你的 API 金鑰>\"\n```\n- （如使用 Vertex AI，請參考官方文件設定 GOOGLE_API_KEY 與 GOOGLE_GENAI_USE_VERTEXAI）",
+      "basicUsage": "### 啟動 CLI\n```bash\ngemini\n```\n或\n```bash\nnpx https://github.com/google-gemini/gemini-cli\n```\n\n### 互動範例\n- 啟動後直接輸入指令，例如：\n  - `請幫我摘要這個 repo 的架構`  \n  - `幫我產生一個 Python 爬蟲腳本`  \n  - `分析這份 PDF 並列出重點`\n- 可於專案目錄下執行，針對本地程式碼進行查詢、重構、生成\n\n### 常用指令\n- `gemini`：啟動互動式 CLI\n- `gemini --help`：顯示所有可用參數與指令\n- 更多進階指令與自動化用法，請參考[官方指令文件](https://github.com/google-gemini/gemini-cli/blob/main/docs/cli/commands.md)",
+      "resources": [
+        {
+          "name": "GitHub Repo",
+          "url": "https://github.com/google-gemini/gemini-cli"
+        },
+        {
+          "name": "官方文件",
+          "url": "https://github.com/google-gemini/gemini-cli/blob/main/docs/index.md"
+        },
+        {
+          "name": "常見問題/疑難排解",
+          "url": "https://github.com/google-gemini/gemini-cli/blob/main/docs/troubleshooting.md"
+        },
+        {
+          "name": "API 金鑰申請",
+          "url": "https://aistudio.google.com/apikey"
+        },
+        {
+          "name": "定價頁",
+          "url": "https://ai.google.dev/gemini-api/docs/pricing"
+        },
+        {
+          "name": "官方 Roadmap",
+          "url": "https://github.com/google-gemini/gemini-cli/blob/main/ROADMAP.md"
+        },
+        {
+          "name": "CLI 指令大全",
+          "url": "https://github.com/google-gemini/gemini-cli/blob/main/docs/cli/commands.md"
+        },
+        {
+          "name": "貢獻指南",
+          "url": "https://github.com/google-gemini/gemini-cli/blob/main/CONTRIBUTING.md"
+        }
+      ],
+      "lastUpdated": "2025-07-16T09:48:44.066Z"
+    },
+    {
+      "id": "openai-codex-cli",
+      "name": "OpenAI Codex CLI",
+      "category": "cli",
+      "overview": "OpenAI Codex CLI 是指透過 OpenAI API（現已整合於 GPT-4o、GPT-4 Turbo、GPT-3.5 Turbo 等模型）以命令列或腳本方式進行程式碼生成、解釋、自然語言處理與多模態任務。可透過官方 Python、Node.js SDK 或直接 HTTP 請求存取。",
+      "features": [
+        "程式碼生成、補全、解釋",
+        "自然語言轉程式碼",
+        "多模態支援（文字、圖片、程式碼）",
+        "Function calling 與工具整合",
+        "Agents 與自動化工作流程",
+        "串流與即時回應",
+        "官方 Python、Node.js SDK"
+      ],
+      "useCases": [
+        "以自然語言生成程式碼",
+        "程式碼解釋、重構",
+        "建立 AI 開發者工具",
+        "自動化重複性程式任務",
+        "整合 AI 於 CI/CD 流程",
+        "資料擷取與文件分析"
+      ],
+      "pricing": {
+        "plans": [
+          "**按量計費**：依模型與 tokens 數量計價",
+          "- GPT-4o：輸入 $5/百萬 tokens，輸出 $15/百萬 tokens",
+          "- GPT-4 Turbo：輸入 $10/百萬 tokens，輸出 $30/百萬 tokens",
+          "- GPT-3.5 Turbo：輸入 $0.5/百萬 tokens，輸出 $1.5/百萬 tokens",
+          "無免費額度（僅 ChatGPT 網頁有限免費）",
+          "詳細與最新價格請參考 [官方定價頁](https://platform.openai.com/docs/pricing)"
+        ],
+        "hasFree": true,
+        "minPrice": 1,
+        "maxPrice": 30,
+        "raw": "- **按量計費**：依模型與 tokens 數量計價\n  - GPT-4o：輸入 $5/百萬 tokens，輸出 $15/百萬 tokens\n  - GPT-4 Turbo：輸入 $10/百萬 tokens，輸出 $30/百萬 tokens\n  - GPT-3.5 Turbo：輸入 $0.5/百萬 tokens，輸出 $1.5/百萬 tokens\n- 無免費額度（僅 ChatGPT 網頁有限免費）\n- 詳細與最新價格請參考 [官方定價頁](https://platform.openai.com/docs/pricing)"
+      },
+      "installation": "安裝官方 Python SDK：\n```bash\npip install openai\n```\n或 Node.js SDK：\n```bash\nnpm install openai\n```\n設定 API 金鑰（於 [OpenAI Platform](https://platform.openai.com/api-keys) 取得）：\n```bash\nexport OPENAI_API_KEY=\"<your-api-key>\"\n```",
+      "basicUsage": "以 Python SDK 生成程式碼：\n```python\nimport openai\nopenai.api_key = \"<your-api-key>\"\nresponse = openai.ChatCompletion.create(\n    model=\"gpt-4o\",\n    messages=[{\"role\": \"user\", \"content\": \"請寫一個反轉字串的 Python 函式。\"}]\n)\nprint(response.choices[0].message[\"content\"])\n```\n或 Node.js SDK：\n```js\nimport OpenAI from \"openai\";\nconst openai = new OpenAI();\nconst response = await openai.chat.completions.create({\n  model: \"gpt-4o\",\n  messages: [{ role: \"user\", content: \"請寫一個反轉字串的 JavaScript 函式。\" }]\n});\nconsole.log(response.choices[0].message.content);\n```",
+      "resources": [
+        {
+          "name": "官方網站",
+          "url": "https://platform.openai.com/"
+        },
+        {
+          "name": "官方文件",
+          "url": "https://platform.openai.com/docs"
+        },
+        {
+          "name": "GitHub 儲存庫",
+          "url": "https://github.com/openai/openai-python"
+        },
+        {
+          "name": "API 定價",
+          "url": "https://platform.openai.com/docs/pricing"
+        }
+      ],
+      "lastUpdated": "2025-07-16T09:48:44.067Z"
+    },
+    {
+      "id": "rovo-dev",
+      "name": "Rovo Dev CLI",
+      "category": "cli",
+      "overview": "",
+      "features": [],
+      "useCases": [],
+      "pricing": null,
+      "installation": "1. 安裝 Atlassian CLI (ACLI)：\n   - [macOS 安裝教學](https://developer.atlassian.com/cloud/acli/guides/install-macos/)\n   - [Linux 安裝教學](https://developer.atlassian.com/cloud/acli/guides/install-linux/)\n   - [Windows 安裝教學](https://developer.atlassian.com/cloud/acli/guides/install-windows/)\n2. 申請 Beta：[Rovo Dev Beta 申請](https://www.atlassian.com/try/cloud/signup?bundle=devai)\n3. 產生 API Token：[Atlassian 個人檔案](https://id.atlassian.com/manage-profile/security/api-tokens)\n4. 終端機登入與啟動：\n\n```bash\nacli rovodev auth login\nacli rovodev run\n```",
+      "basicUsage": "- 啟動互動模式後，直接以自然語言描述需求（如「重構此函式」、「產生文件」等）\n- 於專案目錄下查詢、生成、修改程式碼\n- 整合 Jira、Confluence、Bitbucket 流程\n\n```bash\n# 登入 Atlassian 帳號\nacli rovodev auth login\n\n# 啟動 Rovo Dev 互動模式\nacli rovodev run\n```",
+      "resources": [
+        {
+          "name": "官方網站（AI 開發解決方案）",
+          "url": "https://www.atlassian.com/solutions/devops/ai-innovation"
+        },
+        {
+          "name": "Rovo Dev CLI 官方公告",
+          "url": "https://www.atlassian.com/blog/announcements/rovo-dev-command-line-interface"
+        },
+        {
+          "name": "Rovo Dev CLI 介紹與安裝指南",
+          "url": "https://community.atlassian.com/forums/Rovo-for-Software-Teams-Beta/Introducing-Rovo-Dev-CLI-AI-Powered-Development-in-your-terminal/ba-p/3043623"
+        },
+        {
+          "name": "SWE-bench 排行榜",
+          "url": "https://www.swebench.com/#full"
+        },
+        {
+          "name": "ACLI 官方文件",
+          "url": "https://developer.atlassian.com/cloud/acli/guides/introduction/"
+        },
+        {
+          "name": "Rovo Dev Beta 申請",
+          "url": "https://www.atlassian.com/try/cloud/signup?bundle=devai"
+        },
+        {
+          "name": "Rovo Dev 社群",
+          "url": "https://community.atlassian.com/forums/Rovo-Dev-AI-Agents-Beta/gh-p/rovo-dev-ai-agents"
+        },
+        {
+          "name": "問題回報表單",
+          "url": "https://rovodevagents.atlassian.net/servicedesk/customer/portal/1/group/1/create/45"
+        }
+      ],
+      "lastUpdated": "2025-07-16T09:48:44.067Z"
+    },
+    {
+      "id": "canva",
+      "name": "Canva",
+      "category": "design",
+      "overview": "",
+      "features": [],
+      "useCases": [],
+      "pricing": null,
+      "installation": "",
+      "basicUsage": "",
+      "resources": [],
+      "lastUpdated": "2025-07-16T09:48:44.067Z"
+    },
+    {
+      "id": "gamma",
+      "name": "Gamma",
+      "category": "design",
+      "overview": "Gamma 是一款 AI 設計夥伴，專為簡報、網站與文件創建而設計，結合多模型 AI 生成、即時編輯與多格式分享，協助用戶快速產出高品質內容並提升團隊協作效率。",
+      "features": [
+        "AI 生成簡報、網站、文件（從想法、大綱或現有內容）",
+        "AI 編輯：智慧佈局、內容豐富化、即時翻譯",
+        "多格式匯出（PPT、PDF、PNG、Google Slides、網站）",
+        "卡片式捲動格式，類網頁體驗",
+        "整合多種 AI 模型（Claude、ChatGPT、DALL-E、Gemini）",
+        "團隊協作與內容管理"
+      ],
+      "useCases": [
+        "簡報製作與投影片生成",
+        "社群媒體內容設計",
+        "文件創建與提案產出",
+        "網站與登陸頁快速建立",
+        "團隊內部協作與知識分享"
+      ],
+      "pricing": {
+        "plans": [
+          "免費版：US$0/人/月，20,000 AI 詞元輸入/月，最多 10 張卡片",
+          "Plus 版：US$10/人/月，US$96/人/年，50,000 AI 詞元輸入/月，最多 20 張卡片，無限 AI 創作、優先支援",
+          "Pro 版：US$20/人/月，US$180/人/年，100,000 AI 詞元輸入/月，最多 60 張卡片，高品質圖片、進階編輯、自訂網域",
+          "詳細與最新價格請參考 [定價頁面](https://gamma.app/pricing)"
+        ],
+        "hasFree": true,
+        "minPrice": 10,
+        "maxPrice": 180,
+        "raw": "- 免費版：US$0/人/月，20,000 AI 詞元輸入/月，最多 10 張卡片\n- Plus 版：US$10/人/月，US$96/人/年，50,000 AI 詞元輸入/月，最多 20 張卡片，無限 AI 創作、優先支援\n- Pro 版：US$20/人/月，US$180/人/年，100,000 AI 詞元輸入/月，最多 60 張卡片，高品質圖片、進階編輯、自訂網域\n- 詳細與最新價格請參考 [定價頁面](https://gamma.app/pricing)"
+      },
+      "installation": "- Gamma 為雲端平台，無需安裝，直接註冊帳號於 [官方網站](https://gamma.app/) 使用",
+      "basicUsage": "1. 註冊並登入 Gamma\n2. 選擇「新建簡報」、「網站」或「文件」\n3. 輸入想法或大綱，啟用 AI 生成內容\n4. 編輯、調整卡片內容，匯出或分享",
+      "resources": [
+        {
+          "name": "官方網站",
+          "url": "https://gamma.app/"
+        },
+        {
+          "name": "定價頁面",
+          "url": "https://gamma.app/pricing"
+        },
+        {
+          "name": "o8.agency 評論",
+          "url": "https://www.o8.agency/blog/unleash-your-marketing-productivity-ai-marketing-tools-gammaapp-review"
+        }
+      ],
+      "lastUpdated": "2025-07-16T09:48:44.067Z"
+    },
+    {
+      "id": "locofy",
+      "name": "Locofy.ai",
+      "category": "design",
+      "overview": "",
+      "features": [],
+      "useCases": [],
+      "pricing": null,
+      "installation": "",
+      "basicUsage": "",
+      "resources": [],
+      "lastUpdated": "2025-07-16T09:48:44.068Z"
+    },
+    {
+      "id": "napkin",
+      "name": "Napkin",
+      "category": "design",
+      "overview": "",
+      "features": [],
+      "useCases": [],
+      "pricing": null,
+      "installation": "Napkin 為雲端服務，無需安裝，直接於瀏覽器使用：\n\n```bash\n# 開始使用 Napkin\nhttps://www.napkin.ai/\n# 註冊帳號後即可登入使用\n```",
+      "basicUsage": "1. 進入 Napkin 網站並登入\n2. 貼上或輸入欲視覺化的文字內容\n3. 點擊生成，選擇喜歡的視覺化圖像\n4. 進行細部編輯（顏色、圖示、連接線等）\n5. 匯出為 PPT、PNG、PDF、SVG 或產生分享連結\n\n```bash\n# 範例：將一段流程說明轉為流程圖\n1. 貼上「用戶註冊 → 郵件驗證 → 完成啟用」\n2. 點擊生成，選擇流程圖樣式\n3. 編輯顏色與圖示，匯出為 PNG\n```",
+      "resources": [
+        {
+          "name": "官方網站",
+          "url": "https://www.napkin.ai/"
+        },
+        {
+          "name": "官方文件/說明中心",
+          "url": "https://help.napkin.ai/"
+        },
+        {
+          "name": "定價方案",
+          "url": "https://www.napkin.ai/pricing/"
+        },
+        {
+          "name": "註冊/登入",
+          "url": "https://app.napkin.ai/signin"
+        },
+        {
+          "name": "LinkedIn",
+          "url": "https://www.linkedin.com/company/napkin-ai"
+        },
+        {
+          "name": "X (Twitter)",
+          "url": "https://x.com/napkin_ai/"
+        },
+        {
+          "name": "YouTube",
+          "url": "https://www.youtube.com/@napkin_ai"
+        },
+        {
+          "name": "Instagram",
+          "url": "https://www.instagram.com/napkin_ai/"
+        },
+        {
+          "name": "TikTok",
+          "url": "https://www.tiktok.com/@napkin_ai"
+        },
+        {
+          "name": "聯絡信箱",
+          "url": "mailto:contact@napkin.ai"
+        }
+      ],
+      "lastUpdated": "2025-07-16T09:48:44.068Z"
+    },
+    {
+      "id": "claudia",
+      "name": "Claudia",
+      "category": "ide",
+      "overview": "Claudia GUI 是一款專為 Anthropic 的 Claude Code 設計的強大開源圖形化使用者介面。由 Asterisk 開發，Claudia GUI 縮短了命令列操作與視覺化簡化之間的距離，使 AI 輔助編碼更加直觀且高效。Claudia GUI 採用 Tauri、React 和 Rust 等現代技術，為開發者提供無縫的桌面體驗。",
+      "features": [
+        "**視覺化專案管理**：直觀的專案瀏覽器，支援智慧搜尋與元數據洞察。",
+        "**自訂 AI 代理**：創建專屬代理，支援沙箱執行與行為記錄。",
+        "**使用分析儀表板**：實時追蹤 Claude API 成本與效能，並提供數據匯出功能。",
+        "**進階沙箱安全性**：作業系統級別的保護（Linux seccomp、macOS Seatbelt）。",
+        "**時間旅行功能**：支援檢查點、分支與視覺化時間軸導航。",
+        "**MCP 伺服器管理**：集中管理模型上下文協議伺服器，支援配置導入與連線測試。"
+      ],
+      "useCases": [
+        "使用視覺化介面增強 Claude Code 工作流程。",
+        "管理多個互動式會話與專案。",
+        "創建自訂 AI 代理以自動化重複性任務。",
+        "監控 API 成本並優化 AI 編碼工作流程。"
+      ],
+      "pricing": {
+        "plans": [
+          "**免費且開源**：採用 AGPL 授權。",
+          "**Claude Code 整合**：需使用 Anthropic API，並根據使用量單獨計費。"
+        ],
+        "hasFree": true,
+        "minPrice": null,
+        "maxPrice": null,
+        "raw": "- **免費且開源**：採用 AGPL 授權。\n- **Claude Code 整合**：需使用 Anthropic API，並根據使用量單獨計費。"
+      },
+      "installation": "Claudia GUI 支援 macOS、Linux 和 Windows。請按照以下步驟安裝：\n\n```bash\n# 複製儲存庫\ngit clone https://github.com/getAsterisk/claudia.git\n\n# 安裝前端依賴\nbun install\n\n# 構建應用程式\nbun run tauri build\n```",
+      "basicUsage": "1. 啟動 Claudia GUI，選擇「CC Agents」或「CC Projects」。\n2. 配置 Claude API 憑證並連接至現有專案。\n3. 使用視覺化介面管理會話、創建代理並監控分析。\n\n```bash\n# 範例：啟動 Claudia GUI\n./src-tauri/target/release/claudia\n```",
+      "resources": [],
+      "lastUpdated": "2025-07-16T09:48:44.068Z"
+    },
+    {
+      "id": "cursor",
+      "name": "Cursor",
+      "category": "ide",
+      "overview": "Cursor 是一款 AI 驅動的程式碼編輯器，結合自訂與前沿 AI 模型，支援多行自動完成、自然語言編輯、程式碼庫理解與錯誤修復，適合個人與團隊提升開發效率。",
+      "features": [
+        "Tab 自動完成（多行、智慧重寫）",
+        "程式碼庫理解與問答",
+        "自然語言提示編輯與重構",
+        "Bug 修復代理（Agent）",
+        "程式碼庫分析與 README 生成",
+        "隱私模式（SOC 2 認證）",
+        "組織管理、集中計費、SAML/OIDC SSO",
+        "支援多種 AI 模型（OpenAI、Claude、Gemini 等）"
+      ],
+      "useCases": [
+        "加速個人與團隊程式碼編寫",
+        "程式碼庫分析、文檔自動生成",
+        "調試與錯誤修復",
+        "學習與理解程式碼概念"
+      ],
+      "pricing": {
+        "plans": [
+          "Hobby（個人）：免費，有限代理請求與 Tab 完成",
+          "Pro（個人）：$20/月，$192/年（$16/月），無限 Tab 完成、擴展代理、Bug Bot、最大上下文",
+          "Ultra（個人）：$200/月，$2400/年，Pro 全部功能、20 倍 AI 用量、PR 索引",
+          "Teams：$40/用戶/月，$384/用戶/年（$32/月），Pro 全部功能、組織管理、集中計費、SSO",
+          "Enterprise：聯絡銷售，Teams 全部功能、更多用量、SCIM、存取控制、優先支援",
+          "詳細與最新價格請參考 [定價頁](https://cursor.com/pricing)"
+        ],
+        "hasFree": true,
+        "minPrice": 16,
+        "maxPrice": 2400,
+        "raw": "- Hobby（個人）：免費，有限代理請求與 Tab 完成\n- Pro（個人）：$20/月，$192/年（$16/月），無限 Tab 完成、擴展代理、Bug Bot、最大上下文\n- Ultra（個人）：$200/月，$2400/年，Pro 全部功能、20 倍 AI 用量、PR 索引\n- Teams：$40/用戶/月，$384/用戶/年（$32/月），Pro 全部功能、組織管理、集中計費、SSO\n- Enterprise：聯絡銷售，Teams 全部功能、更多用量、SCIM、存取控制、優先支援\n- 詳細與最新價格請參考 [定價頁](https://cursor.com/pricing)"
+      },
+      "installation": "- 於 [Cursor 官方網站](https://cursor.com/) 下載安裝程式，支援 Windows、macOS、Linux\n- 註冊帳號並登入，即可開始使用",
+      "basicUsage": "1. 下載並安裝 Cursor\n2. 開啟專案資料夾，啟用 AI 自動完成與代理功能\n3. 於編輯器中輸入自然語言提示或使用 Tab 完成程式碼",
+      "resources": [
+        {
+          "name": "官方網站",
+          "url": "https://cursor.com/"
+        },
+        {
+          "name": "定價頁",
+          "url": "https://cursor.com/pricing"
+        },
+        {
+          "name": "EngineLabs AI 評論",
+          "url": "https://blog.enginelabs.ai/cursor-ai-an-in-depth-review"
+        }
+      ],
+      "lastUpdated": "2025-07-16T09:48:44.068Z"
+    },
+    {
+      "id": "jetbrains-ai-assistant",
+      "name": "JetBrains AI Assistant",
+      "category": "ide",
+      "overview": "",
+      "features": [],
+      "useCases": [],
+      "pricing": null,
+      "installation": "- 於 JetBrains IDE Marketplace 安裝「AI Assistant」外掛，或於 IDE 2025.1 以上版本內建\n- 啟用後登入 JetBrains 帳號，依指示啟用免費或付費授權\n- 企業用戶可依需求設定自有 LLM 與資料控管\n\n```bash\n# 於 JetBrains IDE 內搜尋安裝 AI Assistant 外掛\n# 或直接於 Marketplace 安裝\n```",
+      "basicUsage": "- 啟用後於編輯器內直接獲得 AI 補全、重構、測試生成等功能\n- 透過 AI 聊天視窗與 AI 助理互動，詢問程式碼、架構、除錯等問題\n- 可自訂提示、切換 LLM、調整 AI 行為\n\n```bash\n# 範例：於編輯器內自動補全程式碼\n# 範例：AI 聊天視窗輸入「請解釋這段程式碼」\n```",
+      "resources": [
+        {
+          "name": "AI Assistant 官方網站",
+          "url": "https://www.jetbrains.com/ai/"
+        },
+        {
+          "name": "AI Assistant 功能介紹",
+          "url": "https://www.jetbrains.com/ai/features/"
+        },
+        {
+          "name": "AI Assistant 授權與訂閱",
+          "url": "https://www.jetbrains.com/help/ai-assistant/licensing-and-subscriptions.html"
+        },
+        {
+          "name": "Rider 官方網站",
+          "url": "https://www.jetbrains.com/rider/"
+        },
+        {
+          "name": "Rider 定價頁面",
+          "url": "https://www.jetbrains.com/rider/buy/"
+        },
+        {
+          "name": "JetBrains AI Assistant 外掛",
+          "url": "https://plugins.jetbrains.com/plugin/22282-jetbrains-ai-assistant"
+        },
+        {
+          "name": "官方文件",
+          "url": "https://www.jetbrains.com/help/ai-assistant/"
+        }
+      ],
+      "lastUpdated": "2025-07-16T09:48:44.069Z"
+    },
+    {
+      "id": "kiro",
+      "name": "Kiro",
+      "category": "ide",
+      "overview": "Kiro 是一款專為 AI 驅動軟體開發設計的 IDE 與 agent coding 平台，主打「spec-driven development」與多代理人協作，協助開發者從原型到產品快速落地。Kiro 以結構化規格、AI 代理人自動化、MCP 整合、VS Code 相容等特性，讓 AI coding 更高效、可控且工程化。",
+      "features": [
+        "規格驅動開發（Spec-driven development）：將自然語言 prompt 轉為明確需求、系統設計與可執行任務。",
+        "AI 代理人協作：可自訂 agent hooks，根據事件（如儲存檔案）自動執行生成文件、單元測試、優化程式等任務。",
+        "多模態聊天與上下文管理：支援文字、圖片等多模態輸入，並能理解大型專案脈絡。",
+        "MCP 整合：原生支援連接文件、資料庫、API 等，方便整合外部資源。",
+        "VS Code 相容：支援 Open VSX 外掛、主題與設定，降低遷移門檻。",
+        "企業級安全與隱私：完整的權限、隱私與安全設計。",
+        "自動化與 autopilot 模式：可讓 Kiro 自主執行大型任務，開發者可隨時審核與介入。"
+      ],
+      "useCases": [
+        "以自然語言描述需求，快速產生規格、架構與任務分解",
+        "讓 AI 代理人自動生成程式碼、測試、文件，並根據觸發條件自動執行",
+        "團隊協作下，結合規格、審查與自動化，提升大型專案開發效率",
+        "匯入 VS Code 設定與外掛，無痛遷移開發環境",
+        "整合外部 API、資料庫，打造端到端 AI 應用"
+      ],
+      "pricing": {
+        "plans": [
+          "目前處於預覽階段，免費使用",
+          "未來定價請關注 [官方定價頁](https://kiro.dev/pricing/)"
+        ],
+        "hasFree": true,
+        "minPrice": null,
+        "maxPrice": null,
+        "raw": "- 目前處於預覽階段，免費使用\n- 未來定價請關注 [官方定價頁](https://kiro.dev/pricing/)"
+      },
+      "installation": "- 僅支援 macOS，前往 [下載頁](https://kiro.dev/downloads/) 下載安裝包\n- 安裝後可直接啟動，依指示登入/註冊帳號\n- 可匯入 VS Code 設定與外掛，詳見 [遷移指南](https://kiro.dev/docs/guides/migrating-from-vscode/)",
+      "basicUsage": "- 啟動 Kiro，建立新專案或開啟現有專案\n- 以自然語言輸入需求，Kiro 會協助產生規格、分解任務\n- 可設定 agent hooks，自動化常見開發任務（如自動產生測試、文件等）\n- 透過多模態聊天與 AI 代理人協作，快速完成開發、審查與部署\n- 進階用法請參考 [官方教學](https://kiro.dev/docs/getting-started/first-project/)",
+      "resources": [
+        {
+          "name": "官方網站",
+          "url": "https://kiro.dev/"
+        },
+        {
+          "name": "官方文件",
+          "url": "https://kiro.dev/docs/"
+        },
+        {
+          "name": "定價方案",
+          "url": "https://kiro.dev/pricing/"
+        },
+        {
+          "name": "下載頁",
+          "url": "https://kiro.dev/downloads/"
+        },
+        {
+          "name": "遷移指南",
+          "url": "https://kiro.dev/docs/guides/migrating-from-vscode/"
+        },
+        {
+          "name": "常見問題",
+          "url": "https://kiro.dev/faq/"
+        },
+        {
+          "name": "官方部落格",
+          "url": "https://kiro.dev/blog/"
+        },
+        {
+          "name": "GitHub Issues 反饋",
+          "url": "https://github.com/kirodotdev/Kiro/issues/new/choose"
+        },
+        {
+          "name": "Discord 社群",
+          "url": "https://discord.gg/kirodotdev"
+        }
+      ],
+      "lastUpdated": "2025-07-16T09:48:44.069Z"
+    },
+    {
+      "id": "theia-ide",
+      "name": "Theia IDE",
+      "category": "ide",
+      "overview": "",
+      "features": [],
+      "useCases": [],
+      "pricing": null,
+      "installation": "- 以 Node.js/npm 安裝（建議 Node.js 18+）：\n\n```bash\nnpm install -g @theia/cli\n# 建立新專案\ntheia create my-workspace\n# 啟動本地伺服器\ncd my-workspace\nnpx theia start\n```\n- 亦可透過 Docker、雲端平台或下載桌面版（詳見官方文件）",
+      "basicUsage": "- 啟動後於瀏覽器或桌面應用開啟專案，安裝所需擴充套件\n- 啟用 Theia Coder 或其他 AI 代理，於編輯器內輸入自然語言描述需求\n\n```bash\n# 啟動 Theia IDE 本地伺服器\nnpx theia start\n```",
+      "resources": [
+        {
+          "name": "官方網站",
+          "url": "https://theia-ide.org/"
+        },
+        {
+          "name": "官方文件",
+          "url": "https://theia-ide.org/docs/"
+        },
+        {
+          "name": "GitHub Repository",
+          "url": "https://github.com/eclipse-theia/theia"
+        },
+        {
+          "name": "EclipseSource 部落格：AI 驅動的 Theia IDE 介紹",
+          "url": "https://eclipsesource.com/blogs/2025/03/13/introducing-the-ai-powered-theia-ide/"
+        },
+        {
+          "name": "EclipseSource 部落格：VS Code vs. Theia IDE",
+          "url": "https://eclipsesource.com/blogs/2024/07/12/vs-code-vs-theia-ide/"
+        }
+      ],
+      "lastUpdated": "2025-07-16T09:48:44.069Z"
+    },
+    {
+      "id": "trae",
+      "name": "Trae",
+      "category": "ide",
+      "overview": "",
+      "features": [],
+      "useCases": [],
+      "pricing": null,
+      "installation": "- 官方網站註冊帳號即可使用雲端版\n- 桌面版/本地安裝請參考官方文件（如有）\n\n```bash\n# 雲端版：瀏覽器註冊登入即可\n# 桌面版：依官方指示下載安裝\n```",
+      "basicUsage": "- 登入後可建立/選擇專案，配置 AI 代理與工具\n- 於編輯器內輸入需求，AI 代理自動協作完成任務\n\n```bash\n# 於雲端介面建立新專案，啟用代理團隊\n# 於編輯器內輸入自然語言描述需求\n```",
+      "resources": [
+        {
+          "name": "Trae AI 官方網站",
+          "url": "https://www.trae.ai/"
+        },
+        {
+          "name": "官方定價頁面",
+          "url": "https://www.trae.ai/pricing"
+        },
+        {
+          "name": "官方文件/FAQ",
+          "url": "https://www.trae.ai/faq"
+        },
+        {
+          "name": "GitHub Repository",
+          "url": "https://github.com/trae-ai"
+        },
+        {
+          "name": "Reddit 評論",
+          "url": "https://www.reddit.com/r/TraeIDE/comments/1id41o2/using_traeai_for_4_days_now_my_honest_review/"
+        }
+      ],
+      "lastUpdated": "2025-07-16T09:48:44.069Z"
+    },
+    {
+      "id": "windsurf",
+      "name": "Windsurf",
+      "category": "ide",
+      "overview": "",
+      "features": [],
+      "useCases": [],
+      "pricing": null,
+      "installation": "- 前往 [官方網站](https://windsurf.com/) 註冊帳號並下載桌面版（支援 macOS/Windows/Linux）\n- 依官方指示安裝並登入帳號\n- 進階設定請參考官方文件\n\n```bash\n# 桌面版：下載安裝後啟動 Windsurf\n# 依官方指示登入帳號並啟用功能\n```",
+      "basicUsage": "- 啟動桌面應用後可建立/選擇專案，啟用 Cascade 代理與 Windsurf Tab\n- 上傳圖像自動生成前端程式碼\n- 於編輯器內輸入需求，AI 代理自動協作完成任務\n\n```bash\n# 建立新專案，啟用代理團隊\n# 上傳設計圖像自動生成 CSS/HTML/JS\n```",
+      "resources": [
+        {
+          "name": "Windsurf AI 官方網站",
+          "url": "https://windsurf.com/"
+        },
+        {
+          "name": "官方定價頁面",
+          "url": "https://windsurf.com/pricing"
+        },
+        {
+          "name": "官方文件/FAQ",
+          "url": "https://windsurf.com/docs"
+        },
+        {
+          "name": "GitHub Repository",
+          "url": "https://github.com/windsurf-ai"
+        },
+        {
+          "name": "DataCamp 教學",
+          "url": "https://www.datacamp.com/tutorial/windsurf-ai-agentic-code-editor"
+        }
+      ],
+      "lastUpdated": "2025-07-16T09:48:44.070Z"
+    },
+    {
+      "id": "brave-search-mcp",
+      "name": "Brave Search MCP",
+      "category": "mcp",
+      "overview": "",
+      "features": [],
+      "useCases": [],
+      "pricing": null,
+      "installation": "",
+      "basicUsage": "",
+      "resources": [
+        {
+          "name": "Brave Search API 官方指南",
+          "url": "https://brave.com/zh-tw/search/api/guides/use-with-claude-desktop-with-mcp/"
+        },
+        {
+          "name": "Brave Search API 文件",
+          "url": "https://search.brave.com/api/docs"
+        }
+      ],
+      "lastUpdated": "2025-07-16T09:48:44.070Z"
+    },
+    {
+      "id": "context7-mcp",
+      "name": "Context 7 MCP",
+      "category": "mcp",
+      "overview": "Context 7 MCP 是由 Upstash 開發的一個伺服器與 API 平台，用於管理模型上下文協議（MCP）。它提供了一個集中化的解決方案，用於整合與管理上下文感知的 AI 模型，實現無縫協作與高效模型部署。",
+      "features": [
+        "集中管理模型上下文協議。",
+        "與多種工具和庫整合。",
+        "支援上下文感知 AI 模型操作的 API。",
+        "由 Upstash 開發與維護。"
+      ],
+      "useCases": [
+        "在集中化平台中管理上下文感知 AI 模型。",
+        "將 MCP 整合到現有的 AI 工具和工作流程中。",
+        "部署與監控上下文感知 AI 模型。"
+      ],
+      "pricing": {
+        "plans": [
+          "官方網站未明確提及定價細節。請聯繫 Upstash 獲取更多資訊。"
+        ],
+        "hasFree": false,
+        "minPrice": null,
+        "maxPrice": null,
+        "raw": "- 官方網站未明確提及定價細節。請聯繫 Upstash 獲取更多資訊。"
+      },
+      "installation": "",
+      "basicUsage": "### 主要用法\n1. 在 AI 助理或開發工具的 prompt 中加入 `use context7`，即可自動取得最新的程式庫文件與範例。\n2. 若已知特定程式庫，可直接指定 Context7 ID，例如 `/supabase/supabase`，以取得該庫的 API 與說明。\n3. 可在 MCP 支援的 IDE、CLI 或雲端平台中，透過 MCP 協議自動串接 Context7 取得即時文件。\n\n#### Prompt 範例：\n```\n# 取得 Next.js JWT 驗證中介軟體範例\nCreate a Next.js middleware that checks for a valid JWT in cookies and redirects unauthenticated users to /login. use context7\n\n# 直接指定程式庫\nimplement basic authentication with supabase. use library /supabase/supabase for api and docs\n```\n\n### 進階用法\n- 可在 MCP 客戶端（如 Cursor、Windsurf、Claude Desktop 等）設定自動規則，讓所有程式碼、API、設定等問題自動呼叫 Context7。\n- 也可透過 API 直接查詢文件與範例，或在 MCP Inspector 測試。",
+      "resources": [],
+      "lastUpdated": "2025-07-16T09:48:44.070Z"
+    },
+    {
+      "id": "fetch-mcp",
+      "name": "Fetch MCP",
+      "category": "mcp",
+      "overview": "",
+      "features": [],
+      "useCases": [],
+      "pricing": null,
+      "installation": "",
+      "basicUsage": "",
+      "resources": [],
+      "lastUpdated": "2025-07-16T09:48:44.070Z"
+    },
+    {
+      "id": "memory-mcp",
+      "name": "Memory MCP",
+      "category": "mcp",
+      "overview": "",
+      "features": [],
+      "useCases": [],
+      "pricing": null,
+      "installation": "",
+      "basicUsage": "",
+      "resources": [],
+      "lastUpdated": "2025-07-16T09:48:44.071Z"
+    },
+    {
+      "id": "sequential-thinking-mcp",
+      "name": "Sequential Thinking MCP",
+      "category": "mcp",
+      "overview": "",
+      "features": [],
+      "useCases": [],
+      "pricing": null,
+      "installation": "",
+      "basicUsage": "",
+      "resources": [],
+      "lastUpdated": "2025-07-16T09:48:44.071Z"
+    },
+    {
+      "id": "task-master-mcp",
+      "name": "Task Master MCP",
+      "category": "mcp",
+      "overview": "Task Master MCP 是一套專為軟體開發團隊設計的 AI 任務管理與自動化協作系統，支援 MCP（Model Control Protocol）協議。它可與 Cursor、VS Code、Windsurf 等多種編輯器無縫整合，讓開發者能以 AI 助理協助規劃、拆解、追蹤與執行專案任務。",
+      "features": [
+        "AI 驅動的 PRD（產品需求文件）解析與任務拆解",
+        "支援多種 AI 模型（Claude、OpenAI、Gemini、Perplexity、xAI 等）",
+        "與 Cursor、VS Code、Windsurf、Roo 等 IDE 整合",
+        "互動式任務規劃、追蹤與研究",
+        "支援 MCP 協議，可自動串接多種 AI 工具",
+        "自訂規則與專案範本"
+      ],
+      "useCases": [
+        "解析 PRD 並自動產生可執行開發任務",
+        "AI 協助規劃下一步、追蹤進度與任務分配",
+        "研究最佳實踐、技術遷移策略與自動化重複性任務",
+        "在 IDE 內直接與 AI 助理互動，提升開發效率"
+      ],
+      "pricing": {
+        "plans": [
+          "採用 MIT with Commons Clause 授權，開源免費（禁止作為雲端服務銷售）"
+        ],
+        "hasFree": true,
+        "minPrice": null,
+        "maxPrice": null,
+        "raw": "- 採用 MIT with Commons Clause 授權，開源免費（禁止作為雲端服務銷售）"
+      },
+      "installation": "建議以 MCP 模式整合於支援的編輯器：\n\n1. 於專案或全域 MCP 設定檔（如 `.cursor/mcp.json` 或 `.vscode/mcp.json`）加入：\n```json\n{\n  \"servers\": {\n    \"taskmaster-ai\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"--package=task-master-ai\", \"task-master-ai\"],\n      \"env\": {\n        \"ANTHROPIC_API_KEY\": \"YOUR_ANTHROPIC_API_KEY_HERE\",\n        \"OPENAI_API_KEY\": \"YOUR_OPENAI_KEY_HERE\"\n        // ...其他支援的金鑰\n      },\n      \"type\": \"stdio\"\n    }\n  }\n}\n```\n2. 於 AI 編輯器啟用 Task Master MCP，並依需求設定 API 金鑰。",
+      "basicUsage": "### 常用指令與互動\n- 初始化專案：\n```bash\n# 全域安裝\nnpm install -g task-master-ai\n# 初始化\ntask-master init\n```\n- 解析 PRD 並產生任務：\n```bash\ntask-master parse-prd your-prd.txt\n```\n- 查詢任務、追蹤進度：\n```bash\ntask-master list\ntask-master next\ntask-master show 1,3,5\n```\n- 研究與自動化：\n```bash\ntask-master research \"請查找 JWT 驗證最佳實踐\"\n```\n- 於 AI 聊天視窗互動：\n  - 「請解析 scripts/prd.txt 的 PRD」\n  - 「下一步該做什麼？」\n  - 「請協助我實作第 3 個任務」\n  - 「請研究 React Query v5 遷移策略」",
+      "resources": [],
+      "lastUpdated": "2025-07-16T09:48:44.071Z"
+    },
+    {
+      "id": "notebooklm",
+      "name": "NotebookLM",
+      "category": "notebook",
+      "overview": "",
+      "features": [],
+      "useCases": [],
+      "pricing": null,
+      "installation": "",
+      "basicUsage": "",
+      "resources": [],
+      "lastUpdated": "2025-07-16T09:48:44.071Z"
+    },
+    {
+      "id": "notion",
+      "name": "Notion",
+      "category": "notebook",
+      "overview": "",
+      "features": [],
+      "useCases": [],
+      "pricing": null,
+      "installation": "",
+      "basicUsage": "",
+      "resources": [],
+      "lastUpdated": "2025-07-16T09:48:44.072Z"
+    },
+    {
+      "id": "augment-code",
+      "name": "Augment Code",
+      "category": "plugin",
+      "overview": "",
+      "features": [],
+      "useCases": [],
+      "pricing": null,
+      "installation": "",
+      "basicUsage": "",
+      "resources": [],
+      "lastUpdated": "2025-07-16T09:48:44.072Z"
+    },
+    {
+      "id": "github-copilot",
+      "name": "GitHub Copilot",
+      "category": "plugin",
+      "overview": "GitHub Copilot 是一款由 GitHub 與 OpenAI 合作開發的 AI 編程助理，深度整合於多種 IDE，能根據上下文自動補全程式碼、生成整段邏輯、協助除錯與測試，並支援聊天互動與多檔案協作，大幅提升開發效率。",
+      "features": [
+        "AI 代理模式：從單一提示規劃、構建、測試、修復程式碼",
+        "即時更新 AI 模型，提供上下文感知建議",
+        "單行與多行程式碼自動完成",
+        "Copilot 編輯：多檔案編輯、程式碼審查、預覽與回溯",
+        "Copilot Chat：即時程式碼查詢、調試、單元測試生成",
+        "自動產生提交訊息，協助版本控制",
+        "支援多種 IDE（VS Code、JetBrains、Neovim 等）"
+      ],
+      "useCases": [
+        "軟體開發全流程（編寫、調試、測試、版本控制）",
+        "加速個人與團隊開發速度",
+        "自動化單元測試與整合測試",
+        "程式碼審查與重構",
+        "新手學習與程式碼解釋"
+      ],
+      "pricing": {
+        "plans": [
+          "Copilot Pro：$10/月 或 $100/年，無限代理/聊天、無限程式碼完成、6倍高級請求、30天免費試用",
+          "Copilot Pro+：$39/月 或 $390/年，Pro 所有功能、存取所有模型、30倍高級請求、無試用",
+          "高級請求超額：$0.04/次",
+          "詳細與最新價格請參考 [定價頁](https://docs.github.com/en/copilot/concepts/copilot-billing/about-billing-for-individual-copilot-plans)"
+        ],
+        "hasFree": true,
+        "minPrice": 10,
+        "maxPrice": 390,
+        "raw": "- Copilot Pro：$10/月 或 $100/年，無限代理/聊天、無限程式碼完成、6倍高級請求、30天免費試用\n- Copilot Pro+：$39/月 或 $390/年，Pro 所有功能、存取所有模型、30倍高級請求、無試用\n- 高級請求超額：$0.04/次\n- 詳細與最新價格請參考 [定價頁](https://docs.github.com/en/copilot/concepts/copilot-billing/about-billing-for-individual-copilot-plans)"
+      },
+      "installation": "- 於 [GitHub Copilot 官方網站](https://github.com/features/copilot) 選擇對應 IDE 擴充套件安裝\n- 登入 GitHub 帳號並啟用 Copilot 訂閱",
+      "basicUsage": "1. 在 VS Code/JetBrains/Neovim 安裝 Copilot 擴充套件\n2. 開啟專案，於編輯器中輸入程式碼，Copilot 會自動補全\n3. 啟用 Copilot Chat，輸入自然語言查詢、除錯或生成測試",
+      "resources": [
+        {
+          "name": "官方網站",
+          "url": "https://github.com/features/copilot"
+        },
+        {
+          "name": "定價頁",
+          "url": "https://docs.github.com/en/copilot/concepts/copilot-billing/about-billing-for-individual-copilot-plans"
+        }
+      ],
+      "lastUpdated": "2025-07-16T09:48:44.072Z"
+    },
+    {
+      "id": "roo-code",
+      "name": "Roo Code",
+      "category": "plugin",
+      "overview": "",
+      "features": [],
+      "useCases": [],
+      "pricing": null,
+      "installation": "",
+      "basicUsage": "",
+      "resources": [],
+      "lastUpdated": "2025-07-16T09:48:44.072Z"
+    },
+    {
+      "id": "felo",
+      "name": "Felo AI Search",
+      "category": "search",
+      "overview": "",
+      "features": [],
+      "useCases": [],
+      "pricing": null,
+      "installation": "",
+      "basicUsage": "",
+      "resources": [],
+      "lastUpdated": "2025-07-16T09:48:44.073Z"
+    },
+    {
+      "id": "perplexity",
+      "name": "Perplexity",
+      "category": "search",
+      "overview": "",
+      "features": [],
+      "useCases": [],
+      "pricing": null,
+      "installation": "- 直接於 [https://www.perplexity.ai/](https://www.perplexity.ai/) 註冊帳號即可使用\n- iOS/Android 請於 App Store/Google Play 下載官方 App\n- API 與 Sonar 服務請參考[官方文件](https://docs.perplexity.ai/)\n\n```bash\n# 無需安裝，直接註冊或以 Google/Apple/Email 登入\n# 行動裝置請於商店搜尋「Perplexity」下載\n```",
+      "basicUsage": "- 登入後於搜尋框輸入問題或貼上圖片，即可獲得 AI 回答與來源引用\n- 切換 Pro Search 可使用進階模型與功能\n- 建立空間、圖書館管理主題與知識\n- 企業用戶可整合內部檔案、設定團隊權限\n\n```bash\n# 範例：搜尋「2025 年 AI 趨勢」\n# 範例：上傳 PDF 檔案並詢問內容摘要（Pro 版）\n```",
+      "resources": [
+        {
+          "name": "Perplexity 官方網站",
+          "url": "https://www.perplexity.ai/"
+        },
+        {
+          "name": "Perplexity Pro 方案",
+          "url": "https://www.perplexity.ai/pro"
+        },
+        {
+          "name": "Perplexity 企業方案",
+          "url": "https://www.perplexity.ai/enterprise"
+        },
+        {
+          "name": "Perplexity API 文件",
+          "url": "https://docs.perplexity.ai/"
+        },
+        {
+          "name": "金融搜尋",
+          "url": "https://www.perplexity.ai/finance"
+        },
+        {
+          "name": "旅遊搜尋",
+          "url": "https://www.perplexity.ai/travel"
+        },
+        {
+          "name": "學術搜尋",
+          "url": "https://www.perplexity.ai/academic"
+        },
+        {
+          "name": "空間模板",
+          "url": "https://www.perplexity.ai/spaces/templates/"
+        },
+        {
+          "name": "圖書館",
+          "url": "https://www.perplexity.ai/library"
+        },
+        {
+          "name": "官方 FAQ",
+          "url": "https://www.perplexity.ai/hub/faq"
+        }
+      ],
+      "lastUpdated": "2025-07-16T09:48:44.073Z"
+    },
+    {
+      "id": "warp-ai",
+      "name": "Warp AI",
+      "category": "terminal",
+      "overview": "",
+      "features": [],
+      "useCases": [],
+      "pricing": null,
+      "installation": "- 前往 [官方網站](https://www.warp.dev/download) 下載對應平台的 Warp 終端\n- 安裝後登入帳號並啟用 Warp AI\n\n```bash\n# 以 Homebrew 安裝（macOS）\nbrew install --cask warp\n# 下載 Windows/Linux 版請見官方網站\n```",
+      "basicUsage": "- 啟動 Warp 終端後，於輸入列直接輸入自然語言描述需求\n- 例如：「列出目前資料夾所有檔案並顯示詳細資訊」\n- Warp AI 會自動轉換為對應指令並可直接執行\n\n```bash\n# 例：自然語言轉指令\nls -al\n\n# 例：AI 解釋指令\nwarp explain \"tar -czvf archive.tar.gz folder/\"\n```",
+      "resources": [
+        {
+          "name": "Warp AI 官方網站",
+          "url": "https://www.warp.dev/warp-ai"
+        },
+        {
+          "name": "官方定價頁面",
+          "url": "https://www.warp.dev/pricing"
+        },
+        {
+          "name": "官方文件",
+          "url": "https://docs.warp.dev/"
+        },
+        {
+          "name": "GitHub Repository",
+          "url": "https://github.com/warpdotdev/Warp"
+        }
+      ],
+      "lastUpdated": "2025-07-16T09:48:44.073Z"
+    }
+  ]
+}

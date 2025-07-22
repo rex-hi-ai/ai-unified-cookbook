@@ -1,0 +1,36 @@
+{
+  "name": "ai-tools-survey-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "dev:with-base-path": "cross-env NODE_ENV=development next dev -p 3000",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "generate-data": "node scripts/generate-data.js"
+  },
+  "dependencies": {
+    "next": "15.1.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "typescript": "^5",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "tailwindcss": "^3.4.0",
+    "autoprefixer": "^10.0.1",
+    "postcss": "^8",
+    "gray-matter": "^4.0.3",
+    "marked": "^14.1.2",
+    "lucide-react": "^0.263.1",
+    "framer-motion": "^11.11.17",
+    "fuse.js": "^7.0.0",
+    "clsx": "^2.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "15.1.0",
+    "@types/marked": "^6.0.0"
+  }
+}
