@@ -31,6 +31,7 @@ jobs:
         with:
           node-version: '20.x'
           cache: 'npm'
+          cache-dependency-path: web-interface/package-lock.json
 
       # 自動設定 Next.js 的 basePath 和關閉圖片優化
       - name: Setup Pages
