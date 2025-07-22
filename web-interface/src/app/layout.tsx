@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'HI-AI | AI Tools Survey',
@@ -25,6 +26,8 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  // 取得 basePath，確保靜態部署於子目錄時路徑正確
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || ''
   return (
     <html lang="zh-TW" className="scroll-smooth">
       <body className="min-h-screen bg-gray-50">
@@ -42,18 +45,18 @@ export default function RootLayout({
                   </div>
                 </div>
                 <nav className="flex items-center space-x-6">
-                  <a 
-                    href="/" 
+                  <Link 
+                    href={`${basePath}/`} 
                     className="text-gray-600 hover:text-gray-900 transition-colors font-medium"
                   >
                     工具庫
-                  </a>
-                  <a 
-                    href="/prompts" 
+                  </Link>
+                  <Link 
+                    href={`${basePath}/prompts`} 
                     className="text-gray-600 hover:text-gray-900 transition-colors font-medium"
                   >
                     提示詞
-                  </a>
+                  </Link>
                 </nav>
               </div>
             </div>
