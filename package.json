@@ -1,0 +1,13 @@
+{
+  "name": "ai-unified-cookbook",
+  "version": "1.0.0",
+  "description": "AI tools survey and documentation",
+  "private": true,
+  "workspaces": [
+    "web-interface"
+  ],
+  "scripts": {
+    "dev": "cd web-interface && npm run dev",
+    "build": "cd web-interface && npm run build"
+  }
+}
