@@ -30,14 +30,23 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20.x'
-          cache: 'npm'
-          cache-dependency-path: './web-interface/package-lock.json'
 
       # 自動設定 Next.js 的 basePath 和關閉圖片優化
       - name: Setup Pages
         uses: actions/configure-pages@v5
         with:
           static_site_generator: next
+
+      # 手動快取 node_modules 和 .next/cache
+      - name: Cache dependencies
+        uses: actions/cache@v4
+        with:
+          path: |
+            web-interface/node_modules
+            web-interface/.next/cache
+          key: ${{ runner.os }}-nextjs-${{ hashFiles('web-interface/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-nextjs-
 
       - name: Install dependencies
         working-directory: ./web-interface
