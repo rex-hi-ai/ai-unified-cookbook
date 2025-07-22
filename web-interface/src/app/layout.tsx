@@ -39,7 +39,7 @@ export default function RootLayout({
                 </div>
                 <nav className="flex items-center space-x-4">
                   <a 
-                    href="https://github.com/larry.nung/ai-unified-cookbook" 
+                    href="https://github.com/rex-hi-ai/ai-unified-cookbook" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="text-gray-600 hover:text-gray-900 transition-colors"
@@ -59,7 +59,7 @@ export default function RootLayout({
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
               <div className="text-center text-gray-600">
                 <p className="mb-2">
-                  © 2024 AI 工具大全 | 開源專案，歡迎貢獻
+                  © 2025 AI 工具大全 | 開源專案，歡迎貢獻
                 </p>
                 <p className="text-sm">
                   資料持續更新，如有錯誤或建議請透過 GitHub 回報
