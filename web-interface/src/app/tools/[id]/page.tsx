@@ -5,9 +5,9 @@ import Link from 'next/link';
 import { ArrowLeft, ExternalLink, Clock, DollarSign } from 'lucide-react';
 
 interface Props {
-  params: {
+  params: Promise<{
     id: string;
-  };
+  }>;
 }
 
 // Generate static params for all tools
