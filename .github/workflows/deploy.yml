@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'web-interface/**'
+      - 'docs/survey/**'
   workflow_dispatch:
 
 # 設定權限
