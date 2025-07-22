@@ -81,10 +81,10 @@ export default function HomePage({ toolsData }: HomePageProps) {
         totalResults={filteredTools.length}
       />
 
-      {/* 工具列表 */}
+      {/* 工具庫列表 */}
       <section id="tools-section" className="py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-4">
             {filteredTools.map(tool => (
               <ToolCard key={tool.id} tool={tool} />
             ))}

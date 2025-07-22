@@ -1,5 +1,5 @@
-import HomePage from '@/components/HomePage';
-import { ToolsData } from '@/types';
+import SimplifiedToolPage from '@/components/SimplifiedToolPage';
+import { ToolsData, Tool } from '@/types';
 import fs from 'fs';
 import path from 'path';
 
@@ -42,9 +42,30 @@ async function getToolsData(): Promise<ToolsData> {
 export default async function Page() {
   const toolsData = await getToolsData();
   
+  // Extract tools from all categories (if available) or use root-level tools
+  const extractedTools: Tool[] = [];
+  if (toolsData.categories) {
+    Object.values(toolsData.categories).forEach((category) => {
+      if (category.tools && Array.isArray(category.tools)) {
+        extractedTools.push(...category.tools);
+      }
+    });
+  }
+  
+  const finalTools = extractedTools.length > 0 ? extractedTools : (toolsData.tools || []);
+  
   return (
     <div className="min-h-screen">
-      <HomePage toolsData={toolsData} />
+      <SimplifiedToolPage toolsData={{
+        categories: toolsData.categories || {},
+        tools: finalTools,
+        stats: {
+          totalTools: toolsData.stats.totalTools,
+          totalCategories: toolsData.stats.totalCategories,
+          freeTools: toolsData.stats.freeTools,
+          lastUpdated: toolsData.stats.lastUpdated
+        }
+      }} />
     </div>
   );
 }

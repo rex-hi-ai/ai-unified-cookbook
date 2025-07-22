@@ -5,6 +5,7 @@ const { marked } = require('marked');
 
 // 設定路徑
 const SURVEY_DIR = path.join(__dirname, '../../docs/survey');
+const PROMPTS_DIR = path.join(__dirname, '../../prompts');
 const OUTPUT_DIR = path.join(__dirname, '../src/data');
 const OUTPUT_FILE = path.join(OUTPUT_DIR, 'tools-data.json');
 
@@ -68,6 +69,36 @@ function parsePricing(pricingSection) {
     minPrice: minPrice === Infinity ? null : minPrice,
     maxPrice: maxPrice === 0 ? null : maxPrice,
     raw: pricingSection
+  };
+}
+
+// 解析 Prompt 文件
+function parsePromptFile(filePath) {
+  const content = fs.readFileSync(filePath, 'utf8');
+  const relativePath = path.relative(PROMPTS_DIR, filePath);
+  const pathParts = relativePath.replace('.md', '').split(path.sep);
+  
+  // 從檔案名和路徑生成名稱
+  const fileName = path.basename(filePath, '.md');
+  const category = pathParts.slice(0, -1).join(' / ');
+  const name = fileName.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+
+  // 從目錄路徑提取標籤，每個路徑段落都是一個標籤
+  const { data: frontMatter } = matter(content);
+  const directoryTags = pathParts.slice(0, -1); // 排除檔案名，只取目錄路徑
+  const manualTags = frontMatter.tags || []; // 從 front matter 取得的手動標籤
+  
+  // 合併目錄標籤和手動標籤，並去重
+  const tags = [...new Set([...directoryTags, ...manualTags])];
+  
+  return {
+    id: pathParts.join('-'),
+    name,
+    category: category || 'General',
+    content,
+    path: relativePath,
+    lastUpdated: fs.statSync(filePath).mtime.toISOString(),
+    tags
   };
 }
 
@@ -140,6 +171,29 @@ function parseMarkdownFile(filePath, category) {
   };
 }
 
+// 遞歸收集所有 markdown 檔案
+function collectMarkdownFiles(dir) {
+  const files = [];
+  
+  if (!fs.existsSync(dir)) {
+    return files;
+  }
+  
+  const items = fs.readdirSync(dir, { withFileTypes: true });
+  
+  items.forEach(item => {
+    const fullPath = path.join(dir, item.name);
+    
+    if (item.isDirectory()) {
+      files.push(...collectMarkdownFiles(fullPath));
+    } else if (item.isFile() && item.name.endsWith('.md')) {
+      files.push(fullPath);
+    }
+  });
+  
+  return files;
+}
+
 // 生成主要資料
 function generateToolsData() {
   const categories = {};
@@ -169,10 +223,32 @@ function generateToolsData() {
     allTools.push(...categoryTools);
   });
   
-  // 生成統計資料
+  // 處理 prompts 資料
+  const promptFiles = collectMarkdownFiles(PROMPTS_DIR);
+  const allPrompts = promptFiles.map(filePath => parsePromptFile(filePath));
+  
+  // 按分類組織 prompts
+  const promptsByCategory = {};
+  allPrompts.forEach(prompt => {
+    const category = prompt.category;
+    if (!promptsByCategory[category]) {
+      promptsByCategory[category] = {
+        name: category,
+        description: `${category} 相關的工作流程提示詞`,
+        prompts: [],
+        count: 0
+      };
+    }
+    promptsByCategory[category].prompts.push(prompt);
+    promptsByCategory[category].count++;
+  });
+  
+  // 更新統計資料
   const stats = {
     totalTools: allTools.length,
+    totalPrompts: allPrompts.length,
     totalCategories: Object.keys(categories).length,
+    totalPromptCategories: Object.keys(promptsByCategory).length,
     freeTools: allTools.filter(tool => tool.pricing?.hasFree).length,
     lastUpdated: new Date().toISOString()
   };
@@ -181,14 +257,18 @@ function generateToolsData() {
   const data = {
     stats,
     categories,
-    tools: allTools
+    tools: allTools,
+    promptCategories: promptsByCategory,
+    prompts: allPrompts
   };
   
   // 寫入 JSON 檔案
   fs.writeFileSync(OUTPUT_FILE, JSON.stringify(data, null, 2), 'utf8');
   
   console.log(`✅ 已生成 ${allTools.length} 個工具的資料`);
-  console.log(`📁 分類數量: ${Object.keys(categories).length}`);
+  console.log(`✅ 已生成 ${allPrompts.length} 個提示詞的資料`);
+  console.log(`📁 工具分類數量: ${Object.keys(categories).length}`);
+  console.log(`📁 提示詞分類數量: ${Object.keys(promptsByCategory).length}`);
   console.log(`📄 輸出檔案: ${OUTPUT_FILE}`);
   
   return data;

@@ -12,14 +12,33 @@ interface Props {
 
 // Generate static params for all tools
 export async function generateStaticParams() {
-  return toolsData.tools.map((tool) => ({
+  // Extract all tools from categories
+  const allTools: Tool[] = [];
+  Object.values(toolsData.categories || {}).forEach((category: any) => {
+    if (category.tools && Array.isArray(category.tools)) {
+      allTools.push(...category.tools);
+    }
+  });
+  
+  const tools = allTools.length > 0 ? allTools : (toolsData.tools || []);
+  return tools.map((tool) => ({
     id: tool.id,
   }));
 }
 
 export default async function ToolDetail({ params }: Props) {
   const { id } = await params;
-  const tool = toolsData.tools.find((tool: Tool) => tool.id === id);
+  
+  // Extract all tools from categories
+  const allTools: Tool[] = [];
+  Object.values(toolsData.categories || {}).forEach((category: any) => {
+    if (category.tools && Array.isArray(category.tools)) {
+      allTools.push(...category.tools);
+    }
+  });
+  
+  const tools = allTools.length > 0 ? allTools : (toolsData.tools || []);
+  const tool = tools.find((tool: Tool) => tool.id === id);
 
   if (!tool) {
     notFound();

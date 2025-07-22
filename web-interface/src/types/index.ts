@@ -44,9 +44,30 @@ export interface Category {
 // 統計資訊
 export interface Stats {
   totalTools: number;
+  totalPrompts?: number;
   totalCategories: number;
+  totalPromptCategories?: number;
   freeTools: number;
   lastUpdated: string;
+}
+
+// Prompt 資料型別定義
+export interface Prompt {
+  id: string;
+  name: string;
+  category: string;
+  content: string;
+  path: string;
+  lastUpdated: string;
+  tags?: string[];
+}
+
+// Prompt 分類資訊
+export interface PromptCategory {
+  name: string;
+  description: string;
+  prompts: Prompt[];
+  count: number;
 }
 
 // 主要資料結構
@@ -54,6 +75,8 @@ export interface ToolsData {
   stats: Stats;
   categories: Record<string, Category>;
   tools: Tool[];
+  promptCategories?: Record<string, PromptCategory>;
+  prompts?: Prompt[];
 }
 
 // 篩選選項
@@ -78,3 +101,4 @@ export interface SearchResult {
   score: number;
   matches: string[];
 }
+

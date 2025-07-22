@@ -55,10 +55,10 @@ export default function StatsPanel({ stats, categories, onCategoryFilter }: Stat
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div className="text-center mb-8" variants={itemVariants}>
           <h2 className="text-3xl font-bold text-gray-900 mb-2">
-            AI 工具生態系概覽
+            工具庫及提示詞生態系概覽
           </h2>
           <p className="text-gray-600">
-            持續更新的 AI 工具調研資料庫，幫助您發現最適合的 AI 解決方案
+            持續更新的 AI 工具調研資料庫，幫助您發現最適合的解決方案
           </p>
         </motion.div>
 
@@ -72,10 +72,10 @@ export default function StatsPanel({ stats, categories, onCategoryFilter }: Stat
               <TrendingUp className="w-6 h-6 text-primary-600" />
             </div>
             <div className="text-2xl font-bold text-gray-900 mb-1">
-              {stats.totalTools}
+              {stats.totalTools + (stats.totalPrompts || 0)}
             </div>
             <div className="text-sm text-gray-600">
-              AI 工具總數
+工具及提示詞總數
             </div>
           </motion.div>
 
@@ -88,10 +88,10 @@ export default function StatsPanel({ stats, categories, onCategoryFilter }: Stat
               <Users className="w-6 h-6 text-blue-600" />
             </div>
             <div className="text-2xl font-bold text-gray-900 mb-1">
-              {stats.totalCategories}
+              {stats.totalCategories + (stats.totalPromptCategories || 0)}
             </div>
             <div className="text-sm text-gray-600">
-              工具分類
+              分類總數
             </div>
           </motion.div>
 
