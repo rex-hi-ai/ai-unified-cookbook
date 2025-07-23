@@ -63,8 +63,8 @@ export default async function Page() {
             全面的 AI 工具調研與比較平台，幫助您找到最適合的 AI 解決方案，提升生產力與創新力。
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4 mt-8">
-            <a href="/tools" className="px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold shadow hover:bg-blue-700 transition-colors">探索工具庫</a>
-            <a href="/prompts" className="px-6 py-3 bg-purple-600 text-white rounded-lg font-semibold shadow hover:bg-purple-700 transition-colors">瀏覽提示詞</a>
+            <a href={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/tools`} className="px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold shadow hover:bg-blue-700 transition-colors">探索工具庫</a>
+            <a href={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/prompts`} className="px-6 py-3 bg-purple-600 text-white rounded-lg font-semibold shadow hover:bg-purple-700 transition-colors">瀏覽提示詞</a>
           </div>
           <div className="mt-8 text-sm text-gray-500">
             資料持續更新，歡迎貢獻與回饋。
