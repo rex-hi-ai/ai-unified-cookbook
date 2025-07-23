@@ -54,7 +54,7 @@ jobs:
 
       - name: Build with Next.js
         working-directory: ./web-interface
-        run: DEPLOY_GHPAGES=true npm run build && npm run export
+        run: DEPLOY_GHPAGES=true npm run build
         env:
           BASE_PATH: /ai-unified-cookbook
 
