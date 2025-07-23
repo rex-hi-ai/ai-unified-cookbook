@@ -56,16 +56,21 @@ export default async function Page() {
   
   return (
     <div className="min-h-screen">
-      <SimplifiedToolPage toolsData={{
-        categories: toolsData.categories || {},
-        tools: finalTools,
-        stats: {
-          totalTools: toolsData.stats.totalTools,
-          totalCategories: toolsData.stats.totalCategories,
-          freeTools: toolsData.stats.freeTools,
-          lastUpdated: toolsData.stats.lastUpdated
-        }
-      }} />
+      <div className="min-h-screen bg-gradient-to-br from-blue-50 to-purple-50 flex flex-col justify-center items-center">
+        <div className="max-w-2xl w-full px-6 py-16 text-center rounded-2xl shadow-lg bg-white/80 border border-gray-200">
+          <h1 className="text-4xl font-extrabold text-gray-900 mb-4">HI-AI Tools Survey</h1>
+          <p className="text-lg text-gray-700 mb-6">
+            全面的 AI 工具調研與比較平台，幫助您找到最適合的 AI 解決方案，提升生產力與創新力。
+          </p>
+          <div className="flex flex-col sm:flex-row justify-center gap-4 mt-8">
+            <a href="/tools" className="px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold shadow hover:bg-blue-700 transition-colors">探索工具庫</a>
+            <a href="/prompts" className="px-6 py-3 bg-purple-600 text-white rounded-lg font-semibold shadow hover:bg-purple-700 transition-colors">瀏覽提示詞</a>
+          </div>
+          <div className="mt-8 text-sm text-gray-500">
+            資料持續更新，歡迎貢獻與回饋。
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

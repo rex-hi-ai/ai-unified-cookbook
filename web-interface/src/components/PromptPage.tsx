@@ -200,6 +200,12 @@ export default function PromptPage({ promptsData }: PromptPageProps) {
   };
 
   const handleTagSuggestionClick = (tag: string) => {
+    // 檢查 searchQuery 是否已包含該 tag
+    const tagPattern = new RegExp(`#${tag}(\s|$)`, 'i');
+    if (tagPattern.test(searchQuery)) {
+      setShowTagSuggestions(false);
+      return; // 已存在則不重複加入
+    }
     const lastHashIndex = searchQuery.lastIndexOf('#');
     if (lastHashIndex !== -1) {
       // 替換最後的 # 後面的內容
@@ -341,18 +347,24 @@ export default function PromptPage({ promptsData }: PromptPageProps) {
           <div className="px-6 pb-6 border-t border-gray-100">
             <div className="text-sm text-gray-600 mb-3">常用標籤：</div>
             <div className="flex flex-wrap gap-2">
-              {allTags.slice(0, 12).map(tag => (
-                <button
-                  key={tag}
-                  onClick={() => {
-                    setSearchQuery(prev => `${prev}#${tag} `.trim() + ' ');
-                  }}
-                  className="inline-flex items-center px-2.5 py-1 bg-gray-50 hover:bg-gray-100 text-gray-700 text-xs rounded-full border border-gray-200 hover:border-gray-300 transition-colors"
-                >
-                  <span className="mr-1">#</span>
-                  {tag}
-                </button>
-              ))}
+              {allTags.slice(0, 12).map(tag => {
+                const tagPattern = new RegExp(`#${tag}(\s|$)`, 'i');
+                const alreadyInQuery = tagPattern.test(searchQuery);
+                return (
+                  <button
+                    key={tag}
+                    onClick={() => {
+                      if (alreadyInQuery) return; // 已存在則不重複加入
+                      setSearchQuery(prev => `${prev}#${tag} `.trim() + ' ');
+                    }}
+                    className={`inline-flex items-center px-2.5 py-1 bg-gray-50 hover:bg-gray-100 text-gray-700 text-xs rounded-full border border-gray-200 hover:border-gray-300 transition-colors ${alreadyInQuery ? 'opacity-50 cursor-not-allowed' : ''}`}
+                    disabled={alreadyInQuery}
+                  >
+                    <span className="mr-1">#</span>
+                    {tag}
+                  </button>
+                );
+              })}
             </div>
           </div>
         </div>

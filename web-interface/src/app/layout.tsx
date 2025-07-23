@@ -26,8 +26,6 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  // 取得 basePath，確保靜態部署於子目錄時路徑正確
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || ''
   return (
     <html lang="zh-TW" className="scroll-smooth">
       <body className="min-h-screen bg-gray-50">
@@ -36,9 +34,11 @@ export default function RootLayout({
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="flex justify-between items-center h-16">
                 <div className="flex items-center space-x-4">
-                  <h1 className="text-xl font-bold text-gray-900">
-                    HI-AI
-                  </h1>
+                  <Link href="/" className="flex items-center space-x-2">
+                    <h1 className="text-xl font-bold text-gray-900">
+                      HI-AI
+                    </h1>
+                  </Link>
                   <div className="hidden sm:flex items-center space-x-1 text-sm text-gray-500">
                     <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
                     <span>持續更新中</span>
@@ -46,13 +46,13 @@ export default function RootLayout({
                 </div>
                 <nav className="flex items-center space-x-6">
                   <Link 
-                    href={`${basePath}/`} 
+                    href="/tools" 
                     className="text-gray-600 hover:text-gray-900 transition-colors font-medium"
                   >
                     工具庫
                   </Link>
                   <Link 
-                    href={`${basePath}/prompts`} 
+                    href="/prompts" 
                     className="text-gray-600 hover:text-gray-900 transition-colors font-medium"
                   >
                     提示詞

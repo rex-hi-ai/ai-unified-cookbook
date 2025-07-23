@@ -1,5 +1,4 @@
 /** @type {import('next').NextConfig} */
-const BASE_PATH = '/ai-unified-cookbook';
 const nextConfig = {
   experimental: {
     // appDir is enabled by default in Next.js 13.4+
@@ -11,12 +10,8 @@ const nextConfig = {
   // 禁用影像最佳化（靜態匯出不支援）
   images: {
     unoptimized: true
-  },
-  basePath: BASE_PATH,
-  assetPrefix: BASE_PATH + '/',
-  env: {
-    NEXT_PUBLIC_BASE_PATH: BASE_PATH
   }
+  // 不加 basePath、不加 assetPrefix
 }
 
 module.exports = nextConfig
