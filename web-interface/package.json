@@ -6,6 +6,7 @@
     "dev": "next dev -p 3000",
     "dev:with-base-path": "cross-env NODE_ENV=development next dev -p 3000",
     "build": "next build",
+    "export": "next export",
     "start": "next start",
     "lint": "next lint",
     "generate-data": "node scripts/generate-data.js"
