@@ -52,7 +52,6 @@ function PromptCard({ prompt, onTagToggle, selectedTags }: {
   onTagToggle: (tag: string) => void;
   selectedTags: string[];
 }) {
-  const [isExpanded, setIsExpanded] = useState(false);
   const [copied, setCopied] = useState(false);
 
   const formatDate = (dateString: string) => {
@@ -63,7 +62,8 @@ function PromptCard({ prompt, onTagToggle, selectedTags }: {
     });
   };
 
-  const handleCopy = async () => {
+  const handleCopy = async (e: React.MouseEvent) => {
+    e.stopPropagation(); // 防止觸發卡片點擊事件
     try {
       await navigator.clipboard.writeText(prompt.content);
       setCopied(true);
@@ -71,6 +71,15 @@ function PromptCard({ prompt, onTagToggle, selectedTags }: {
     } catch (err) {
       console.error('複製失敗:', err);
     }
+  };
+
+  const handleCardClick = () => {
+    // 導航到提示詞詳細頁面
+    window.open(`/prompts/${prompt.id}`, '_blank');
+  };
+
+  const handleTagClick = (e: React.MouseEvent) => {
+    e.stopPropagation(); // 防止觸發卡片點擊事件
   };
 
   // 使用手動設定的標籤，不從路徑生成
@@ -83,7 +92,8 @@ function PromptCard({ prompt, onTagToggle, selectedTags }: {
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden"
+      className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden cursor-pointer hover:shadow-md transition-shadow"
+      onClick={handleCardClick}
     >
       <div className="p-4">
         {/* Header */}
@@ -97,34 +107,17 @@ function PromptCard({ prompt, onTagToggle, selectedTags }: {
           </div>
         </div>
 
-        {/* Content Preview/Full */}
+        {/* Content Preview */}
         <div className="bg-gray-50 rounded-lg p-3 mb-3">
-          <pre className="text-xs text-gray-700 whitespace-pre-wrap overflow-x-auto">
-            {isExpanded ? prompt.content : previewContent}
+          <pre className="text-xs text-gray-700 whitespace-pre-wrap overflow-x-auto line-clamp-4">
+            {previewContent}
           </pre>
         </div>
 
         {/* Actions */}
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
-            {prompt.content.length > 150 && (
-              <button
-                onClick={() => setIsExpanded(!isExpanded)}
-                className="flex items-center gap-1 text-purple-600 hover:text-purple-700 text-sm font-medium transition-colors"
-              >
-                {isExpanded ? (
-                  <>
-                    <ChevronUp className="w-4 h-4" />
-                    收合
-                  </>
-                ) : (
-                  <>
-                    <ChevronDown className="w-4 h-4" />
-                    展開
-                  </>
-                )}
-              </button>
-            )}
+            <span className="text-xs text-gray-500">點擊查看完整內容</span>
           </div>
           
           <div className="flex items-center gap-2">
@@ -152,7 +145,9 @@ function PromptCard({ prompt, onTagToggle, selectedTags }: {
         </div>
 
         {/* Manual Tags */}
-        <ManualTags tags={tags} onTagToggle={onTagToggle} selectedTags={selectedTags} />
+        <div onClick={handleTagClick}>
+          <ManualTags tags={tags} onTagToggle={onTagToggle} selectedTags={selectedTags} />
+        </div>
       </div>
     </motion.div>
   );
