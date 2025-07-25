@@ -127,69 +127,51 @@ export default function SimplifiedToolPage({ toolsData }: SimplifiedToolPageProp
         {/* Tools Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4">
           {filteredTools.map((tool) => (
-            <div key={tool.id} className="bg-white rounded-lg shadow-sm p-4">
-              <div className="flex justify-between items-start mb-3">
-                <div>
+            <Link key={tool.id} href={`/tools/${tool.id}`} className="block h-full">
+              <div className="bg-white rounded-lg shadow-sm p-4 h-full hover:shadow-md transition-shadow cursor-pointer flex flex-col min-h-[240px]">
+                <div className="flex-shrink-0">
                   <h3 className="text-base font-semibold text-gray-900 mb-2">
                     {tool.name}
                   </h3>
-                  <div className="flex items-center gap-2 text-xs text-gray-600 mb-2">
+                  <div className="flex items-center gap-2 text-xs text-gray-600 mb-3">
                     <Tag className="w-3 h-3" />
                     <span>{getCategoryName(tool.category)}</span>
                     <span>•</span>
                     <Clock className="w-3 h-3" />
                     <span>{formatDate(tool.lastUpdated)}</span>
                   </div>
-                  {tool.pricing?.hasFree && (
-                    <span className="inline-block px-2 py-1 bg-green-100 text-green-800 text-xs rounded-full font-medium mb-2">
-                      免費
-                    </span>
+                </div>
+
+                <div className="flex-grow flex flex-col">
+                  <div className="bg-gray-50 rounded-lg p-3 mb-3 flex-grow">
+                    <p className="text-xs text-gray-700 line-clamp-3">
+                      {tool.overview || '暫無描述'}
+                    </p>
+                  </div>
+                </div>
+
+                {/* Features Preview */}
+                <div className="flex-shrink-0 mt-auto">
+                  {tool.features.length > 0 && (
+                    <div className="flex flex-wrap gap-1">
+                      {tool.features.slice(0, 2).map((feature, index) => (
+                        <span 
+                          key={index} 
+                          className="px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded"
+                        >
+                          {feature}
+                        </span>
+                      ))}
+                      {tool.features.length > 2 && (
+                        <span className="px-2 py-1 bg-gray-100 text-gray-500 text-xs rounded">
+                          +{tool.features.length - 2}
+                        </span>
+                      )}
+                    </div>
                   )}
                 </div>
               </div>
-
-              {tool.overview && (
-                <div className="bg-gray-50 rounded-lg p-3 mb-3">
-                  <p className="text-xs text-gray-700 line-clamp-3">
-                    {tool.overview}
-                  </p>
-                </div>
-              )}
-
-              {/* Features Preview */}
-              {tool.features.length > 0 && (
-                <div className="mb-3">
-                  <div className="flex flex-wrap gap-1">
-                    {tool.features.slice(0, 2).map((feature, index) => (
-                      <span 
-                        key={index} 
-                        className="px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded"
-                      >
-                        {feature}
-                      </span>
-                    ))}
-                    {tool.features.length > 2 && (
-                      <span className="px-2 py-1 bg-gray-100 text-gray-500 text-xs rounded">
-                        +{tool.features.length - 2}
-                      </span>
-                    )}
-                  </div>
-                </div>
-              )}
-
-              <div className="flex justify-between items-center text-xs text-gray-500">
-                <div className="flex items-center gap-1">
-                  <DollarSign className="w-3 h-3" />
-                  <span className="truncate">{getPriceDisplay(tool)}</span>
-                </div>
-                <Link
-                  href={`/tools/${tool.id}`}
-                  className="text-blue-600 hover:text-blue-700 font-medium ml-2 flex-shrink-0"
-                >
-                  查看詳情
-                </Link>
-              </div>
-            </div>
+            </Link>
           ))}
         </div>
 

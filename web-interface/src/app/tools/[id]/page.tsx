@@ -3,6 +3,8 @@ import { Tool } from '@/types';
 import toolsData from '@/data/tools-data.json';
 import Link from 'next/link';
 import { ArrowLeft, ExternalLink, Clock, DollarSign } from 'lucide-react';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 
 interface Props {
   params: Promise<{
@@ -25,6 +27,57 @@ export async function generateStaticParams() {
     id: tool.id,
   }));
 }
+
+// Markdown 組件配置
+const MarkdownComponents = {
+  // 自訂程式碼區塊樣式
+  code: ({ node, inline, className, children, ...props }: any) => {
+    if (inline) {
+      return (
+        <code className="bg-gray-100 text-red-600 px-1 py-0.5 rounded text-sm" {...props}>
+          {children}
+        </code>
+      );
+    }
+    return (
+      <code className="block bg-gray-900 text-gray-100 rounded-lg p-4 overflow-x-auto text-sm" {...props}>
+        {children}
+      </code>
+    );
+  },
+  // 自訂連結樣式
+  a: ({ href, children }: any) => (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-blue-600 hover:text-blue-700 underline"
+    >
+      {children}
+    </a>
+  ),
+  // 自訂清單樣式
+  ul: ({ children }: any) => (
+    <ul className="list-disc list-inside space-y-2 text-gray-700">{children}</ul>
+  ),
+  ol: ({ children }: any) => (
+    <ol className="list-decimal list-inside space-y-2 text-gray-700">{children}</ol>
+  ),
+  // 自訂段落樣式
+  p: ({ children }: any) => (
+    <p className="text-gray-700 leading-relaxed mb-4">{children}</p>
+  ),
+  // 自訂標題樣式
+  h1: ({ children }: any) => (
+    <h1 className="text-2xl font-bold text-gray-900 mb-4">{children}</h1>
+  ),
+  h2: ({ children }: any) => (
+    <h2 className="text-xl font-bold text-gray-900 mb-3">{children}</h2>
+  ),
+  h3: ({ children }: any) => (
+    <h3 className="text-lg font-semibold text-gray-900 mb-2">{children}</h3>
+  ),
+};
 
 export default async function ToolDetail({ params }: Props) {
   const { id } = await params;
@@ -187,40 +240,47 @@ export default async function ToolDetail({ params }: Props) {
             </div>
           )}
 
-          {/* 定價詳情 */}
-          {tool.pricing && (
+          {/* 定價詳情 - 使用 Markdown */}
+          {tool.pricing && tool.pricing.raw && (
             <div className="mb-8">
               <h2 className="text-2xl font-bold mb-4">定價方案</h2>
-              <div className="bg-gray-50 rounded-lg p-6">
-                {tool.pricing.plans.map((plan, index) => (
-                  <div key={index} className="mb-2 text-gray-700">
-                    • {plan}
-                  </div>
-                ))}
+              <div className="bg-gray-50 rounded-lg p-6 prose prose-gray max-w-none">
+                <ReactMarkdown 
+                  remarkPlugins={[remarkGfm]}
+                  components={MarkdownComponents}
+                >
+                  {tool.pricing.raw}
+                </ReactMarkdown>
               </div>
             </div>
           )}
 
-          {/* 安裝與設定 */}
+          {/* 安裝與設定 - 使用 Markdown */}
           {tool.installation && (
             <div className="mb-8">
               <h2 className="text-2xl font-bold mb-4">安裝與設定</h2>
-              <div className="prose max-w-none">
-                <pre className="bg-gray-900 text-gray-100 rounded-lg p-4 overflow-x-auto">
-                  <code>{tool.installation}</code>
-                </pre>
+              <div className="prose prose-gray max-w-none">
+                <ReactMarkdown 
+                  remarkPlugins={[remarkGfm]}
+                  components={MarkdownComponents}
+                >
+                  {tool.installation}
+                </ReactMarkdown>
               </div>
             </div>
           )}
 
-          {/* 基本用法 */}
+          {/* 基本用法 - 使用 Markdown */}
           {tool.basicUsage && (
             <div className="mb-8">
               <h2 className="text-2xl font-bold mb-4">基本用法與範例</h2>
-              <div className="prose max-w-none">
-                <pre className="bg-gray-900 text-gray-100 rounded-lg p-4 overflow-x-auto">
-                  <code>{tool.basicUsage}</code>
-                </pre>
+              <div className="prose prose-gray max-w-none">
+                <ReactMarkdown 
+                  remarkPlugins={[remarkGfm]}
+                  components={MarkdownComponents}
+                >
+                  {tool.basicUsage}
+                </ReactMarkdown>
               </div>
             </div>
           )}

@@ -76,7 +76,7 @@ function PromptCard({ prompt, onTagToggle, selectedTags }: {
   const handleCardClick = () => {
     // 導航到提示詞詳細頁面
     const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
-    window.open(`${basePath}/prompts/${prompt.id}`, '_blank');
+    window.location.href = `${basePath}/prompts/${prompt.id}`;
   };
 
   const handleTagClick = (e: React.MouseEvent) => {
