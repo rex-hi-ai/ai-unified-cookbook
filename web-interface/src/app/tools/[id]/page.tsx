@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation';
 import { Tool } from '@/types';
 import toolsData from '@/data/tools-data.json';
 import Link from 'next/link';
-import { ArrowLeft, ExternalLink, Clock, DollarSign } from 'lucide-react';
+import { ExternalLink, Clock, DollarSign } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 
@@ -139,14 +139,6 @@ export default async function ToolDetail({ params }: Props) {
   return (
     <div className="min-h-screen bg-gray-50">
       <div className="container mx-auto px-4 py-8">
-        {/* 返回按鈕 */}
-        <Link 
-          href="/" 
-          className="inline-flex items-center text-primary-600 hover:text-primary-700 mb-8 transition-colors"
-        >
-          <ArrowLeft className="w-4 h-4 mr-2" />
-          返回首頁
-        </Link>
 
         <div className="bg-white rounded-lg shadow-sm p-8">
           {/* 標題區域 */}

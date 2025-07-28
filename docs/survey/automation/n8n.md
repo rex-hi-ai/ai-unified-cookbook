@@ -1,9 +1,9 @@
 # n8n
 
-## 1. Overview
+## 1. 總覽
 n8n 是一套開源、可自託管的工作流程自動化平台，結合 AI 原生能力與 500+ 應用整合，讓技術團隊能以拖拉式介面或程式碼靈活打造自動化流程。n8n 支援多步驟代理、資料整合、API 操作、AI 工具串接，並可部署於本地或雲端，適合需要高度自訂與資料主控權的企業與開發者。
 
-## 2. 主要功能
+## 2. 關鍵功能
 - 視覺化拖拉式流程編輯器，支援無程式碼與程式碼混合
 - 500+ 內建整合（如 Google Sheets、Slack、MySQL、Discord 等）
 - 原生 AI 代理與 LangChain 支援，可串接自有 AI 模型與資料
@@ -13,7 +13,7 @@ n8n 是一套開源、可自託管的工作流程自動化平台，結合 AI 原
 - 多人協作、專案管理、API 控制、CLI 工具
 - 1700+ 範本與豐富社群資源
 
-## 3. 常見應用情境
+## 3. 常見使用案例
 - IT/DevOps：自動化員工入職、事件通知、API 整合
 - 資安：自動豐富工單、串接 SIEM/資安工具
 - 銷售/行銷：自動化潛在客戶追蹤、評論分析、郵件發送
@@ -21,7 +21,7 @@ n8n 是一套開源、可自託管的工作流程自動化平台，結合 AI 原
 - AI 應用：多步驟 AI 代理、RAG、AI 聊天機器人
 - 專案管理：自動化日常任務、跨系統資料流轉
 
-## 4. 收費方案
+## 4. 定價方案
 n8n 採「公平原始碼」授權，提供自託管社群版與雲端訂閱制：
 
 | 方案      | 月繳   | 年繳（每月） | 執行次數/月 | 主要功能             | 託管方式      |
@@ -71,8 +71,8 @@ $ docker run -it --rm --name n8n -p 5678:5678 -v n8n_data:/home/node/.n8n docker
 - [定價方案](https://n8n.io/pricing/)
 - [整合清單](https://n8n.io/integrations/)
 - [範本/工作流程](https://n8n.io/workflows/)
-- [社群論壇](https://community.n8n.io/)
-- [YouTube 頻道](https://www.youtube.com/c/n8n-io)
-- [X (Twitter)](https://twitter.com/n8n_io)
-- [LinkedIn](https://www.linkedin.com/company/n8n/)
-- [Discord](https://discord.gg/n8n)
+- [技術支援](https://community.n8n.io/)
+
+## 8. 相關參考
+- [n8n 社群教學資源](https://www.youtube.com/c/n8n-io)
+- [n8n 開源平台討論](https://www.reddit.com/r/n8n/)

@@ -38,5 +38,10 @@ Cursor 是一款 AI 驅動的程式碼編輯器，結合自訂與前沿 AI 模�
 
 ## 7. 官方資源
 - [官方網站](https://cursor.com/)
-- [定價頁](https://cursor.com/pricing)
-- [EngineLabs AI 評論](https://blog.enginelabs.ai/cursor-ai-an-in-depth-review)
+- [官方定價](https://cursor.com/pricing)
+- [下載頁面](https://cursor.com/)
+- [官方文檔](https://docs.cursor.com/)
+
+## 8. 相關參考
+- [Cursor AI 評論](https://blog.enginelabs.ai/cursor-ai-an-in-depth-review)
+- [Cursor 社群討論](https://www.reddit.com/r/cursor/)

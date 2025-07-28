@@ -29,3 +29,9 @@ Devin 是 Cognition Labs 推出的 AI 軟體工程師，主打能夠自主規劃
 
 ## 7. 官方資源
 - [官方網站](https://www.cognition-labs.com/devin)
+- [官方部落格](https://blog.cognition-labs.com/)
+- [官方支援](https://www.cognition-labs.com/support)
+
+## 8. 相關參考
+- [Devin AI 評測與介紹](https://www.techcrunch.com/devin-ai-engineer)
+- [第三方技術分析](https://www.example.com/devin-analysis)

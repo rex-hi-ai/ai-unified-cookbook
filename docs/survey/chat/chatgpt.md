@@ -48,10 +48,11 @@ ChatGPT 可直接於網頁使用，或下載行動 App：
 ## 7. 官方資源
 - [官方網站](https://chatgpt.com/)
 - [官方定價](https://openai.com/chatgpt/pricing/)
-- [Team 方案](https://openai.com/chatgpt/team/)
-- [Enterprise 方案](https://openai.com/chatgpt/enterprise/)
-- [教育方案](https://openai.com/chatgpt/education/)
 - [下載頁](https://openai.com/chatgpt/download/)
 - [OpenAI API 平台](https://openai.com/api/)
-- [OpenAI 支援中心](https://help.openai.com/)
-- [OpenAI 開發者文檔](https://platform.openai.com/docs/overview)
+- [技術支援](https://help.openai.com/)
+- [開發者文檔](https://platform.openai.com/docs/overview)
+
+## 8. 相關參考
+- [OpenAI 社群論壇](https://community.openai.com/)
+- [ChatGPT 使用教學與技巧分享](https://www.reddit.com/r/ChatGPT/)

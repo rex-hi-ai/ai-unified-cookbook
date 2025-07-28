@@ -1,9 +1,9 @@
 # Zapier
 
-## 1. 工具簡介
+## 1. 總覽
 Zapier 是一個領先的自動化平台，讓用戶無需程式碼即可串接超過 8,000 種應用程式，建立 AI 驅動的自動化流程、AI 代理、聊天機器人與資料整合，適用於個人與企業級自動化需求。
 
-## 2. 主要功能
+## 2. 關鍵功能
 - Zaps：可視化自動化流程設計與執行
 - Tables：內建資料庫管理
 - Interfaces：自訂互動頁面與表單
@@ -13,14 +13,14 @@ Zapier 是一個領先的自動化平台，讓用戶無需程式碼即可串接�
 - 整合 8,000+ 應用程式（如 Slack、Google Sheets、Salesforce 等）
 - 企業級安全（SOC 2/3、GDPR、CCPA、SSO、稽核日誌）
 
-## 3. 常見應用情境
+## 3. 常見使用案例
 - 跨部門自動化（行銷、IT、營運、人資等）
 - 應用程式間資料同步與自動任務觸發
 - AI 代理與聊天機器人自動處理日常工作
 - IT 支援、銷售、行銷活動自動化
 - 客製化業務流程與自動化報表
 
-## 4. 價格方案
+## 4. 定價方案
 | 方案名稱 | 價格 (月繳) | 價格 (年繳) | 任務數/月 | 主要特點 |
 | :--- | :--- | :--- | :--- | :--- |
 | 免費版 | $0 | $0 | 100 | 無限 Zaps，兩步驟 Zaps，AI 基本功能 |
@@ -48,13 +48,15 @@ Zapier 是一個領先的自動化平台，讓用戶無需程式碼即可串接�
 ```
 
 ## 7. 官方資源
-- [Zapier 官方網站](https://zapier.com/)
-- [官方定價頁面](https://zapier.com/pricing)
-- [官方文件](https://help.zapier.com/)
-- [Zapier AI 介紹](https://zapier.com/ai)
-- [Zapier Canvas](https://zapier.com/canvas)
-- [Zapier Agents](https://zapier.com/agents)
-- [Zapier Chatbots](https://zapier.com/ai/chatbot)
+- [官方網站](https://zapier.com/)
+- [定價資訊](https://zapier.com/pricing)
+- [文件](https://help.zapier.com/)
+- [AI 介紹](https://zapier.com/ai)
+- [Canvas](https://zapier.com/canvas)
+- [Agents](https://zapier.com/agents)
+- [Chatbots](https://zapier.com/ai/chatbot)
+
+## 8. 相關參考
 - [Gartner 評論](https://www.gartner.com/reviews/market/application-integration-platforms/vendor/zapier)
 
 > 本文件依據 2025/07 官方資訊整理，功能與價格如有異動請以官方網站為準。

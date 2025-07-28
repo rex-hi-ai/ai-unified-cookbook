@@ -46,11 +46,15 @@ Dify 是一款 AI 工作流自動化平台，支援視覺化拖拉建構、整�
 ## 7. 官方資源
 - [官方網站](https://dify.ai/)
 - [雲端服務](https://cloud.dify.ai/)
-- [定價方案](https://dify.ai/pricing)
+- [官方定價](https://dify.ai/pricing)
 - [GitHub 頁面](https://github.com/langgenius/dify)
 - [官方文檔](https://docs.dify.ai/en/introduction)
-- [Discord 社群](https://discord.com/invite/FngNHpbcY7)
+- [官方支援](https://docs.dify.ai/en/support)
 - [教育計畫](https://dify.ai/education)
 - [合作夥伴計畫](https://dify.ai/partner)
 - [插件市場](https://marketplace.dify.ai/?language=en-US)
 - [品牌指南](https://docs.dify.ai/en/resources/about-dify/dify-brand-guidelines)
+
+## 8. 相關參考
+- [Dify Discord 社群](https://discord.com/invite/FngNHpbcY7)
+- [Dify 社群討論](https://github.com/langgenius/dify/discussions)

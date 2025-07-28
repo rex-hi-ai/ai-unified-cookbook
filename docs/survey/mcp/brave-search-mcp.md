@@ -39,9 +39,14 @@ Brave Search MCP 是 Brave Search 官方針對 Claude Desktop、Context7 MCP 等
 - **查無結果/回應慢**：請確認網路連線與 API 金鑰設定正確
 - **安全性疑慮**：Brave Search 強調隱私保護，不會追蹤用戶查詢紀錄
 
-## 官方資源
+## 7. 官方資源
 - [Brave Search API 官方指南](https://brave.com/zh-tw/search/api/guides/use-with-claude-desktop-with-mcp/)
 - [Brave Search API 文件](https://search.brave.com/api/docs)
+
+## 8. 相關參考
+- [搜索技術探討](https://github.com/topics/search-technology)
+- [Brave 社群動態](https://news.ycombinator.com/from?site=brave.com)
+- [MCP 使用反饋](https://www.reddit.com/r/bravesearch)
 
 ---
 

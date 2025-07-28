@@ -1,9 +1,9 @@
 # JetBrains AI Assistant
 
-## 1. 工具簡介
+## 1. 總覽
 JetBrains AI Assistant 是 JetBrains IDE 內建的 AI 助理，結合自家與頂尖第三方 LLM，提供無限程式碼補全、AI 聊天、程式碼解釋、重構、測試生成等功能，支援多平台與多語言開發，協助開發者提升生產力並簡化日常工作。
 
-## 2. 主要功能
+## 2. 關鍵功能
 - 無限程式碼補全與智慧建議，支援多種語言與框架
 - 具程式碼庫上下文的 AI 聊天與即時協作
 - 多檔案同時編輯、重構、生成測試、文件與終端指令
@@ -14,14 +14,14 @@ JetBrains AI Assistant 是 JetBrains IDE 內建的 AI 助理，結合自家與�
 - 跨平台支援：Windows、macOS、Linux
 - 適用於 .NET、C#、F#、ASP.NET、Blazor、MAUI、Unity、Unreal、Godot 等
 
-## 3. 常見應用情境
+## 3. 常見使用案例
 - .NET 與遊戲開發的主力 IDE 與 AI 助理
 - 提升程式碼品質、重構與自動化測試
 - 加速日常開發、減少重複性工作
 - 解釋錯誤、理解 Git 歷史、協助除錯
 - 跨平台應用程式與多語言專案開發
 
-## 4. 價格方案
+## 4. 定價方案
 - **AI Free**：免費，無限程式碼補全、AI 聊天、主要 AI 功能（需 IDE 2025.1 以上，部分 IDE/地區有限制）
 - **AI Pro/Ultimate**：付費方案，提供更高雲端與 Junie 代理人配額，功能同 Free 但資源更多
 - **AI Enterprise**：企業專屬，支援自選 LLM、進階安全與合規，需聯絡銷售
